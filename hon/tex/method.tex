@@ -57,7 +57,7 @@
 \newpage
 \section{システム}
 本研究室のチームが行ってきたシステム\cite{okada}へ目標方向に対応したコマンドの生成機能とネットワーク構造の変更をすることでシステムを構築した．
-「直進」「左折」「右折」の目標方向を要素数3,次元数1のint型の配列(One-Hot ベクトル)で表現し，方向と配列の対応をTable \ref{tb:comman}に示す．
+「道なり」「直進」「左折」「右折」の目標方向を要素数3,次元数1のint型の配列(One-Hot ベクトル)で表現し，方向と配列の対応をTable \ref{tb:comman}に示す．
 
 本節では学習器の訓練を行う\ref{lerning}「学習フェーズ」，学習結果を用いて走行を行う\ref{test}「テストフェーズ」，
 \ref{net}構築したネットワークの構造と\ref{seigyo}学習フェーズで用いる地図べースの制御器の4つに分けて述べる．
@@ -76,7 +76,22 @@
     \vspace{-3.0zh}
     \label{tb:comman}
     \end{table}
-
+  
+    \begin{table}[h]
+      \centering
+      \caption{Command}
+      \begin{tabular}{ccccll}
+      \cline{1-5}
+      \multicolumn{1}{|c|}{Target Direction} & \multicolumn{1}{c|}{con}&\multicolumn{1}{c|}{go straihgt}          & \multicolumn{1}{c|}{go left}          & \multicolumn{1}{c|}{go right}          &  \\ \cline{1-5}
+      \multicolumn{1}{|c|}{data}  &\multicolumn{1}{c|}{{[}100, 0, 0, 0{]}}& \multicolumn{1}{c|}{{[}100, 0, 0, 0{]}} & \multicolumn{1}{c|}{{[}0,100,0, 0{]}} & \multicolumn{1}{l|}{{[}0, 0, 0, 100{]}} &  \\ \cline{1-5}
+                                 &                                  &                                  &                                  &  \\
+                                 &                                  &                                  &                                  &  \\
+      \multicolumn{1}{l}{}       &                                  &                                  &                                  & 
+      \end{tabular}
+      \vspace{-3.0zh}
+      \label{tb:command_4}
+      \end{table}
+  
 \newpage
 \section{地図ベースの制御器}
     \label{seigyo}

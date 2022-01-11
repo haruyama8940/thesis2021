@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2021.11.1)  11 JAN 2022 19:06
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2021.11.1)  11 JAN 2022 20:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -375,7 +375,32 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [6] (./thesis.lof [7
+ [6] (./thesis.lof
+
+LaTeX Warning: Citation `Nvidia' on page vii undefined on input line 2.
+
+
+LaTeX Warning: Citation `okada' on page vii undefined on input line 3.
+
+
+LaTeX Warning: Citation `okada' on page vii undefined on input line 4.
+
+
+LaTeX Warning: Citation `razikon' on page vii undefined on input line 6.
+
+
+LaTeX Warning: Citation `razikon' on page vii undefined on input line 7.
+
+
+LaTeX Warning: Citation `razikon' on page vii undefined on input line 8.
+
+
+LaTeX Warning: Citation `nagoya' on page vii undefined on input line 9.
+
+
+LaTeX Warning: Citation `Imagenet' on page vii undefined on input line 13.
+
+[7
 
 ])
 \tf@lof=\write5
@@ -390,8 +415,7 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 ]
 \openout2 = `tex/introduction.aux'.
 
-
-(./tex/introduction.tex
+ (./tex/introduction.tex
 第1章
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 19.9311pt on input line 1.
@@ -405,6 +429,9 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 2.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 2.
+
+LaTeX Warning: Citation `Nvidia' on page 1 undefined on input line 7.
+
 File: ./figs/EndtoEnd_Learning_for_Self-Driving_Cars.pdf Graphic file (type pdf
 )
 <./figs/EndtoEnd_Learning_for_Self-Driving_Cars.pdf>
@@ -420,28 +447,70 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 8.64899pt on input line 14.
+
+LaTeX Warning: Citation `Nvidia' on page 1 undefined on input line 14.
+
+
+LaTeX Warning: Citation `Nvidia' on page 1 undefined on input line 14.
+
 [1
 
 
 
 
 ]
+
+LaTeX Warning: Citation `okada' on page 2 undefined on input line 19.
+
 File: ./figs/okada_sys.png Graphic file (type bmp)
 <./figs/okada_sys.png>
+
+LaTeX Warning: Citation `okada' on page 2 undefined on input line 27.
+
+
+LaTeX Warning: Citation `okada' on page 2 undefined on input line 27.
+
 File: ./figs/okada.png Graphic file (type bmp)
 <./figs/okada.png>
+
+LaTeX Warning: Citation `okada' on page 2 undefined on input line 34.
+
+
+LaTeX Warning: Citation `okada' on page 2 undefined on input line 34.
+
+
+LaTeX Warning: Citation `pomeru' on page 2 undefined on input line 50.
+
 File: ./figs/bunki.jpg Graphic file (type bmp)
 <./figs/bunki.jpg>
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2]
 File: ./figs/topo.png Graphic file (type bmp)
 <./figs/topo.png>
+
+
+LaTeX Warning: Citation `razikon' on page 3 undefined on input line 68.
+
+
+LaTeX Warning: Citation `razikon' on page 3 undefined on input line 68.
+
 File: ./figs/sina.png Graphic file (type bmp)
 <./figs/sina.png>
- [3]
+
+LaTeX Warning: Citation `razikon' on page 3 undefined on input line 74.
+
+
+LaTeX Warning: Citation `razikon' on page 3 undefined on input line 74.
+
+[3]
+
+LaTeX Warning: Citation `okada' on page 4 undefined on input line 77.
+
+
+LaTeX Warning: Citation `razikon' on page 4 undefined on input line 85.
+
 File: ./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf Graphic 
 file (type pdf)
 <./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf>
@@ -450,11 +519,26 @@ Overfull \hbox (38.42271pt too wide) in paragraph at lines 91--92
  [][] 
  []
 
+
+LaTeX Warning: Citation `razikon' on page 4 undefined on input line 92.
+
+
+LaTeX Warning: Citation `razikon' on page 4 undefined on input line 92.
+
 [4] [5]
+
+LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 97.
+
 File: ./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutio
 nal_Neural_Network_abst.pdf Graphic file (type pdf)
 <./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutional_N
 eural_Network_abst.pdf>
+
+LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 104.
+
+
+LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 104.
+
 ) [6]
 \openout2 = `tex/element_technology.aux'.
 
@@ -470,12 +554,21 @@ File: ./figs/net.pdf Graphic file (type pdf)
 File: ./figs/e2e.pdf Graphic file (type pdf)
 <./figs/e2e.pdf>
  [8]
+
+LaTeX Warning: Citation `Imagenet' on page 9 undefined on input line 46.
+
 File: ./figs/alex.pdf Graphic file (type pdf)
 <./figs/alex.pdf>
 
 Overfull \hbox (38.42271pt too wide) in paragraph at lines 55--56
  [][] 
  []
+
+
+LaTeX Warning: Citation `Imagenet' on page 9 undefined on input line 56.
+
+
+LaTeX Warning: Citation `Imagenet' on page 9 undefined on input line 56.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -485,6 +578,9 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
  (./tex/method.tex
 第3章
+
+LaTeX Warning: Citation `okada' on page 11 undefined on input line 8.
+
 File: ./figs/turtlebot3_kame.pdf Graphic file (type pdf)
 <./figs/turtlebot3_kame.pdf>
 File: ./figs/system_abs.pdf Graphic file (type pdf)
@@ -506,25 +602,37 @@ Overfull \hbox (11.38054pt too wide) in paragraph at lines 47--48
 
 
 ] [12]
+
+LaTeX Warning: Citation `okada' on page 13 undefined on input line 59.
+
+
 Overfull \hbox (8.34431pt too wide) in paragraph at lines 68--78
  [][][][] 
  []
 
 [13]
+
+LaTeX Warning: Citation `navigation:online' on page 14 undefined on input line 
+104.
+
 File: ./figs/navigation.pdf Graphic file (type pdf)
 <./figs/navigation.pdf>
- [14]
+[14]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 101.
+(Font)              scaled to size 11.53198pt on input line 116.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 101.
+(Font)              scaled to size 11.53198pt on input line 116.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 101.
+(Font)              scaled to size 11.53198pt on input line 116.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 101.
+(Font)              scaled to size 11.53198pt on input line 116.
+
+
+LaTeX Warning: Citation `okada' on page 15 undefined on input line 126.
+
 File: ./figs/system_learning.pdf Graphic file (type pdf)
 <./figs/system_learning.pdf>
- [15]
+[15]
 File: ./figs/system_test.pdf Graphic file (type pdf)
 <./figs/system_test.pdf>
  [16]
@@ -535,6 +643,13 @@ File: ./figs/network.pdf Graphic file (type pdf)
 
  (./tex/experiment.tex
 第4章
+
+LaTeX Warning: Citation `gazebo:online' on page 18 undefined on input line 4.
+
+
+LaTeX Warning: Citation `turtlebot3:online' on page 18 undefined on input line 
+5.
+
 File: ./figs/3_camera.png Graphic file (type bmp)
 <./figs/3_camera.png>
 [18
@@ -576,6 +691,9 @@ File: ./figs/bunkiban.pdf Graphic file (type pdf)
 
  (./tex/conclusion.tex
 第5章
+
+LaTeX Warning: Citation `okada' on page 26 undefined on input line 3.
+
 ) [26
 
 
@@ -583,22 +701,10 @@ File: ./figs/bunkiban.pdf Graphic file (type pdf)
 ]
 \openout2 = `backmatter/main.aux'.
 
- (./backmatter/main.tex (./thesis.bbl
-LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 37.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 37.
-LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 37.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 37.
-) (./backmatter/acknowledgement.tex
-[27
+ (./backmatter/main.tex (./thesis.bbl) (./backmatter/acknowledgement.tex)) [27
 
 
 
-
-])) [28
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
@@ -609,16 +715,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 72.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 24B2CA3482C0CA4F2941FA6BD7D5C837;2003.
+(rerunfilecheck)             Checksum: FF7B7C8C0472EDDF2664FD270B7E929D;1953.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
  ) 
 Here is how much of TeX's memory you used:
- 6809 strings out of 494735
- 103639 string characters out of 6176126
- 190223 words of memory out of 5000000
- 10177 multiletter control sequences out of 15000+600000
- 16969 words of font info for 80 fonts, out of 8000000 for 9000
+ 6804 strings out of 494735
+ 103583 string characters out of 6176126
+ 191923 words of memory out of 5000000
+ 10174 multiletter control sequences out of 15000+600000
+ 16455 words of font info for 78 fonts, out of 8000000 for 9000
  269 hyphenation exceptions out of 8191
- 36i,14n,44p,290b,687s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,14n,41p,290b,687s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (37 pages, 86640 bytes).
+Output written on thesis.dvi (36 pages, 81860 bytes).
