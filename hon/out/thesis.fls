@@ -141,10 +141,10 @@ INPUT ./figs/okada_sys.png
 INPUT extractbb -B cropbox -O ./figs/okada_sys.png
 INPUT ./figs/okada.png
 INPUT extractbb -B cropbox -O ./figs/okada.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT ./figs/bunki.jpg
 INPUT extractbb -B cropbox -O ./figs/bunki.jpg
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT ./figs/topo.png
 INPUT extractbb -B cropbox -O ./figs/topo.png
 INPUT ./figs/sina.png
@@ -173,12 +173,8 @@ INPUT ./figs/system_test_abs.pdf
 INPUT extractbb -B cropbox -O ./figs/system_test_abs.pdf
 INPUT ./figs/navigation.pdf
 INPUT extractbb -B cropbox -O ./figs/navigation.pdf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT ./figs/mapbased.png
+INPUT extractbb -B cropbox -O ./figs/mapbased.png
 INPUT ./figs/system_learning.pdf
 INPUT extractbb -B cropbox -O ./figs/system_learning.pdf
 INPUT ./figs/system_test.pdf
@@ -190,6 +186,12 @@ INPUT tex/experiment.tex
 INPUT tex/experiment.tex
 INPUT ./figs/3_camera.png
 INPUT extractbb -B cropbox -O ./figs/3_camera.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT ./figs/zyuuziyoko.png
 INPUT extractbb -B cropbox -O ./figs/zyuuziyoko.png
 INPUT ./figs/zyuziroute.pdf

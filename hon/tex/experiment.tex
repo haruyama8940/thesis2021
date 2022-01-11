@@ -2,7 +2,7 @@
 \section{実験環境}
 実験はシミュレータ上で行い，
 シミュレータ環境としてオープンソースの3DロボットシミュレータGazebo\cite{gazebo:online}を用いる．
-使用機体についてはturtlebot3\_waffle\cite{turtlebot3:online}へカメラを3つ追加したモデルを使用する．
+使用機体についてはturtlebot3\_waffle\cite{turtlebot3:online}へカメラを3つ追加したモデル\ref{fig::turtlebot3}を使用する．
 
 \begin{figure}[H]
     \centering
@@ -38,6 +38,7 @@
 \subsection{実験目的}
 提案手法を用いて，分岐路においてコマンドによってルートの変更が可能であるかの検証を行う．
 \subsection{実験環境}
+学習step数:4000[step]
 Fig. \ref{fig::zyuzi}に示す道幅が2.5m幅の十字路の環境を用いる．
 \begin{figure}[ht]
     \centering
@@ -83,6 +84,7 @@ Fig. \ref{fig::exp1route}で青で示した地点において，
 実験1で用いた局所的な環境を更に複雑な環境へ拡張し，
 提案手法を用いて，分岐路においてコマンドによってルートの変更が可能であるかさらなる検証を行う．
 \subsection{実験環境}
+学習step数:60000step
 Fig. \ref{fig::hatinozi}に示す道幅が2.5m幅の八の字型の環境用いる．
 \begin{figure}[h]
     \centering
@@ -94,7 +96,7 @@ Fig. \ref{fig::hatinozi}に示す道幅が2.5m幅の八の字型の環境用い�
 \newpage
 \subsection{学習フェーズでの経路}
 学習時の経路についてFig. \ref{fig::exp2route}に示す．
-1~6のルートを繰り返し周回する．
+Route 1-6のルートを繰り返し周回する．
 
 \begin{figure}[H]
     \begin{tabular}{cc}
