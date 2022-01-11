@@ -9,37 +9,29 @@
 提案手法の概要を以下に示す
 学習フェーズ
 テストフェーズ
-本研究で対象とするロボットの構造，搭載するセンサをTable\ref{tb:hikaku}に定義する
+本研究で対象とするロボットの構造，搭載するセンサを\ref{fig::turtlebot3_gazo}に示す．
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 4cm]{./figs/turtlebot3_kame.pdf}
+    \caption{turtlebot3 waffle}
+    \label{fig::turtlebot3_gazo}
+\end{figure}
+
 
 % \begin{table}[ht]
 %     \centering
-%     \caption{Comparison of methods}
-%     \begin{tabular}{|c|c|c|ll}
-%     \cline{1-3}
-%                                      & conventional method     & Proposed method          &  &  \\ \cline{1-3}
-%     Input                               & Camera Image    & Camera Image, Command   &  &  \\ \cline{1-3}
-%     Output                               & Angular velocity      & Angular velocity           &  &  \\ \cline{1-3}
-%     Route                             & Circumnavigate a certain path & Route according to command &  &  \\ \cline{1-3}
-%     \multicolumn{1}{|l|}{Change of route} & ×        & ○             &  &  \\ \cline{1-3}
-%      \end{tabular}
+%     \caption{Robot}
+%       \begin{tabular}{c|cll}
+%       \hline
+%       tpye    & Differential-drive wheele                                                           \\ \hline
+%       sensors & \begin{tabular}[c]{@{}l@{}}2D-LiDAR\\ Wheel Encoder\\ Monocular Camera\end{tabular} \\ \hline
+%       \end{tabular}
+
     
 %     \label{tb:hikaku}
    
 %     \end{table}
-\begin{table}[ht]
-    \centering
-    \caption{Robot}
-      \begin{tabular}{c|cll}
-      \hline
-      tpye    & Differential-drive wheele                                                           \\ \hline
-      sensors & \begin{tabular}[c]{@{}l@{}}2D-LiDAR\\ Wheel Encoder\\ Monocular Camera\end{tabular} \\ \hline
-      \end{tabular}
-
-    
-    \label{tb:hikaku}
-   
-    \end{table}
-
 
 
 \begin{figure}[H]
@@ -65,7 +57,7 @@
 \newpage
 \section{システム}
 本研究室のチームが行ってきたシステム\cite{okada}へ目標方向に対応したコマンドの生成機能とネットワーク構造の変更をすることでシステムを構築した．
-「直進」「左折」「右折」の目標方向を要素数3,次元数1のint型の配列で表現し，方向と配列の対応をTable \ref{tb:comman}に示す．
+「直進」「左折」「右折」の目標方向を要素数3,次元数1のint型の配列(One-Hot ベクトル)で表現し，方向と配列の対応をTable \ref{tb:comman}に示す．
 
 本節では学習器の訓練を行う\ref{lerning}「学習フェーズ」，学習結果を用いて走行を行う\ref{test}「テストフェーズ」，
 \ref{net}構築したネットワークの構造と\ref{seigyo}学習フェーズで用いる地図べースの制御器の4つに分けて述べる．
@@ -85,6 +77,7 @@
     \label{tb:comman}
     \end{table}
 
+\newpage
 \section{地図ベースの制御器}
     \label{seigyo}
     学習フェーズで使用する地図ベースの制御器について，概要をFig. \ref{fig::navigation}に示す．
@@ -97,7 +90,7 @@
     \vspace{2.0zh}
     \begin{figure}[h]
         \centering
-        \includegraphics[width = 15cm]{./figs/navigation.pdf}
+        \includegraphics[width = 12cm]{./figs/navigation.pdf}
         \caption{Map-based controller}
         \label{fig::navigation}
     \end{figure}

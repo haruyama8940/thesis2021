@@ -10,16 +10,24 @@ Fig. \ref{fig::nvidia}で示す方法で，人間のハンドル操作による�
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width = 15cm]{./figs/EndtoEnd_Learning_for_Self-Driving_Cars.pdf}
-    \caption{Training the neural network\cite{Nvidia}}
+    \includegraphics[width = 13cm]{./figs/EndtoEnd_Learning_for_Self-Driving_Cars.pdf}
+    \caption{Training the neural network from \cite{Nvidia}}
     \label{fig::nvidia}
 \end{figure}
 
 \newpage
-本研究室においても岡田ら\cite{okada}によってFig. \ref{fig::okada}に示すように
+本研究室においても岡田ら\cite{okada}によってFig. \ref{fig::okada_sys}に示すように
 LiDAR,オドメトリを入力とした地図べースの制御器の出力と
-その際に取得したカメラ画像を訓練データとして用いることで,経路追従行動を模倣が可能であること
+その際に取得したカメラ画像を訓練データとして用いることで,\ref{fig::okada}
+経路追従行動を模倣が可能であること
 を確認した.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 10cm]{./figs/okada_sys.png}
+    \caption{Okada and others proposed method from \cite{okada}}
+    \label{fig::okada_sys}
+\end{figure}
+
 \begin{figure}[h]
     \centering
     \includegraphics[width = 10cm]{./figs/okada.png}
@@ -41,18 +49,6 @@ LiDAR,オドメトリを入力とした地図べースの制御器の出力と
 画像のみを入力としたネットワークでは，
 分岐路においてネットワークが2つの方向を出力してしまい，左右に車体を向ける振動が発生してしまう事象がDean A. Pomerleauら\cite{pomeru}によって確認されている．
 
-
-人間の話分岐路での行動「道案内」
-シナリオ
-島田シナリオに基づいた
-トポロジカルマップとシナリオの
-情報を入力へ加えること
-
-本研究では，\cite{okada}らと島田ら手法を拡張し，
-「直進」「左折」「右折」などの目標とする方向情報(本研究では"目標方向"とする)
-を追加することで分岐路において特定のルート選択を行う
-
-「カメラ画像と目標方向の情報を用いて，分岐路において任意の走行経路を選択する手法」を提案する．
 \begin{figure}[h]
     \centering
     \includegraphics[width = 8cm]{./figs/bunki.jpg}
@@ -60,6 +56,30 @@ LiDAR,オドメトリを入力とした地図べースの制御器の出力と
     \label{fig::bunki}
 \end{figure}
 \newpage
+
+人間の話分岐路での行動「道案内」
+シナリオ
+島田シナリオに基づいた
+トポロジカルマップとシナリオの
+情報を入力へ加えること
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 12cm]{./figs/topo.png}
+    \caption{topo\cite{razikon}}
+    \label{fig::topo}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 12cm]{./figs/sina.png}
+    \caption{sina\cite{razikon}}
+    \label{fig::sina}
+\end{figure}
+本研究では，\cite{okada}らと島田ら手法を拡張し，
+「直進」「左折」「右折」などの目標とする方向情報(本研究では"目標方向"とする)
+を追加することで分岐路において特定のルート選択を行う
+
+「カメラ画像と目標方向の情報を用いて，分岐路において任意の走行経路を選択する手法」を提案する．
+
 
 カメラ画像以外に他の情報を用いて，自律移動を行う研究として
 Felipeら\cite{razikon}はカメラ画像と操舵角と加速度の2次元の制御信号と，continue，left，straight，rightの4つのコマンドを入力としたネットワークを
@@ -69,7 +89,7 @@ Felipeら\cite{razikon}はカメラ画像と操舵角と加速度の2次元の�
 \begin{figure}[H]
     \centering
     \includegraphics[width = 15cm]{./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf}
-    \caption{End-to-end  Driving  via  Conditional  Imitation  Learning\cite{razikon}}
+    \caption{End-to-end  Driving  via  Conditional  Imitation  Learning from \cite{razikon}}
     \label{fig::Conditional_Imitation_Learning}
 \end{figure}
 
@@ -81,7 +101,7 @@ Felipeら\cite{razikon}はカメラ画像と操舵角と加速度の2次元の�
 \begin{figure}[H]
     \centering
     \includegraphics[width = 10cm]{./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutional_Neural_Network_abst.pdf}
-    \caption{Overview of Seiya and others proposed method}
+    \caption{Overview of Seiya and others proposed method from \cite{nagoya}}
     \label{fig::nagoyaabst}
 \end{figure}
 

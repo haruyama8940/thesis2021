@@ -137,12 +137,18 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
+INPUT ./figs/okada_sys.png
+INPUT extractbb -B cropbox -O ./figs/okada_sys.png
 INPUT ./figs/okada.png
 INPUT extractbb -B cropbox -O ./figs/okada.png
 INPUT ./figs/bunki.jpg
 INPUT extractbb -B cropbox -O ./figs/bunki.jpg
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT ./figs/topo.png
+INPUT extractbb -B cropbox -O ./figs/topo.png
+INPUT ./figs/sina.png
+INPUT extractbb -B cropbox -O ./figs/sina.png
 INPUT ./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf
 INPUT extractbb -B cropbox -O ./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf
 INPUT ./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutional_Neural_Network_abst.pdf
@@ -159,6 +165,8 @@ INPUT extractbb -B cropbox -O ./figs/alex.pdf
 OUTPUT out/tex/method.aux
 INPUT tex/method.tex
 INPUT tex/method.tex
+INPUT ./figs/turtlebot3_kame.pdf
+INPUT extractbb -B cropbox -O ./figs/turtlebot3_kame.pdf
 INPUT ./figs/system_abs.pdf
 INPUT extractbb -B cropbox -O ./figs/system_abs.pdf
 INPUT ./figs/system_test_abs.pdf

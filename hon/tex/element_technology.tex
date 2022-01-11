@@ -14,18 +14,18 @@ Deep learningは近年，自然言語処理など様々な分野で利用され�
     \label{fig::network}
 \end{figure}
 
-\section{end-to-end学習}
-end-to-endとは「端から端まで」という，
+\section{End-to-End学習}
+End-to-Endとは「端から端まで」という，
 Fig. \ref{fig::e2e}に示すように生データ(入力)から目的の結果(出力)を得るために必要な多段階の処理をNeusal Networkを用いて直接学習を行うものである．
 例として，実世界における自動運転では人物や障害物などの物体認識，走行レーンの検出，経路計画，ステアリング制御
-などの人間が設定した複数個のタスクを解く必要があるが，end-to-end学習では先程のタスクを人間が直接設定せずに
+などの人間が設定した複数個のタスクを解く必要があるが，End-to-End学習では先程のタスクを人間が直接設定せずに
 カメラ画像をニューラルネットワークに入力することで直接ステアリング操作を学習する．
 
 \vspace{2.0zh}
 \begin{figure}[h]
     \centering
     \includegraphics[width = 10cm]{./figs/e2e.pdf}
-    \caption{Structure of end-to-end learning}
+    \caption{Structure of End-to-End learning}
     \label{fig::e2e}
 \end{figure}
 
@@ -53,7 +53,7 @@ Krizhevskら\cite{Imagenet}はFig. \ref{fig::alex}で示すような3つの畳�
 \begin{figure}[h]
     \centering
     \includegraphics[width = 15cm]{./figs/alex.pdf}
-    \caption{Alex net\cite{Imagenet}}
+    \caption{Alex net from \cite{Imagenet}}
     \label{fig::alex}
 \end{figure}
 
