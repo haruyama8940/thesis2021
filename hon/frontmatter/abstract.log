@@ -1,0 +1,3332 @@
+This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.12.25)  26 DEC 2020 00:15
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**abstract.tex
+(./abstract.tex
+pLaTeX2e <2020-10-01u04>+1 (based on LaTeX2e <2020-10-01> patch level 2)
+L3 programming layer <2020-12-07> xparse <2020-03-03>
+./abstract.tex:1: Undefined control sequence.
+l.1 \chapter
+            *{概要}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./abstract.tex:1: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \chapter*
+             {概要}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (25.00002pt too wide) in paragraph at lines 1--4
+[]\OT1/cmr/m/n/10 *
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--4
+\JY2/mc/m/n/10 概
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--4
+\JY2/mc/m/n/10 要 
+ []
+
+./abstract.tex:5: Undefined control sequence.
+l.5   \scalebox
+               {1.5}{実機への実装を考慮した環境下における...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 5--5
+ \OT1/cmr/m/n/10 1.5 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 実 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 機 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 へ 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 の 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 実 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 装 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 を 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 考 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 慮 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 し 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 た 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 環 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 境 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 下 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 に 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 お 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 け 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 る 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 強 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 化 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 学 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 習 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 を 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 用 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 い 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 5--5
+ \JY2/mc/m/n/10 た 
+ []
+
+./abstract.tex:6: Undefined control sequence.
+<recently read> \scalebox 
+                          
+l.6   \scalebox
+               {1.5}{移動ロボットのドリブル動作の生成につ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 6--6
+ []\OT1/cmr/m/n/10 1.5 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 移 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 動 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 ロ 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 ボ 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 ッ 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 ト 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 の 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 ド 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 リ 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 ブ 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 ル 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 動 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 作 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 の 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 生 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 成 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 に 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 つ 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 い 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 て 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 の 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 検 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 6--6
+ \JY2/mc/m/n/10 討 
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 本
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 論
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 文
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (12.39998pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 は\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 強
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 化
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 学
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 習
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 用
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 た
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 移
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 動
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ロ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ボ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ッ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ト
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ド
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 リ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ブ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ル
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 動
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 作
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 に
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 つ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (12.39998pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 て\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 実
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 機
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 へ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 実
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 装
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 考
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 慮
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 し
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 た
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 上
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 検
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 討
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 し
+ []
+
+
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 た 。
+ []
+
+
+Overfull \hbox (41.52788pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/n/10 RoboCup
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ヒ
+ []
+
+
+Overfull \hbox (18.74438pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ュ ー
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 マ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ノ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 イ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ド
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (18.74438pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 チ ー
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ム
+ []
+
+
+Overfull \hbox (21.3889pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/n/10 CIT-
+ []
+
+
+Overfull \hbox (28.27785pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/n/10 Brains
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (12.39998pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 は\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ド
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 リ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ブ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ル
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 動
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 作
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 は
+ []
+
+
+Overfull \hbox (18.74438pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ル ー
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ル
+ []
+
+
+Overfull \hbox (18.74438pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ベ ー
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ス
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 に
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 よ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 っ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 て
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 制
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 御
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 さ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 れ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 て
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (12.39998pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 る\OT1/cmr/m/n/10 .
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 し
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 か
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 し
+ []
+
+
+Overfull \hbox (18.74438pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ボ ー
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ル
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ド
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 リ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ブ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ル
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 す
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 と
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 う
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 動
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 作
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 考
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 え
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 た
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 め
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 に
+ []
+
+
+Overfull \hbox (12.39998pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 は\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ロ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ボ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ッ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ト
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 と
+ []
+
+
+Overfull \hbox (18.74438pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ボ ー
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ル
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 や
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 床
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 と
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 適
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 切
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 な
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 相
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 互
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 作
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 用
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 考
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 慮
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 す
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 必
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 要
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 が
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 あ
+ []
+
+
+Overfull \hbox (12.39998pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 り\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (18.74438pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ル ー
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ル
+ []
+
+
+Overfull \hbox (18.74438pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ベ ー
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ス
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 制
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 御
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 は
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 非
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 常
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 に
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 難
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 し
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 と
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 さ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 れ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 て
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (12.39998pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 る\OT1/cmr/m/n/10 .
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 実
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 際
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 に
+ []
+
+
+Overfull \hbox (18.74438pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ボ ー
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ル
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ド
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 リ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ブ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ル
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 す
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (12.39998pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 際\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 現
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 在
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 採
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 用
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 し
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 て
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (18.74438pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ル ー
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ル
+ []
+
+
+Overfull \hbox (18.74438pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ベ ー
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ス
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 制
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 御
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 手
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 法
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (12.39998pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 は\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (18.74438pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ボ ー
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ル
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 正
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 確
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 に
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 運
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 べ
+ []
+
+
+Overfull \hbox (12.39998pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ず\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 弾
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 て
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 し
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ま
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 う
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 こ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 と
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 が
+ []
+
+
+Overfull \hbox (18.74438pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 多 々
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 あ
+ []
+
+
+Overfull \hbox (12.39998pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 る\OT1/cmr/m/n/10 .
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 こ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 問
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 題
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 に
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 対
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 し
+ []
+
+
+Overfull \hbox (12.39998pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 て\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 強
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 化
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 学
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 習
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 用
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 て
+ []
+
+
+Overfull \hbox (18.74438pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ボ ー
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ル
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ド
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 リ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ブ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ル
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 さ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 せ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 た
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 め
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 制
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 御
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 器
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 作
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 成
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 す
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 方
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 法
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 提
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 案
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 す
+ []
+
+
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 る 。
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 学
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 習
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ア
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ル
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ゴ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 リ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ズ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ム
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 に
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 は
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 実
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 機
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 実
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 装
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 実
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 績
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 が
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 多
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (17.50006pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/n/10 Soft
+ []
+
+
+Overfull \hbox (28.08337pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/n/10 Actor-
+ []
+
+
+Overfull \hbox (25.02782pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/n/10 Critic
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 採
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 用
+ []
+
+
+Overfull \hbox (12.39998pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 し\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 物
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 理
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 シ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ミ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ュ
+ []
+
+
+Overfull \hbox (18.74438pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 レ ー
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 タ
+ []
+
+
+Overfull \hbox (15.4167pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/n/10 Py-
+ []
+
+
+Overfull \hbox (18.75005pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/n/10 Bul-
+ []
+
+
+Overfull \hbox (11.11113pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/n/10 let
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 用
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 て
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ド
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 リ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ブ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ル
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 動
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 作
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 が
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 生
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 成
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 可
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 能
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 か
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 ど
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 う
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 か
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 検
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 証
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 し
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 て
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (12.39998pt too wide) in paragraph at lines 10--11
+\JY2/mc/m/n/10 く\OT1/cmr/m/n/10 . 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 11.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 11.
+
+
+./abstract.tex:11: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 
+     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1]
+Overfull \hbox (38.74438pt too wide) in paragraph at lines 12--14
+[]\JY2/mc/m/n/10 キ ー
+ []
+
+
+Overfull \hbox (18.74438pt too wide) in paragraph at lines 12--14
+\JY2/mc/m/n/10 ワ ー
+ []
+
+
+Overfull \hbox (12.39998pt too wide) in paragraph at lines 12--14
+\JY2/mc/m/n/10 ド\OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--14
+\JY2/mc/m/n/10 強
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--14
+\JY2/mc/m/n/10 化
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--14
+\JY2/mc/m/n/10 学
+ []
+
+
+Overfull \hbox (12.39998pt too wide) in paragraph at lines 12--14
+\JY2/mc/m/n/10 習\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (44.30566pt too wide) in paragraph at lines 12--14
+\OT1/cmr/m/n/10 RoboCup,
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--14
+\JY2/mc/m/n/10 ド
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--14
+\JY2/mc/m/n/10 リ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--14
+\JY2/mc/m/n/10 ブ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--14
+\JY2/mc/m/n/10 ル 
+ []
+
+
+./abstract.tex:14: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \newpage
+             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[2]
+./abstract.tex:16: Undefined control sequence.
+l.16 \chapter
+             *{abstract}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (60.63898pt too wide) in paragraph at lines 16--19
+[]\OT1/cmr/m/n/10 *abstract 
+ []
+
+./abstract.tex:20: Undefined control sequence.
+l.20   \scalebox
+                {1.5}{Generation of mobile robot dribbling motion using}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (61.20847pt too wide) in paragraph at lines 20--20
+ \OT1/cmr/m/n/10 1.5Generation 
+ []
+
+
+Overfull \hbox (8.05559pt too wide) in paragraph at lines 20--20
+ \OT1/cmr/m/n/10 of 
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 20--20
+ \OT1/cmr/m/n/10 mo- 
+ []
+
+
+Overfull \hbox (15.55559pt too wide) in paragraph at lines 20--20
+ \OT1/cmr/m/n/10 bile 
+ []
+
+
+Overfull \hbox (23.63896pt too wide) in paragraph at lines 20--20
+ \OT1/cmr/m/n/10 robot 
+ []
+
+
+Overfull \hbox (21.13893pt too wide) in paragraph at lines 20--20
+ \OT1/cmr/m/n/10 drib- 
+ []
+
+
+Overfull \hbox (21.66673pt too wide) in paragraph at lines 20--20
+ \OT1/cmr/m/n/10 bling 
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 20--20
+ \OT1/cmr/m/n/10 mo- 
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 20--20
+ \OT1/cmr/m/n/10 tion 
+ []
+
+
+Overfull \hbox (12.83334pt too wide) in paragraph at lines 20--20
+ \OT1/cmr/m/n/10 us- 
+ []
+
+
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 20--20
+ \OT1/cmr/m/n/10 ing 
+ []
+
+./abstract.tex:21: Undefined control sequence.
+<recently read> \scalebox 
+                          
+l.21   \scalebox
+                {1.5}{reinforcement learning in an uncertain environment}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (72.27792pt too wide) in paragraph at lines 21--21
+ []\OT1/cmr/m/n/10 1.5reinforcement 
+ []
+
+
+Overfull \hbox (25.02782pt too wide) in paragraph at lines 21--21
+ \OT1/cmr/m/n/10 learn- 
+ []
+
+
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 21--21
+ \OT1/cmr/m/n/10 ing 
+ []
+
+
+Overfull \hbox (8.33336pt too wide) in paragraph at lines 21--21
+ \OT1/cmr/m/n/10 in 
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 21--21
+ \OT1/cmr/m/n/10 an 
+ []
+
+
+Overfull \hbox (14.44447pt too wide) in paragraph at lines 21--21
+ \OT1/cmr/m/n/10 un- 
+ []
+
+
+Overfull \hbox (16.13889pt too wide) in paragraph at lines 21--21
+ \OT1/cmr/m/n/10 cer- 
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 21--21
+ \OT1/cmr/m/n/10 tain 
+ []
+
+
+Overfull \hbox (13.33334pt too wide) in paragraph at lines 21--21
+ \OT1/cmr/m/n/10 en- 
+ []
+
+
+Overfull \hbox (11.38892pt too wide) in paragraph at lines 21--21
+ \OT1/cmr/m/n/10 vi- 
+ []
+
+
+Overfull \hbox (17.80559pt too wide) in paragraph at lines 21--21
+ \OT1/cmr/m/n/10 ron- 
+ []
+
+
+Overfull \hbox (21.94449pt too wide) in paragraph at lines 21--21
+ \OT1/cmr/m/n/10 ment 
+ []
+
+
+Overfull \hbox (29.16669pt too wide) in paragraph at lines 25--26
+[]\OT1/cmr/m/n/10 In
+ []
+
+
+Overfull \hbox (16.1667pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 this
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 pa-
+ []
+
+
+Overfull \hbox (16.97226pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 per,
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 the
+ []
+
+
+Overfull \hbox (21.13893pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 drib-
+ []
+
+
+Overfull \hbox (21.66673pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 bling
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 mo-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 tion
+ []
+
+
+Overfull \hbox (8.05559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 of
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 a
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 mo-
+ []
+
+
+Overfull \hbox (15.55559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 bile
+ []
+
+
+Overfull \hbox (23.63896pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 robot
+ []
+
+
+Overfull \hbox (12.83334pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 us-
+ []
+
+
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ing
+ []
+
+
+Overfull \hbox (11.69444pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 re-
+ []
+
+
+Overfull \hbox (11.66669pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 in-
+ []
+
+
+Overfull \hbox (24.19447pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 force-
+ []
+
+
+Overfull \hbox (21.94449pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ment
+ []
+
+
+Overfull \hbox (25.02782pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 learn-
+ []
+
+
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ing
+ []
+
+
+Overfull \hbox (15.8889pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 was
+ []
+
+
+Overfull \hbox (13.05557pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ex-
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 am-
+ []
+
+
+Overfull \hbox (18.33337pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ined
+ []
+
+
+Overfull \hbox (11.38892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 af-
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ter
+ []
+
+
+Overfull \hbox (18.33336pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 con-
+ []
+
+
+Overfull \hbox (15.61113pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 sid-
+ []
+
+
+Overfull \hbox (11.69444pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 er-
+ []
+
+
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ing
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 the
+ []
+
+
+Overfull \hbox (14.44447pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 im-
+ []
+
+
+Overfull \hbox (16.11113pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ple-
+ []
+
+
+Overfull \hbox (21.6667pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 men-
+ []
+
+
+Overfull \hbox (12.22224pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ta-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 tion
+ []
+
+
+Overfull \hbox (8.05559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 of
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 an
+ []
+
+
+Overfull \hbox (12.77779pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ac-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 tual
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ma-
+ []
+
+
+Overfull \hbox (25.27782pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 chine.
+ []
+
+
+Overfull \hbox (9.16669pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 In
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 the
+ []
+
+
+Overfull \hbox (41.52788pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 RoboCup
+ []
+
+
+Overfull \hbox (14.16669pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 hu-
+ []
+
+
+Overfull \hbox (32.22232pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 manoid
+ []
+
+
+Overfull \hbox (21.66672pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 team
+ []
+
+
+Overfull \hbox (18.05557pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 CIT
+ []
+
+
+Overfull \hbox (31.05563pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 Brains,
+ []
+
+
+Overfull \hbox (21.13893pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 drib-
+ []
+
+
+Overfull \hbox (21.66673pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 bling
+ []
+
+
+Overfull \hbox (13.61113pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 be-
+ []
+
+
+Overfull \hbox (18.88893pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 hav-
+ []
+
+
+Overfull \hbox (11.69447pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ior
+ []
+
+
+Overfull \hbox (6.72223pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 is
+ []
+
+
+Overfull \hbox (18.33336pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 con-
+ []
+
+
+Overfull \hbox (28.36118pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 trolled
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 by
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 a
+ []
+
+
+Overfull \hbox (16.69447pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 rule
+ []
+
+
+Overfull \hbox (21.72226pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 base.
+ []
+
+
+Overfull \hbox (22.7778pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 How-
+ []
+
+
+Overfull \hbox (20.58336pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ever,
+ []
+
+
+Overfull \hbox (8.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 to
+ []
+
+
+Overfull \hbox (23.05563pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 think
+ []
+
+
+Overfull \hbox (25.27786pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 about
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 the
+ []
+
+
+Overfull \hbox (12.77779pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ac-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 tion
+ []
+
+
+Overfull \hbox (8.05559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 of
+ []
+
+
+Overfull \hbox (21.13893pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 drib-
+ []
+
+
+Overfull \hbox (21.66673pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 bling
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 the
+ []
+
+
+Overfull \hbox (18.88895pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ball,
+ []
+
+
+Overfull \hbox (6.66669pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 it
+ []
+
+
+Overfull \hbox (6.72223pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 is
+ []
+
+
+Overfull \hbox (17.77779pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 nec-
+ []
+
+
+Overfull \hbox (11.72221pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 es-
+ []
+
+
+Overfull \hbox (18.13893pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 sary
+ []
+
+
+Overfull \hbox (8.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 to
+ []
+
+
+Overfull \hbox (18.33336pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 con-
+ []
+
+
+Overfull \hbox (20.63892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 sider
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 the
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ap-
+ []
+
+
+Overfull \hbox (17.80559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 pro-
+ []
+
+
+Overfull \hbox (15.58336pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 pri-
+ []
+
+
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ate
+ []
+
+
+Overfull \hbox (11.66669pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 in-
+ []
+
+
+Overfull \hbox (15.58334pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ter-
+ []
+
+
+Overfull \hbox (12.77779pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ac-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 tion
+ []
+
+
+Overfull \hbox (13.61113pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 be-
+ []
+
+
+Overfull \hbox (25.00002pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 tween
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 the
+ []
+
+
+Overfull \hbox (23.63896pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 robot
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 the
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ball
+ []
+
+
+Overfull \hbox (8.91669pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 or
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 the
+ []
+
+
+Overfull \hbox (22.52785pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 floor,
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (6.66669pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 it
+ []
+
+
+Overfull \hbox (6.72223pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 is
+ []
+
+
+Overfull \hbox (17.27782pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 said
+ []
+
+
+Overfull \hbox (18.33339pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 that
+ []
+
+
+Overfull \hbox (20.0278pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 rule-
+ []
+
+
+Overfull \hbox (24.50005pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 based
+ []
+
+
+Overfull \hbox (18.33336pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 con-
+ []
+
+
+Overfull \hbox (15.58337pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 trol
+ []
+
+
+Overfull \hbox (6.72223pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 is
+ []
+
+
+Overfull \hbox (13.05557pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ex-
+ []
+
+
+Overfull \hbox (33.0834pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 tremely
+ []
+
+
+Overfull \hbox (14.72226pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 dif-
+ []
+
+
+Overfull \hbox (8.8889pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 fi-
+ []
+
+
+Overfull \hbox (19.44449pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 cult.
+ []
+
+
+Overfull \hbox (25.83339pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 When
+ []
+
+
+Overfull \hbox (21.13893pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 drib-
+ []
+
+
+Overfull \hbox (21.66673pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 bling
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 a
+ []
+
+
+Overfull \hbox (18.88895pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ball,
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 the
+ []
+
+
+Overfull \hbox (20.0278pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 rule-
+ []
+
+
+Overfull \hbox (24.50005pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 based
+ []
+
+
+Overfull \hbox (18.33336pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 con-
+ []
+
+
+Overfull \hbox (15.58337pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 trol
+ []
+
+
+Overfull \hbox (33.05565pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 method
+ []
+
+
+Overfull \hbox (17.25002pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 cur-
+ []
+
+
+Overfull \hbox (25.58339pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 rently
+ []
+
+
+Overfull \hbox (19.50003pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 used
+ []
+
+
+Overfull \hbox (11.38892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 of-
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ten
+ []
+
+
+Overfull \hbox (17.5556pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 fails
+ []
+
+
+Overfull \hbox (8.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 to
+ []
+
+
+Overfull \hbox (22.5556pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 carry
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 the
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ball
+ []
+
+
+Overfull \hbox (12.77779pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ac-
+ []
+
+
+Overfull \hbox (13.33334pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 cu-
+ []
+
+
+Overfull \hbox (25.30562pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 rately
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (27.33336pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 causes
+ []
+
+
+Overfull \hbox (6.66669pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 it
+ []
+
+
+Overfull \hbox (8.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 to
+ []
+
+
+Overfull \hbox (33.61119pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 bounce.
+ []
+
+
+Overfull \hbox (11.3889pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 To
+ []
+
+
+Overfull \hbox (21.1667pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 solve
+ []
+
+
+Overfull \hbox (16.1667pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 this
+ []
+
+
+Overfull \hbox (23.36116pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 prob-
+ []
+
+
+Overfull \hbox (18.33337pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 lem,
+ []
+
+
+Overfull \hbox (11.38889pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 we
+ []
+
+
+Overfull \hbox (17.80559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 pro-
+ []
+
+
+Overfull \hbox (19.22226pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 pose
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 a
+ []
+
+
+Overfull \hbox (33.05565pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 method
+ []
+
+
+Overfull \hbox (8.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 to
+ []
+
+
+Overfull \hbox (16.13889pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 cre-
+ []
+
+
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ate
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 a
+ []
+
+
+Overfull \hbox (18.33336pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 con-
+ []
+
+
+Overfull \hbox (26.72227pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 troller
+ []
+
+
+Overfull \hbox (11.97226pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 for
+ []
+
+
+Overfull \hbox (21.13893pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 drib-
+ []
+
+
+Overfull \hbox (21.66673pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 bling
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 the
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ball
+ []
+
+
+Overfull \hbox (12.83334pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 us-
+ []
+
+
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ing
+ []
+
+
+Overfull \hbox (11.69444pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 re-
+ []
+
+
+Overfull \hbox (11.66669pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 in-
+ []
+
+
+Overfull \hbox (24.19447pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 force-
+ []
+
+
+Overfull \hbox (21.94449pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ment
+ []
+
+
+Overfull \hbox (25.02782pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 learn-
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ing.
+ []
+
+
+Overfull \hbox (13.8889pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 We
+ []
+
+
+Overfull \hbox (15.55559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 will
+ []
+
+
+Overfull \hbox (13.94446pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 use
+ []
+
+
+Overfull \hbox (17.50006pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 Soft
+ []
+
+
+Overfull \hbox (25.58337pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 actor-
+ []
+
+
+Overfull \hbox (25.02782pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 critic,
+ []
+
+
+Overfull \hbox (25.27782pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 which
+ []
+
+
+Overfull \hbox (14.50003pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 has
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 a
+ []
+
+
+Overfull \hbox (11.6667pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 lot
+ []
+
+
+Overfull \hbox (8.05559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 of
+ []
+
+
+Overfull \hbox (34.72226pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 achieve-
+ []
+
+
+Overfull \hbox (25.88893pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ments
+ []
+
+
+Overfull \hbox (8.33336pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 in
+ []
+
+
+Overfull \hbox (12.77779pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ac-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 tual
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ma-
+ []
+
+
+Overfull \hbox (22.50003pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 chine
+ []
+
+
+Overfull \hbox (14.44447pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 im-
+ []
+
+
+Overfull \hbox (16.11113pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ple-
+ []
+
+
+Overfull \hbox (21.6667pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 men-
+ []
+
+
+Overfull \hbox (12.22224pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ta-
+ []
+
+
+Overfull \hbox (20.00006pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 tion,
+ []
+
+
+Overfull \hbox (8.94446pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 as
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 the
+ []
+
+
+Overfull \hbox (25.02782pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 learn-
+ []
+
+
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ing
+ []
+
+
+Overfull \hbox (11.11113pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 al-
+ []
+
+
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 go-
+ []
+
+
+Overfull \hbox (27.25008pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 rithm,
+ []
+
+
+Overfull \hbox (16.11116pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 and
+ []
+
+
+Overfull \hbox (16.69446pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ver-
+ []
+
+
+Overfull \hbox (11.11116pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ify
+ []
+
+
+Overfull \hbox (35.02783pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 whether
+ []
+
+
+Overfull \hbox (21.13893pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 drib-
+ []
+
+
+Overfull \hbox (21.66673pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 bling
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 mo-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 tion
+ []
+
+
+Overfull \hbox (15.00003pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 can
+ []
+
+
+Overfull \hbox (10.2778pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 be
+ []
+
+
+Overfull \hbox (18.33336pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 gen-
+ []
+
+
+Overfull \hbox (11.69444pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 er-
+ []
+
+
+Overfull \hbox (18.88893pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ated
+ []
+
+
+Overfull \hbox (12.83334pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 us-
+ []
+
+
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 ing
+ []
+
+
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 the
+ []
+
+
+Overfull \hbox (31.22227pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 physics
+ []
+
+
+Overfull \hbox (18.38892pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 sim-
+ []
+
+
+Overfull \hbox (8.8889pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 u-
+ []
+
+
+Overfull \hbox (11.11113pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 la-
+ []
+
+
+Overfull \hbox (12.80559pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 tor
+ []
+
+
+Overfull \hbox (15.4167pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 Py-
+ []
+
+
+Overfull \hbox (24.86119pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 Bullt. 
+ []
+
+)
+! Emergency stop.
+<*> abstract.tex
+                
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 22 strings out of 479847
+ 415 string characters out of 5881593
+ 288181 words of memory out of 5000000
+ 17442 multiletter control sequences out of 15000+600000
+ 406071 words of font info for 45 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 28i,4n,27p,1068b,144s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on abstract.dvi (2 pages, 2868 bytes).

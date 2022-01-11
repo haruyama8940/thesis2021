@@ -1,0 +1,23 @@
+# Fdb version 3
+["bibtex main"] 1609093862 "main.aux" "main.bbl" "main" 1609093862
+  "/usr/local/texlive/2020/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
+  "main.aux" 1609093364 910 46368831c13f491773849a3054ebf771 ""
+  "main_bibliography.bib" 0 -1 0 ""
+  (generated)
+  "main.blg"
+  "main.bbl"
+["dvipdf"] 0 "main.dvi" "main.pdf" "main" 0
+  "main.dvi" 0 -1 0 "latex"
+  (generated)
+  "main.pdf"
+["latex"] 1609093862 "main.tex" "main.dvi" "main" 1609093862
+  "/usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf" 1598393674 39451 15a3ebee027466ecb89701aa91dfebaf ""
+  "/usr/local/texlive/2020/texmf-var/web2c/euptex/uplatex.fmt" 1608887547 2583912 39385cc17fb20dfa0171c69fcc4f4cfd ""
+  "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
+  "backmatter/appendix.tex" 0 -1 0 ""
+  "main.aux" 1609093364 910 46368831c13f491773849a3054ebf771 ""
+  "main.bbl" 0 -1 0 "bibtex main"
+  "main.tex" 1609093861 137 6ae58308ab994360a7d3fece97496bf2 ""
+  (generated)
+  "main.log"
+  "main.dvi"

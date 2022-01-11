@@ -1,0 +1,55 @@
+\begin{thebibliography}{1}
+
+\bibitem{gazebo:online}
+gazebo.
+\newblock \url{http://gazebosim.org/}.
+\newblock (Accessed on 12/30/2021).
+
+\bibitem{navigation:online}
+ros-planning, navigation.
+\newblock \url{https://github.com/ros-planning/navigation}.
+\newblock (Accessed on 12/30/2021).
+
+\bibitem{turtlebot3:online}
+Turtlebot3 | robotis　emanual.robotis.
+\newblock
+  \url{https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/}.
+\newblock (Accessed on 12/31/2021).
+
+\bibitem{Imagenet}
+I.~Sutskever A.~Krizhevsky and G.~E. Hinton.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock pages 2P1--J07. 一般社団法人 日本機械学会, 2017.
+
+\bibitem{razikon}
+Felipe~Codevilla et~al.
+\newblock "end-to-end driving via conditional imitation learning".
+\newblock arXiv: 1710.02410, 2018.
+
+\bibitem{Nvidia}
+Mariusz~Bojarski et~al.
+\newblock "end to end learning for self-driving cars".
+\newblock arXiv: 1604.07316, 2016.
+
+\bibitem{pomeru}
+Dean~A. Pomerleau.
+\newblock Alvinn: An autonomous land vehicle in a neural network.
+\newblock In D.~Touretzky, editor, {\em Advances in Neural Information
+  Processing Systems}, volume~1. Morgan-Kaufmann, 1989.
+
+\bibitem{nagoya}
+Shunya Seiya, Alexander Carballo, Eijiro Takeuchi, Chiyomi Miyajima, and Kazuya
+  Takeda.
+\newblock "end-to-end navigation with branch turning support using
+  convolutional neural network".
+\newblock In {\em 2018 IEEE International Conference on Robotics and
+  Biomimetics (ROBIO)}, pages 499--506, 2018.
+
+\bibitem{okada}
+上田隆一~林原靖男 岡田眞也, 清岡優祐.
+\newblock "視覚と行動の end-to-end
+  学習により経路追従行動をオンラインで模倣する手法の提案".
+\newblock In {\em SICE-SI2020予稿集}, pages 1147--1152. 制御学会 SI 部門講演会,
+  2020.
+
+\end{thebibliography}

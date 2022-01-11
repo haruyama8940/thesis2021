@@ -1,0 +1,14 @@
+# Fdb version 3
+["dvipdf"] 1608909328 "abstract.dvi" "abstract.pdf" "abstract" 1608909329
+  "abstract.dvi" 1608909328 2868 b62f183be884e20acc4cbc71b1339127 "latex"
+  (generated)
+  "abstract.pdf"
+["latex"] 1608909328 "abstract.tex" "abstract.dvi" "abstract" 1608909329
+  "/usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf" 1598393674 39451 15a3ebee027466ecb89701aa91dfebaf ""
+  "/usr/local/texlive/2020/texmf-var/web2c/euptex/uplatex.fmt" 1608887547 2583912 39385cc17fb20dfa0171c69fcc4f4cfd ""
+  "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
+  "abstract.aux" 1608899074 8 a94a2480d3289e625eea47cd1b285758 ""
+  "abstract.tex" 1608909327 2615 0e439319dbc64733058d3cc64a290f36 ""
+  (generated)
+  "abstract.dvi"
+  "abstract.log"

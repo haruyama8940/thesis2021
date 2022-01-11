@@ -1,0 +1,233 @@
+PWD /home/haru/souko/thesis2021/hon
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/eptex/platex.fmt
+INPUT /home/haru/souko/thesis2021/hon/thesis.tex
+OUTPUT out/thesis.log
+INPUT /usr/share/texlive/texmf-dist/tex/platex/jsclasses/jsbook.cls
+INPUT /usr/share/texlive/texmf-dist/tex/platex/jsclasses/jsbook.cls
+INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/platex/jsclasses/jslogo.sty
+INPUT /usr/share/texlive/texmf-dist/tex/platex/jsclasses/jslogo.sty
+INPUT /usr/share/texlive/texmf-dist/tex/platex/jsclasses/jslogo.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hdvipdfm.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hdvipdfm.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT /usr/share/texlive/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty
+INPUT /usr/share/texlive/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT thesis.sty
+INPUT thesis.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/here/here.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/here/here.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+INPUT out/thesis.aux
+INPUT out/thesis.aux
+OUTPUT out/thesis.aux
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT thesis.out
+INPUT thesis.out
+INPUT thesis.out
+INPUT thesis.out
+INPUT ./thesis.out
+INPUT ./thesis.out
+OUTPUT out/thesis.out
+OUTPUT out/frontmatter/main.aux
+INPUT frontmatter/main.tex
+INPUT frontmatter/main.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+OUTPUT out/thesis.dvi
+INPUT frontmatter/abstract.tex
+INPUT frontmatter/abstract.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
+INPUT thesis.toc
+OUTPUT out/thesis.toc
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT thesis.lof
+OUTPUT out/thesis.lof
+INPUT thesis.lot
+OUTPUT out/thesis.lot
+OUTPUT out/tex/introduction.aux
+INPUT tex/introduction.tex
+INPUT tex/introduction.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss17.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT ./figs/EndtoEnd_Learning_for_Self-Driving_Cars.pdf
+INPUT extractbb -B cropbox -O ./figs/EndtoEnd_Learning_for_Self-Driving_Cars.pdf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
+INPUT ./figs/okada.png
+INPUT extractbb -B cropbox -O ./figs/okada.png
+INPUT ./figs/bunki.jpg
+INPUT extractbb -B cropbox -O ./figs/bunki.jpg
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT ./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf
+INPUT extractbb -B cropbox -O ./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf
+INPUT ./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutional_Neural_Network_abst.pdf
+INPUT extractbb -B cropbox -O ./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutional_Neural_Network_abst.pdf
+OUTPUT out/tex/element_technology.aux
+INPUT tex/element_technology.tex
+INPUT tex/element_technology.tex
+INPUT ./figs/net.pdf
+INPUT extractbb -B cropbox -O ./figs/net.pdf
+INPUT ./figs/e2e.pdf
+INPUT extractbb -B cropbox -O ./figs/e2e.pdf
+INPUT ./figs/alex.pdf
+INPUT extractbb -B cropbox -O ./figs/alex.pdf
+OUTPUT out/tex/method.aux
+INPUT tex/method.tex
+INPUT tex/method.tex
+INPUT ./figs/system_abs.pdf
+INPUT extractbb -B cropbox -O ./figs/system_abs.pdf
+INPUT ./figs/system_test_abs.pdf
+INPUT extractbb -B cropbox -O ./figs/system_test_abs.pdf
+INPUT ./figs/navigation.pdf
+INPUT extractbb -B cropbox -O ./figs/navigation.pdf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT ./figs/system_learning.pdf
+INPUT extractbb -B cropbox -O ./figs/system_learning.pdf
+INPUT ./figs/system_test.pdf
+INPUT extractbb -B cropbox -O ./figs/system_test.pdf
+INPUT ./figs/network.pdf
+INPUT extractbb -B cropbox -O ./figs/network.pdf
+OUTPUT out/tex/experiment.aux
+INPUT tex/experiment.tex
+INPUT tex/experiment.tex
+INPUT ./figs/3_camera.png
+INPUT extractbb -B cropbox -O ./figs/3_camera.png
+INPUT ./figs/zyuuziyoko.png
+INPUT extractbb -B cropbox -O ./figs/zyuuziyoko.png
+INPUT ./figs/zyuziroute.pdf
+INPUT extractbb -B cropbox -O ./figs/zyuziroute.pdf
+INPUT ./figs/coli.png
+INPUT extractbb -B cropbox -O ./figs/coli.png
+INPUT ./figs/8nozi_1.pdf
+INPUT extractbb -B cropbox -O ./figs/8nozi_1.pdf
+INPUT ./figs/8nozi_2.pdf
+INPUT extractbb -B cropbox -O ./figs/8nozi_2.pdf
+INPUT ./figs/8nozi_3.pdf
+INPUT extractbb -B cropbox -O ./figs/8nozi_3.pdf
+INPUT ./figs/8nozi_4.pdf
+INPUT extractbb -B cropbox -O ./figs/8nozi_4.pdf
+INPUT ./figs/8nozi_5.pdf
+INPUT extractbb -B cropbox -O ./figs/8nozi_5.pdf
+INPUT ./figs/8nozi_6.pdf
+INPUT extractbb -B cropbox -O ./figs/8nozi_6.pdf
+INPUT ./figs/bunkiban.pdf
+INPUT extractbb -B cropbox -O ./figs/bunkiban.pdf
+OUTPUT out/tex/conclusion.aux
+INPUT tex/conclusion.tex
+INPUT tex/conclusion.tex
+OUTPUT out/backmatter/main.aux
+INPUT backmatter/main.tex
+INPUT backmatter/main.tex
+INPUT thesis.bbl
+INPUT thesis.bbl
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT backmatter/acknowledgement.tex
+INPUT backmatter/acknowledgement.tex
+INPUT out/thesis.aux
+INPUT out/frontmatter/main.aux
+INPUT out/frontmatter/main.aux
+INPUT out/tex/introduction.aux
+INPUT out/tex/introduction.aux
+INPUT out/tex/element_technology.aux
+INPUT out/tex/element_technology.aux
+INPUT out/tex/method.aux
+INPUT out/tex/method.aux
+INPUT out/tex/experiment.aux
+INPUT out/tex/experiment.aux
+INPUT out/tex/conclusion.aux
+INPUT out/tex/conclusion.aux
+INPUT out/backmatter/main.aux
+INPUT out/backmatter/main.aux
+INPUT out/thesis.out
+INPUT out/thesis.out
