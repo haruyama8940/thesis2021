@@ -8,7 +8,7 @@
 1章の背景で述べた分岐路において，ルートを選択する場合に
 入力する情報としてカメラ画像のみでは「右と左のどちらに曲がる」という判断をするための情報が不足していると考えられる．
 そこで，カメラ画像をもとにEnd-to-End学習で経路追従行動を行う岡田らの研究\cite{okada}で用いたシステムへ
-カメラ画像以外にルートの選択に必要な情報として，「直進」「左折」「右折」の目標方向情報をコマンドを追加した，
+カメラ画像以外にルートの選択に必要な情報として，「直進」「左折」「右折」の目標方向情報を目標方向を追加した，
 
 本研究で対象とするロボットの構造，搭載するセンサを\ref{fig::turtlebot3_gazo}とし，
 提案手法の概要をFig.\ref{fig::method_abs}
@@ -44,16 +44,18 @@
     \begin{tabular}{c}
       \begin{minipage}[t]{0.5\hsize}
         \centering
-        \includegraphics[keepaspectratio, scale=0.4]{./figs/system_abs.pdf}
+        % \vspace{-1.0zh}
+        \includegraphics[keepaspectratio, scale=0.35]{./figs/system_abs.pdf}
         \subcaption{Learning phase}
         \label{fig::learning_abs}
-      \end{minipage}\\
+      \end{minipage}
       \begin{minipage}[t]{0.5\hsize}
         \centering
-        \includegraphics[keepaspectratio, scale=0.4]{./figs/system_test_abs.pdf}
+        
+        \includegraphics[keepaspectratio, scale=0.35]{./figs/system_test_abs.pdf}
         \subcaption{Test phase}
         \label{fig::test_abs}
-      \end{minipage} \\
+      \end{minipage}
       \vspace{2.0zh}
     \end{tabular}
      \caption{Concept of the proposed method}
@@ -62,7 +64,7 @@
 
 \newpage
 % \section{システム}
-% 本研究室のチームが行ってきたシステム\cite{okada}へ，目標方向に対応したコマンドの生成機能とネットワーク構造の変更をすることでシステムを構築した．
+% 本研究室のチームが行ってきたシステム\cite{okada}へ，目標方向に対応した目標方向の生成機能とネットワーク構造の変更をすることでシステムを構築した．
 
 
 % 本節では\ref{seigyo}学習フェーズで用いる地図べースの制御器
@@ -96,6 +98,7 @@
     これらを統合して行動計画とモータ指令を行う「move\_base」，Particle\_Filterによって自己位置推定を行う「amcl」，この2つへ保持する地図の配信を行う
     「map\_server」などのパッケージを統合した自律移動用のメタパッケージである．
     ROS Navigation\_stack\cite{navigation:online}へ目標地点(waypoint)と目標方向の生成機能をもつ「waypoint\_nav」を組み込んで使用している．
+    
     目標方向は「道なり」「直進」「左折」「右折」の4つとし，要素数4,次元数1のint型の配列(One-Hot ベクトル)で表現する．
     方向と配列の対応をTable \ref{tb:command_4}に示す．
     \vspace{2.0zh}
@@ -129,41 +132,53 @@
       \end{table}
 
 \newpage
-
 \section{学習フェーズ}
 \label{lerning}
 学習器の訓練を行う学習フェーズで用いるシステムをFig. \ref{fig::learningsystem}示す．
-学習は下記の一連の流れを1stepとして，設定したstep数行う．
+学習は下記の一連の流れを1 stepとして，設定したstep数行う．
 \begin{enumerate}
-    \item LiDARとオドメトリを入力とする地図ベースの制御器の出力を用いて自律走行を行う
-    \item 地図ベースの制御器の出力からヨー方向の角速度とコマンド，機体に取り付けたカメラからRGB画像を取得し，訓練データへ加える
-    \item 訓練データを　入力:カメラ画像，コマンド 目標出力:角速度　として学習器へ渡す
+    \item LiDARとオドメトリから得たデータを入力とする地図ベースの制御器の出力を用いて自律走行を行う
+    \item 地図ベースの制御器の出力からヨー方向の角速度と目標方向，機体に取り付けたカメラからRGB画像を取得し，訓練データへ加える
+    \item 訓練データを　入力:カメラ画像，目標方向 目標出力:角速度　として学習器の訓練を行う
     \item 学習器の出力を記録．
   \end{enumerate}
-画像の取得には従来研究\cite{okada}にならい，機体の中央, 中央に対して左，右に傾けて取り付けた3つのカメラを用いる．
-% また分岐路以外では，1つのコマンド(例として「直進」）を出力し続けた場合にデータセットへ偏りが生じる可能性が考えられるため，
-% ランダムなコマンドの出力を用いる．
-% コマンドの生成方法は\ref{seigyo}で述べるwaypointを用いて，目標方向に対応したコマンドを生成する．
 
-\begin{figure}[H]
+  \begin{figure}[h]
     \centering
     \includegraphics[width = 12cm]{./figs/system_learning.pdf}
     \caption{Learning phase system }
     \label{fig::learningsystem}
 \end{figure}
 
+  画像の取得には岡田らの研究\cite{okada}にならい，
+旋回のデータをデータセットへ加えることを目的として
+機体の中央, 中央に対して左，右に傾けて取り付けた3つのカメラを用い，Table\ref{tb::camera_ang}に示す．
+% また分岐路以外では，1つの目標方向(例として「直進」）を出力し続けた場合にデータセットへ偏りが生じる可能性が考えられるため，
+% ランダムな目標方向の出力を用いる．
+% 目標方向の生成方法は\ref{seigyo}で述べるwaypointを用いて，目標方向に対応した目標方向を生成する．
+\begin{table}[H]
+  \centering
+  \caption{camera }
+  \begin{tabular}{|c|c|ll}
+  \hline
+  Left camera   & Angular velocity of Map-based controller + 0.2 rad/s \\ \hline
+  Center camera & Angular velocity of Map-based controller             \\ \hline
+  Right camera  & Angular velocity of Map-based controller - 0.2 rad/s  \\ \hline
+  \end{tabular}
+  \label{tb::camera_ang}
+  \end{table}
 
 \newpage
 \section{テストフェーズ}
 \label{test}
 設定したstep数に達した場合に，Fig. \ref{fig::testsystem}に示すように
-地図ベースの制御器の出力による動作から，中央のカメラ画像とコマンドを入力とした
+地図ベースの制御器の出力による動作から，中央のカメラ画像と目標方向を入力とした
 学習器の出力による動作へ切り替えて走行を行う．
-テスト時のコマンドの生成(方向の指示)はJoy\_stickコントローラのボタンを用いて行う．
+テスト時の目標方向の生成(方向の指示)はJoy\_stickコントローラのボタンを用いて行う．
 テストフェーズにおける手順を下記に示す．
 \begin{enumerate}
-    \item 機体に取り付けた中央のカメラからRGB画像,Joy\_stickコントローラよりコマンドのデータを取得
-    \item 取得したデータ(カメラ画像，コマンド)を学習器へ入力
+    \item 機体に取り付けた中央のカメラからRGB画像,Joy\_stickコントローラより目標方向のデータを取得
+    \item 取得したデータ(カメラ画像，目標方向)を学習器へ入力
     \item 学習器の出力である角速度をモータへ与える
   \end{enumerate}
 
@@ -180,7 +195,7 @@
 \label{net}
 今回のシステムで用いたネットワークをFig. \ref{fig::methodnetwork}に示す．
 また，ハイパーパラメータについてTable \ref{tb::param}に示す．
-64×48のRGB画像を入力とする入力層1，畳込み層3，全結合層2層を持つ6層のCNNと，CNNの出力とコマンドを入力する入力層1，
+64×48のRGB画像を入力とする入力層1，畳込み層3，全結合層2層を持つ6層のCNNと，CNNの出力と目標方向を入力する入力層1，
 全結合層2．出力層1の全10層の構造になっている．
 出力はヨー方向の角速度を連続値である．
 

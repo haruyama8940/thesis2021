@@ -16,12 +16,12 @@ Fig. \ref{fig::nvidia}で示す方法で，人間のハンドル操作による�
 \end{figure}
 
 \newpage
-本研究室においても岡田ら\cite{okada}によってFig. \ref{fig::okada_sys}に示すように
-LiDAR,オドメトリを入力としたルールべースの制御器の出力と
-その際に取得したカメラ画像を訓練データとして用いることで,\ref{fig::okada}
-データセット収集における労力の削減，経路へ戻る行動
-経路追従行動を模倣する手法を提案した．
-を確認した.
+本研究室においても岡田ら\cite{okada}によってFig. \ref{fig::okada_sys}に示すシステム
+LiDAR,オドメトリなどの入力としたルールべースの制御器の出力による自律走行を行い
+その際にロボットから取得したカメラ画像を入力，ルールベース制御器の出力した角速度を目標出力として学習器の訓練を行い，
+訓練後にはカメラ画像を入力を学習器へ入力し，その出力を用いて走行を行う
+ルールベース制御器を用いてデータセット収集における労力の削減と経路へ戻る行動が学習可能な
+Fig.\ref{fig::okada}で示すルールベース制御器の経路追従行動を模倣する手法が提案されている．
 \begin{figure}[h]
     \centering
     \includegraphics[width = 10cm]{./figs/okada_sys.png}
@@ -36,76 +36,84 @@ LiDAR,オドメトリを入力としたルールべースの制御器の出力�
     \label{fig::okada}
 \end{figure}
 
+\newpage
+上記の研究により，カメラ画像用いてロボットが学習した経路を
+周回可能であることが確認されている．
 
-上記の研究により，カメラ画像用いて，ロボットが経路を周回可能であることが示されている．
 
-
-経路を周回　研究の拡張を行う
+次に岡田ら\cite{okada}研究を一定の経路の周回以外への拡張について考える．
 走行する経路内にFig. \ref{fig::bunki}のような分岐路が含まれる場合，
-従来研究では同じ分岐路において
-任意のルートへ走行を明確に切り替え．
-
-カメラ画像のみのでは「分岐路をどちらへ進むか」という特定のルート選択を行うために
-必要な情報が不足していることが要因と考えられる．
-画像のみを入力としたネットワークでは，
-分岐路においてネットワークが2つの方向を出力してしまい，左右に車体を向ける振動が発生してしまう事象がDean A. Pomerleauら\cite{pomeru}によって確認されている．
-
+画像のみを入力としたネットワークでは，分岐路においてネットワークが2つの方向を出力してしまい，
+左右に車体を向ける振動が発生してしまう事象がDean A. Pomerleauら\cite{pomeru}によって確認されている．
+そのため赤と緑の矢印で示した直進と左折のようなルートを任意に切り替えを行うためには，
+カメラ画像のみを入力とした場合「分岐路をどちらへ進むか」というルート選択を行うために
+情報が必要だと考えられる．
+ \vspace{4.0zh}
 \begin{figure}[h]
     \centering
-    \includegraphics[width = 8cm]{./figs/bunki.jpg}
-    \caption{Cross Road}
+    \includegraphics[width = 8cm]{./figs/bunki.pdf}
+    \caption{Cross road}
     \label{fig::bunki}
 \end{figure}
 \newpage
 
-分岐路で経路を選択をする情報として
-人間は交差点などの目印に基づいて目的地まで移動することができ，
-島田らは目印とそのつながりを表現する地図(トポロジカルマップ)
-トポロジカルマップより「道案内」同様に，「条件」と「行動」の組み合わせで作成した経路の情報(シナリオ)
-を用いてロボットの自律移動へ用いる方法を提案している．
-シナリオ\ref{fig::sina}
-\ref{fig::topo}
-トポロジカルマップとシナリオの
-情報を入力へ加えること
+分岐路でルートをを選択をする情報として
+人間の交差点などの目印に基づいて目的地まで移動する能力を，
+島田らは分岐路などの目印(エッジ)とそのつながり(ノード)を表現する地図(トポロジカルマップ)
+Fig. \ref{fig::topo}と
+次の情報を持つエッジ
+1) ID
+2) Type(通路の特徴)
+3) Edge(エッジの ID と相対角度)
+トポロジカルマップより「道案内」同様に，「次の角まで」のような「条件」と「直進」などの「行動」
+の組み合わせで作成した経路の情報(シナリオ)\ref{fig::sina}
+を用いて表現した自律移動ロボットのNavigation手法を提案している．
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width = 12cm]{./figs/topo.png}
+    \includegraphics[width = 13cm]{./figs/topo.png}
     \caption{topo\cite{razikon}}
     \label{fig::topo}
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[width = 12cm]{./figs/sina.png}
+    \includegraphics[width = 13cm]{./figs/sina.png}
     \caption{sina\cite{razikon}}
     \label{fig::sina}
 \end{figure}
-本研究では，\cite{okada}らと島田ら手法を拡張し，
+
+そこで本研究では，島田らが提案した「シナリオ」から生成した
 「直進」「左折」「右折」などの目標とする方向の情報(本研究では"目標方向"とする)
-を追加することで分岐路において特定のルート選択を行う
+を\cite{okada}らが提案した手法において学習器の入力へ追加し，
+学習器の出力を用いた走行で分岐路において特定のルート選択を行う
+「カメラ画像と目標方向を用いたEnd-to-End学習によるシナリオを用いたNavigation手法」を提案する．
+提案手法全体の流れをFig. \ref{fig::haikei_zentai}に示す．
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 13cm]{./figs/haikei_zentai.pdf}
+    \caption{hai}
+    \label{fig::haikei_zentai}
+\end{figure}
 
-「カメラ画像と目標方向の情報を用いて，分岐路において任意の走行経路を選択する手法」を提案する．
-
-
-カメラ画像以外に他の情報を用いて，自律移動を行う研究として
+\newpage
+カメラ画像と他の情報を用いて，自律移動を行う研究として
 Felipeら\cite{razikon}はカメラ画像と操舵角と加速度の2次元の制御信号と，continue，left，straight，rightの4つのコマンドを入力としたネットワークを
 用いてFig. \ref{fig::Conditional_Imitation_Learning}で示すように実環境と都市環境のシミュレータ上で学習器がコマンドに沿った行動が可能であることを
 確認している．
-
 \begin{figure}[H]
     \centering
-    \includegraphics[width = 15cm]{./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf}
+    \includegraphics[width = 12cm]{./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf}
     \caption{End-to-end  Driving  via  Conditional  Imitation  Learning from \cite{razikon}}
     \label{fig::Conditional_Imitation_Learning}
 \end{figure}
 
-\newpage
 また，Seiyaら\cite{nagoya}はFig. \ref{fig::nagoyaabst}で示すように
 カメラ画像と目標方向を入力，ステアリング制御信号を出力とするシステムを用いて，右および左に曲がる屋外の軌道を
 追跡可能であることを確認している．
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width = 10cm]{./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutional_Neural_Network_abst.pdf}
+    \includegraphics[width = 9.8cm]{./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutional_Neural_Network_abst.pdf}
     \caption{Overview of Seiya and others proposed method from \cite{nagoya}}
     \label{fig::nagoyaabst}
 \end{figure}
@@ -114,7 +122,14 @@ Felipeら\cite{razikon}はカメラ画像と操舵角と加速度の2次元の�
 \section{目的}
 本研究では，岡田らと島田らの研究を拡張し，
 カメラ画像と目標方向を用いたEnd-to-End学習
-によるシナリオに基づいたNavigation手法を行う前段階として
+によるシナリオに基づいたNavigation手法を行う予備段階として
+Fig. \ref{fig::haikei_abs}に赤枠で示した部分を対象とする，
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 12cm]{./figs/haikei_abs.pdf}
+    \caption{a}
+    \label{fig::haikei_abs}
+\end{figure}
 
 カメラ画像と目標方向を入力とする学習器の出力を用いた走行において，
 目標方向によって分岐路で任意のルートへ走行経路を変更することを目指す．

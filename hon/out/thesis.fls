@@ -143,16 +143,20 @@ INPUT ./figs/okada.png
 INPUT extractbb -B cropbox -O ./figs/okada.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
-INPUT ./figs/bunki.jpg
-INPUT extractbb -B cropbox -O ./figs/bunki.jpg
+INPUT ./figs/bunki.pdf
+INPUT extractbb -B cropbox -O ./figs/bunki.pdf
 INPUT ./figs/topo.png
 INPUT extractbb -B cropbox -O ./figs/topo.png
 INPUT ./figs/sina.png
 INPUT extractbb -B cropbox -O ./figs/sina.png
+INPUT ./figs/haikei_zentai.pdf
+INPUT extractbb -B cropbox -O ./figs/haikei_zentai.pdf
 INPUT ./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf
 INPUT extractbb -B cropbox -O ./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf
 INPUT ./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutional_Neural_Network_abst.pdf
 INPUT extractbb -B cropbox -O ./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutional_Neural_Network_abst.pdf
+INPUT ./figs/haikei_abs.pdf
+INPUT extractbb -B cropbox -O ./figs/haikei_abs.pdf
 OUTPUT out/tex/element_technology.aux
 INPUT tex/element_technology.tex
 INPUT tex/element_technology.tex
