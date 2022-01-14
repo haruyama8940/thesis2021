@@ -25,11 +25,11 @@
     
     \abstract{When preparing the manuscript, read and observe carefully this sample as well as the instruction manual for the manuscript of the Transaction of Japan Society of Mechanical Engineers. This sample was prepared using MS-word. Character size of the English title is 14 pts of Times New Roman as well as sub-title. The name is 12 pts. The address of the first author and the abstract is 10 pts of Times New Roman. Character spacing of the abstract is narrowed by 0.2 pts preferably.}
     
-    \keywords{Mechanical Engineering, Keywords List}
+    \keywords{End-to-End, Navigation, Target Direction}
     
     \maketitle
     
-    \supervisor{指導教員：林原安男 准教授}
+    \supervisor{指導教員：林原靖男 教授}
     
     \section{緒\hspace{2zw}言}%===========================
     近年,様々なセンサを用いた移動ロボットの自律移動に関する研究が盛んに行われており,
@@ -37,22 +37,21 @@
     Bojaskiら\cite{nvidia}は人間のハンドル操作によるステアリングの
     角度の模倣学習を行い,画像を用いて走行を行う方法を提案している．
 
-    また岡田ら\cite{okada}はLiDAR, オドメトリ
-    などを入力とするルールべースの制御器を用いて自律移動を行い，
-    その制御器の角速度とロボットに取り付けたカメラ画像を用いて
+    また岡田ら\cite{okada}はLiDARとオドメトリを入力とするルールべースの制御器を用いて自律移動を行い，
+    その制御器の出力する角速度とロボットに取り付けたカメラから取得したカメラ画像を用いて
     学習器の訓練を行い，学習後はカメラ画像のみを用いて自律移動を行う．
-    ルールベース制御器を用いることでデータセットを自動的に収集し，
+    ルールベースの制御器を用いることでデータセットを自動的に収集し，
     その経路追従行動を模倣する手法を提案している．
-    上記の研究により，カメラ画像を用いてロボットが一定の経路を周回することが可能であると示されている．
+    上記の研究により，カメラ画像を用いたEnd-to-End学習によって
+    ロボットが一定の経路を周回することが可能であると示されている．
     
-    次に，走行する経路を一定から拡張について考える．
-    経路内に\reffig{bunki}のような分岐路が含まれる場合に，
-    赤で示す「直進」と緑で示す「左折」の経路を選択するためには
-    カメラ画像のみでは情報が不足していると考えられる．
-    そのため，データセットへカメラ画像以外に「直進」「右折」「左折」の目標とする方向の情報
-     ( 本研究では”目標方向”とする )を追加することで分岐路において特定のルートを選択できる可能性がある．
+    次に上記の研究を拡張し，経路内に\reffig{bunki}のような分岐路において，
+    赤で示す「直進」と緑で示す「左折」の経路を選択する手法を考える．
+    カメラ画像のみでは必要な情報が不足していると考えられる．
+    そこで，データセットへカメラ画像以外に「右折」「左折」などの目標とする方向の情報
+     ( 本研究では”目標方向”とする )を追加することで分岐路において特定のルートを選択することが可能であると考えられる．
 
-    そこで，カメラ画像と目標方向を入力とする学習器の出力を用いた走行において,目標方向によって
+    本稿ではカメラ画像と目標方向を入力とするEnd-to-End学習による走行において,目標方向によって
     分岐路で任意のルートへ走行経路を変更が可能であるかの検証を行う．
     \begin{center}
         \begin{figure}[h]
@@ -62,98 +61,39 @@
             \label{fig:bunki}
         \end{figure}
     \end{center}
-    % 本稿では，研究概要作成に関する主な原稿体裁をまとめた．
-    
-    % 本文には，半角かな文字は使用せず，文章の区切りには全角の読点（，）と句点（．）を用いる．
-    
-    % \section{記号・単位の書き方}%===========================
-    % \begin{table}[!h]
-    %     \begin{tabular}{lcl}
-    %         $L$ & ： & 長さ [m] \\
-    %         $t$ & ： & 時間 [s] \\
-    %         $x$ & ： & 流れ方向の座標 [m] \\
-    %         $\alpha$ & ： & 熱伝達率 [$\mathrm{W/(m^2\cdot K)}$] \\
-    %         $Re$ & ： & レイノルズ数 \\
-    %         $\bm{R}$ & ： & 回転行列 \\
-    %         $\bm{t}$ & ： & 並進ベクトル \\
-    %     \end{tabular}
-    % \end{table}
-    
-    % 量記号はイタリック体，単位記号はローマン体，無次元数はイタリック体で書く．
-    % 数学記号・単位記号及び量記号は，半角英数字を使用する．単位は，SI単位を使用し，4~MPa のように書く．
-    
-    % 分野によって作法は異なるが，わかりやすさの観点から行列の表記は大文字のイタリック体・ボールド体を推奨し，ベクトルの表記は小文字のイタリック体・ボールド体を推奨する．
-    
-    % \section{見出しの書き方}%===========================
-    
-    % 論文の章立ては．章・節・項である．章見出しはゴシック体で記述し，2行分をとって行の中ほどに書く．
-    % 18字以上は3行分を必要とするが，見出しが不必要に長くなるのは推奨されない．
-    
-    % \subsection{節の書き方}
-    
-    % 項の見出しもゴシック体で記述し，本文は見出し後に改行をせずに，直後に2文字分の空白を空けてから書き始める．
-    
     \section{提案手法}%===========================
-    学習器の訓練を行う「学習フェーズ」，訓練した学習器の出力を用いて走行する「テストフェーズ」
-    の2つに分けて述べる
-    \subsection{学習フェーズ}
-    学習器の訓練を行う学習フェーズで用いるシステムを\reffig{system_learning}に示す.
-    地図ベースの制御器はROS Navigation\_stackへ目標方向の
-    生成機能を追加する形で作成したルールベース制御器である．
-    学習は下記の一連の流れを 1 step として,設定した step 数行う.
-    目標方向は「continue」「go straihgt」「go left」「go right」の4つとし，これらを要素数4のOne-hotベクトルで表現する．
-    1)LiDAR とオドメトリから得たデータを入力とする地図ベースの制御器の出力を用いて
-    自律走行を行う
-    2)地図ベースの制御器の出力からヨー方向の角速度と目標方向,機体に取り付けたカメラから RGB 画像を取得し,訓練データへ加える
-    3)訓練データを 入力 : カメラ画像,目標方向 目標出力 : 角速度 として学習器の訓練を行う
-    4)学習器の出力を記録.
-    % \begin{enumerate}
-    %     \setlength{\parskip}{0cm} % 段落間
-    %     \setlength{\itemsep}{0cm} % 項目間
-    %     \item LiDAR とオドメトリから得たデータを入力とする地図ベースの制御器の出力を用いて
-    %             自律走行を行う
-    %     \item 地図ベースの制御器の出力からヨー方向の角速度と目標方向,機体に取り付けたカメラ
-    %     から RGB 画像を取得し,訓練データへ加える
-    %     \item 訓練データを 入力 : カメラ画像,目標方向 目標出力 : 角速度 として学習器の訓練を
-    %     行う
-    %     \item 学習器の出力を記録.
-    % \end{enumerate}
-
-    % \begin{table}[h]
-    %     \caption{Command}
-    %     \label{tab:com}
-    %     \begin{center}
-    %         \vskip 1zh
-    %         \begin{tabular}{|c|c|}
-    %             \hline
-    %             Target Direction & Data\\ \hline
-    %             con & $[100,0,0,0]$ \\ \hline
-    %             go straihgt & $[0,100,0,0]$ \\ \hline
-    %             go left & $[0,0,100,0]$ \\ \hline
-    %             go right & $[0,0,0,100]$ \\ \hline
-    %         \end{tabular}
-    %     \end{center}
-    % \end{table}
+    提案手法を学習器の訓練を行う「学習フェーズ」，訓練した学習器の出力を用いて走行する「テストフェーズ」
+    の2つに分けて述べる．
+    % \subsection{学習フェーズ}
     
-   
+    学習フェーズで用いるシステムを\reffig{system_learning}に示す.
+    地図ベースの制御器はROS Navigation\_stack\cite{navigation}へ目標方向の生成機能を追加したルールベース制御器である．
+    目標方向は「continue，go straihgt，go left，go right」の4つとし，これらを要素数4のOne-hotベクトルで表現する．
+    学習器の訓練は次の流れを 1stepとして自動的にデータセットを収集し,設定したstep数の学習行う．
+    1)LiDAR とオドメトリから得たデータを入力とする地図ベースの制御器の出力を用いて自律走行を行う．
+    2)地図ベースの制御器の出力からヨー方向の角速度と目標方向,機体に取り付けた3つのカメラから
+    RGB画像を取得し,訓練データへ加える．
+    3)訓練データ(入力:カメラ画像,目標方向 目標出力:角速度)を用いてEnd-to-End学習を行い，学習器の出力を記録．
+
     \begin{center}
         \begin{figure}[h]
             \centering
-            \includegraphics[width=0.4\textwidth]{./fig/system_learning.pdf}
-            \caption{System of learning}
+            \includegraphics[width=0.40\textwidth]{./fig/system_learning.pdf}
+            \caption{Learning phase}
             \label{fig:system_learning}
         \end{figure}
     \end{center}
     
-    \subsection{テストフェーズ}
-    設定した step 数に達した場合に, \reffig{system_test}に示すように地図ベースの制御器の出力による
-    動作から,中央のカメラ画像と目標方向を入力とした学習器の出力による動作へ切り替えて走
-    行を行う.テスト時の目標方向は Joy stick コントローラのボタンを用いて入力する.
-    テストフェーズにおける手順を下記に示す
-    1)機体に取り付けた中央のカメラから RGB 画像 ,Joy stick コントローラより目標方向の
-    データを取得
-    2)取得したデータ ( カメラ画像,目標方向 ) を学習器へ入力
-    3)学習器の出力(角速度)をモータへ与える
+    % \subsection{テストフェーズ}
+    
+    設定したstep数に達した場合に, テストフェーズへ移行し,
+    \reffig{system_test}に示すように中央のカメラ画像と目標方向を入力とした
+    学習器の出力(角速度)による走行を行う.
+    テスト時の目標方向は Joy stickコントローラのボタンを用いて入力する.
+    テストフェーズにおける手順を下記に示す．
+    1)機体に取り付けた中央のカメラから RGB 画像 ,Joy stick コントローラより目標方向のデータを取得．
+    2)取得したデータ (カメラ画像,目標方向) を学習器へ入力．
+    3)学習器の出力(角速度)を用いて自律走行を行う．
     % \begin{enumerate}
     % \setlength{\parskip}{0cm} % 段落間
     % \setlength{\itemsep}{0cm} % 項目間
@@ -166,22 +106,21 @@
         \begin{figure}[h]
             \centering
             \includegraphics[width=0.38\textwidth]{./fig/system_test.pdf}
-            \caption{System of test}
+            \caption{Test phase}
             \label{fig:system_test}
         \end{figure}
     \end{center}
     
     \section{実\hspace{2zw}験}%===========================
-    実験はシミュレータ上で行い，
-    環境はGazebo上で作成した\reffig{bunki}で示す道幅が2.5mの十字路とし，
-    使用するロボットはturtlebot3 waffleへカメラを3つ追加したモデルを用いる．
-    実験条件は「壁に衝突せず,目標方向に対応したコースを選択」を成功，
-    「目標方向とは異なったコースを選択する,または壁に衝突」を失敗とする．
-    目標方向は学習フェーズ，テストフェーズともに
-    図中の緑ー青間を「continue」青ー1「go straihgt」青ー2「go left」青ー3「go right」
-    を入力している．
-    step数は4000[step]行った．
-    実験結果を\reftab{suc}に示す
+    実験では\reffig{system_learning}，\reffig{system_test}で示すturtlebot3 waffleへカメラを3つ追加したモデルを用いる．
+    環境とルートを\reffig{exp}に示す．環境はgazebo上で作成した道幅が2.5mの十字路を用い，
+    ルートは2,3,4の地点に到達後，緑の初期位置へロボットの位置，自己位置推定をリセット
+    を行いながら,緑-青-1,緑-青-2,緑-青-3の順で走行を行う．
+    目標方向は学習フェーズ，テストフェーズともに緑-青(continue)青-赤1(go straihgt)青-赤2(go left)青-赤3(go right)を入力している．
+    step数は4000stepとした．
+    実験条件はテストフェーズにおいて「壁に衝突せず,目標方向に対応したコースを選択」を成功，
+     「目標方向とは異なったコースを選択する,または壁に衝突」を失敗とする．
+    実験結果を\reftab{suc}に示す．
     % \begin{enumerate}
     %     \setlength{\parskip}{0cm} % 段落間
     %     \setlength{\itemsep}{0cm} % 項目間
@@ -193,71 +132,35 @@
        
     % \end{enumerate}
     \begin{center}
-        \begin{figure}[H]
+        \begin{figure}[h]
             \centering
-            \includegraphics[width=0.35\textwidth]{./fig/zyuziroute.pdf}
-            \caption{Route of }
+            \includegraphics[width=0.34\textwidth]{./fig/zyuziroute.pdf}
+            \caption{Course and route of experiment}
             \vskip 0.1zh
             \label{fig:exp}
         \end{figure}
     \end{center}
-    \begin{table}[H]
-        \caption{suc}
+    \vspace{-1zh}
+    \begin{table}[h]
+        \caption{Number of successes experiment 1 point}
         \label{tab:suc}
         \begin{center}
-            \vskip 0.1zh
+            \vskip -1zh
             \begin{tabular}{|c|c|}
                 \hline
-                Point & Number of successes\\ \hline
-                $1$ & $5/5$ \\ \hline
-                $2$ & $4/5$ \\ \hline
-                $3$ & $5/5$ \\ \hline
+                Target direction and Point & Number of successes\\ \hline
+                continue (1) & $5/5$ \\ \hline
+                go straihgt (2) & $5/5$ \\ \hline
+                go left (3) & $4/5$ \\ \hline
+                go right (4) & $5/5$ \\ \hline
             \end{tabular}
         \end{center}
     \end{table}
-    
-    % \section{数式の書き方}%===========================
-    
-    % 式番号は，式と同じ行に右寄せして（ ）の中に書く．また，本文で式を引用するときは，\refeqn{sample-eq1}のように書く．
-    % \begin{equation}
-    %     \gamma(t) = \frac{ji}{N} \label{eq:sample-eq1}
-    % \end{equation}
-    % \begin{equation}
-    % \bar{C}(t)=\frac{1}{N}\sum_{i=1}^{N}C_i(t) \label{eq:sample-eq2}
-    % \end{equation}
-    
-    %\begin{table}[!b] \notag
-    %\begin{minipage}{\textwidth}
-    %\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr}
-    %{\footnotesize
-    %$\displaystyle 
-    %u^*_{i,j} = u^n_{i,j} - \Delta t \left\{u^n_{i,j}\frac{u^n_{i+1,j} - u^n_{i-1,j}}{2\Delta x} + v^n_{i,j}\frac{u^n_{i,j+1} - u^n_{i,j-1}}{2\Delta y} + \frac{1}{Re}\left(\frac{u^n_{i+1,j} - 2u^n_{i,j} + u^n_{i-1,j}}{(\Delta x)^2} + \frac{u^n_{i,j+1} - 2u^n_{i,j} + u^n_{i,j-1}}{(\Delta y)^2}\right) \right\}
-    %$}
-    %& $\inlineTag\label{eq:long-eq} $
-    %\end{tabular*}
-    %\end{minipage}
-    %\end{table}
-    
-    % 式を書くときは，2文字分空白を空ける．
-    % また，必要行数分を必ず使うようにして書く．
-    % 3行必要とする式を2行につめて書いたり，2行に分かれる式を1行に収めたりしない．
-    % なお，本文と式，式相互間は１行以上の空白を空けて，見やすくする．
-    % ポイント数は本文に準じるものとするが，添え字等が小さく読みにくくなるときは適宜拡大する．
-    
-    %式はなるべく片側に書くことが望ましいが，両側にまたがる場合は，読む順序に混乱を生じないように，そのページの式の上，または下の本文全部を両方にまたがるように書かなければならない．
-    %本見本では\refeqn{long-eq}のようにページの最上段もしくは最下段に配置している場合は，上記のような混乱は生じ得ないので以下の文章は2段組で続けることができる．
-    %ただし，所望の位置に表示されない，文字が重なるなどレイアウト上の多くの問題が生じるため，極めて推奨しない．
-    
-    % \section{引用文献の書き方}%===========================
-    % 本文中の引用箇所には，右肩に小括弧をつけて，通し番号を付ける．例えば，文献\cite{工大2005}や，文献\cite{Shibutani2004, Handbook1979, Kikuchi2017, Adrobo2019}のようにする．
-    
-    % 引用文献は，英文で記述されているもの（文献\cite{Shibutani2004}など）は英文で書き，本文末尾に引用順にまとめて書く．専門的な書籍（文献\cite{Handbook1979}など）についても引用しても良い．
-    % Web上の資料を引用する場合，例えばオンラインジャーナルなどの場合は文献\cite{Kikuchi2017}のように，webページの場合は文献\cite{Adrobo2019}のように，それぞれ参考文献として記載して引用する．この時，URLとともに参照日を記載すること．ただし，webページの場合は個人の技術ブログなどのように第3者による十分な審査が行われていないものの引用は行ってはいけない．公的な機関が発行しているページであっても，その永続性の問題から必要最小限に留めることを推奨する．
-        
+            
     \section{結\hspace{2zw}言}%===========================
-    本稿ではカメラ画像と目標方向￥￥￥￥を行い，
-    実験結果から
-    分岐路において目標方向を用いて特定のルートが選択する行動が見られた．
+    本稿ではカメラ画像と目標方向を用いたEnd-to-End学習による，
+    特定のルート選択を選択可能なNavigation手法を提案し，
+    実験結果から分岐路において目標方向を用いて特定のルートが選択する行動が見られた．
     
     \vspace{5truemm}
     {\footnotesize
@@ -268,14 +171,17 @@
             % 日本機械学会論文誌A, 
             % Vol.~108, No.~1034 (2005), pp.~1--2.
             
+            \bibitem{nvidia}
+            Mariusz Bojarski et al:``End to End Learning for Self-Driving Cars'',
+            arXiv: 1604.07316,(2016)
             \bibitem{okada}
             岡田眞也, 清岡優祐, 上田隆一, 林原靖男:``視覚と行動の end-to-end 
             学習により経路追従行動をオンラインで模倣する手法の提案''
             SICE-SI2020予稿集,1147--1152,制御学会SI部門講演会(2020)
-            
-            \bibitem{nvidia}
-            Mariusz Bojarski et al:``End to End Learning for Self-Driving Cars'',
-            arXiv: 1604.07316,(2016)
+            \bibitem{navigation}
+            ros-planning, navigation: 
+            \url{https://github.com/ros-planning/navigation}， 
+            （参照日 2020年12月30日）. 
             % \bibitem{Shibutani2004}
             % Y. Shibutani: ``Heinrich's Law Resulted Pattern Dynamics --Part2--''，
             % Proceedings of the 79th Kansai Branch Regular Meeting of the Japan Society of Mechanical Engineers,  
@@ -288,12 +194,6 @@
             % \bibitem{Kikuchi2017}
             % K. Kikuchi, M. Miura, K. Shibata, J. Yamamura: ``Soft Landing Condition for Stair-climbing Robot with Hopping Mechanism'', 
             % Journal of JSDE, Vol.~53, No.~8 (2018), pp.~605--614, \url{https://doi.org/10.14953/jjsde.2017.2774}.
-            
-            \bibitem{navigation}
-            ros-planning, navigation: 
-            \url{https://github.com/ros-planning/navigation}， 
-            （参照日 2020年12月30日）. 
-            
         \end{thebibliography}
     }
     \normalsize
