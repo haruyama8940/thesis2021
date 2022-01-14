@@ -101,17 +101,23 @@
     地図ベースの制御器はROS Navigation\_stackへ目標方向の
     生成機能を追加する形で作成したルールベース制御器である．
     学習は下記の一連の流れを 1 step として,設定した step 数行う.
-    \begin{enumerate}
-        \setlength{\parskip}{0cm} % 段落間
-        \setlength{\itemsep}{0cm} % 項目間
-        \item LiDAR とオドメトリから得たデータを入力とする地図ベースの制御器の出力を用いて
-                自律走行を行う
-        \item 地図ベースの制御器の出力からヨー方向の角速度と目標方向,機体に取り付けたカメラ
-        から RGB 画像を取得し,訓練データへ加える
-        \item 訓練データを 入力 : カメラ画像,目標方向 目標出力 : 角速度 として学習器の訓練を
-        行う
-        \item 学習器の出力を記録.
-    \end{enumerate}
+    目標方向は「continue」「go straihgt」「go left」「go right」の4つとし，これらを要素数4のOne-hotベクトルで表現する．
+    1)LiDAR とオドメトリから得たデータを入力とする地図ベースの制御器の出力を用いて
+    自律走行を行う
+    2)地図ベースの制御器の出力からヨー方向の角速度と目標方向,機体に取り付けたカメラから RGB 画像を取得し,訓練データへ加える
+    3)訓練データを 入力 : カメラ画像,目標方向 目標出力 : 角速度 として学習器の訓練を行う
+    4)学習器の出力を記録.
+    % \begin{enumerate}
+    %     \setlength{\parskip}{0cm} % 段落間
+    %     \setlength{\itemsep}{0cm} % 項目間
+    %     \item LiDAR とオドメトリから得たデータを入力とする地図ベースの制御器の出力を用いて
+    %             自律走行を行う
+    %     \item 地図ベースの制御器の出力からヨー方向の角速度と目標方向,機体に取り付けたカメラ
+    %     から RGB 画像を取得し,訓練データへ加える
+    %     \item 訓練データを 入力 : カメラ画像,目標方向 目標出力 : 角速度 として学習器の訓練を
+    %     行う
+    %     \item 学習器の出力を記録.
+    % \end{enumerate}
 
     % \begin{table}[h]
     %     \caption{Command}
@@ -144,32 +150,38 @@
     動作から,中央のカメラ画像と目標方向を入力とした学習器の出力による動作へ切り替えて走
     行を行う.テスト時の目標方向は Joy stick コントローラのボタンを用いて入力する.
     テストフェーズにおける手順を下記に示す
-    \begin{enumerate}
-    \setlength{\parskip}{0cm} % 段落間
-    \setlength{\itemsep}{0cm} % 項目間
-    \item 機体に取り付けた中央のカメラから RGB 画像 ,Joy stick コントローラより目標方向の
+    1)機体に取り付けた中央のカメラから RGB 画像 ,Joy stick コントローラより目標方向の
     データを取得
-    \item 取得したデータ ( カメラ画像,目標方向 ) を学習器へ入力
-    \item 学習器の出力(角速度)をモータへ与える
-    \end{enumerate}
+    2)取得したデータ ( カメラ画像,目標方向 ) を学習器へ入力
+    3)学習器の出力(角速度)をモータへ与える
+    % \begin{enumerate}
+    % \setlength{\parskip}{0cm} % 段落間
+    % \setlength{\itemsep}{0cm} % 項目間
+    % \item 機体に取り付けた中央のカメラから RGB 画像 ,Joy stick コントローラより目標方向の
+    % データを取得
+    % \item 取得したデータ ( カメラ画像,目標方向 ) を学習器へ入力
+    % \item 学習器の出力(角速度)をモータへ与える
+    % \end{enumerate}
     \begin{center}
         \begin{figure}[h]
             \centering
-            \includegraphics[width=0.4\textwidth]{./fig/system_test.pdf}
+            \includegraphics[width=0.38\textwidth]{./fig/system_test.pdf}
             \caption{System of test}
             \label{fig:system_test}
         \end{figure}
     \end{center}
     
     \section{実\hspace{2zw}験}%===========================
-    実験はシミュレータ上で行う．
+    実験はシミュレータ上で行い，
     環境はGazebo上で作成した\reffig{bunki}で示す道幅が2.5mの十字路とし，
     使用するロボットはturtlebot3 waffleへカメラを3つ追加したモデルを用いる．
-    実験条件は「分岐路において壁に衝突せず,目標方向に対応したコースを選択」を成功，
-    「目標方向とは異なったコースを選択する,分岐路において壁に衝突」を失敗とする．
-    目標方向は
-    学習フェーズ，テストフェーズ
-    またstep数は4000[step]行った．
+    実験条件は「壁に衝突せず,目標方向に対応したコースを選択」を成功，
+    「目標方向とは異なったコースを選択する,または壁に衝突」を失敗とする．
+    目標方向は学習フェーズ，テストフェーズともに
+    図中の緑ー青間を「continue」青ー1「go straihgt」青ー2「go left」青ー3「go right」
+    を入力している．
+    step数は4000[step]行った．
+    実験結果を\reftab{suc}に示す
     % \begin{enumerate}
     %     \setlength{\parskip}{0cm} % 段落間
     %     \setlength{\itemsep}{0cm} % 項目間
@@ -185,23 +197,24 @@
             \centering
             \includegraphics[width=0.35\textwidth]{./fig/zyuziroute.pdf}
             \caption{Route of }
+            \vskip 0.1zh
             \label{fig:exp}
         \end{figure}
     \end{center}
-    % \begin{table}[t]
-    %     \caption{suc}
-    %     \label{tab:suc}
-    %     \begin{center}
-    %         \vskip 1zh
-    %         \begin{tabular}{|c|c|}
-    %             \hline
-    %             Point & Number of successes\\ \hline
-    %             $1$ & $/5$ \\ \hline
-    %             $2$ & $/5$ \\ \hline
-    %             $3$ & $/5$ \\ \hline
-    %         \end{tabular}
-    %     \end{center}
-    % \end{table}
+    \begin{table}[H]
+        \caption{suc}
+        \label{tab:suc}
+        \begin{center}
+            \vskip 0.1zh
+            \begin{tabular}{|c|c|}
+                \hline
+                Point & Number of successes\\ \hline
+                $1$ & $5/5$ \\ \hline
+                $2$ & $4/5$ \\ \hline
+                $3$ & $5/5$ \\ \hline
+            \end{tabular}
+        \end{center}
+    \end{table}
     
     % \section{数式の書き方}%===========================
     
