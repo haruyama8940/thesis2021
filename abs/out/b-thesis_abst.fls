@@ -122,8 +122,8 @@ INPUT ./fig/system_learning.pdf
 INPUT extractbb -B cropbox -O ./fig/system_learning.pdf
 INPUT ./fig/system_test.pdf
 INPUT extractbb -B cropbox -O ./fig/system_test.pdf
-INPUT ./fig/zyuziroute.pdf
-INPUT extractbb -B cropbox -O ./fig/zyuziroute.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
+INPUT ./fig/zyuziroute.pdf
+INPUT extractbb -B cropbox -O ./fig/zyuziroute.pdf
 INPUT out/b-thesis_abst.aux

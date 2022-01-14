@@ -78,7 +78,7 @@
     \begin{center}
         \begin{figure}[h]
             \centering
-            \includegraphics[width=0.40\textwidth]{./fig/system_learning.pdf}
+            \includegraphics[width=0.46\textwidth]{./fig/system_learning.pdf}
             \caption{Learning phase}
             \label{fig:system_learning}
         \end{figure}
@@ -105,12 +105,12 @@
     \begin{center}
         \begin{figure}[h]
             \centering
-            \includegraphics[width=0.38\textwidth]{./fig/system_test.pdf}
+            \includegraphics[width=0.40\textwidth]{./fig/system_test.pdf}
             \caption{Test phase}
             \label{fig:system_test}
         \end{figure}
     \end{center}
-    
+    \vspace{-1zh}
     \section{実\hspace{2zw}験}%===========================
     実験では\reffig{system_learning}，\reffig{system_test}で示すturtlebot3 waffleへカメラを3つ追加したモデルを用いる．
     環境とルートを\reffig{exp}に示す．環境はgazebo上で作成した道幅が2.5mの十字路を用い，
@@ -131,38 +131,13 @@
     %     \item コース内に設定した地点において目標方向のコマンドを入力,挙動を確認
        
     % \end{enumerate}
-    \begin{center}
-        \begin{figure}[h]
-            \centering
-            \includegraphics[width=0.34\textwidth]{./fig/zyuziroute.pdf}
-            \caption{Course and route of experiment}
-            \vskip 0.1zh
-            \label{fig:exp}
-        \end{figure}
-    \end{center}
-    \vspace{-1zh}
-    \begin{table}[h]
-        \caption{Number of successes experiment 1 point}
-        \label{tab:suc}
-        \begin{center}
-            \vskip -1zh
-            \begin{tabular}{|c|c|}
-                \hline
-                Target direction and Point & Number of successes\\ \hline
-                continue (1) & $5/5$ \\ \hline
-                go straihgt (2) & $5/5$ \\ \hline
-                go left (3) & $4/5$ \\ \hline
-                go right (4) & $5/5$ \\ \hline
-            \end{tabular}
-        \end{center}
-    \end{table}
+    
             
     \section{結\hspace{2zw}言}%===========================
     本稿ではカメラ画像と目標方向を用いたEnd-to-End学習による，
     特定のルート選択を選択可能なNavigation手法を提案し，
     実験結果から分岐路において目標方向を用いて特定のルートが選択する行動が見られた．
     
-    \vspace{5truemm}
     {\footnotesize
         \begin{thebibliography}{99}
             
@@ -196,6 +171,33 @@
             % Journal of JSDE, Vol.~53, No.~8 (2018), pp.~605--614, \url{https://doi.org/10.14953/jjsde.2017.2774}.
         \end{thebibliography}
     }
+    \begin{center}
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.38\textwidth]{./fig/zyuziroute.pdf}
+            \caption{Course and route of experiment}
+            \vskip 0.1zh
+            \label{fig:exp}
+        \end{figure}
+    \end{center}
+    \vspace{-1zh}
+    \begin{table}[h]
+        \caption{Number of successes experiment 1 point}
+        \label{tab:suc}
+        \begin{center}
+            \vskip -1zh
+            \begin{tabular}{|c|c|}
+                \hline
+                Target direction and Point & Number of successes\\ \hline
+                continue (1) & $5/5$ \\ \hline
+                go straihgt (2) & $5/5$ \\ \hline
+                go left (3) & $4/5$ \\ \hline
+                go right (4) & $5/5$ \\ \hline
+            \end{tabular}
+        \end{center}
+    \end{table}
+    \vspace{5truemm}
+    
     \normalsize
     
 \end{document}
