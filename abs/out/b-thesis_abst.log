@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2021.11.1)  15 JAN 2022 00:39
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2021.11.1)  15 JAN 2022 00:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -248,4 +248,4 @@ Here is how much of TeX's memory you used:
  264 hyphenation exceptions out of 8191
  27i,9n,26p,545b,344s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/b-thesis_abst.dvi (2 pages, 12240 bytes).
+Output written on out/b-thesis_abst.dvi (2 pages, 12232 bytes).
