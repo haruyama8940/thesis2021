@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2021.11.1)  12 JAN 2022 18:26
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2021.11.1)  15 JAN 2022 19:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -598,63 +598,55 @@ File: ./figs/navigation.pdf Graphic file (type pdf)
 <./figs/navigation.pdf>
 File: ./figs/mapbased.png Graphic file (type bmp)
 <./figs/mapbased.png>
+[13] [14]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13]
-
-LaTeX Warning: Reference `fig::learningsystem' on page 14 undefined on input line 137.
+LaTeX Warning: Reference `fig::learningsystem' on page 15 undefined on input line 137.
 
 File: ./figs/system_learning.pdf Graphic file (type pdf)
 <./figs/system_learning.pdf>
+[15]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Citation `okada' on page 14 undefined on input line 153.
+LaTeX Warning: Citation `okada' on page 16 undefined on input line 154.
 
 
-LaTeX Warning: Reference `tb::camera_ang' on page 14 undefined on input line 155.
+LaTeX Warning: Reference `tb::camera_ang' on page 16 undefined on input line 156.
 
-[14] [15]
+[16]
 
-LaTeX Warning: Reference `fig::testsystem' on page 16 undefined on input line 174.
+LaTeX Warning: Reference `fig::testsystem' on page 17 undefined on input line 175.
 
 File: ./figs/system_test.pdf Graphic file (type pdf)
 <./figs/system_test.pdf>
-[16]
+[17]
 
-LaTeX Warning: Reference `fig::methodnetwork' on page 17 undefined on input line 196.
+LaTeX Warning: Reference `fig::methodnetwork' on page 18 undefined on input line 198.
 
 
-LaTeX Warning: Reference `tb::param' on page 17 undefined on input line 197.
+LaTeX Warning: Reference `tb::param' on page 18 undefined on input line 199.
 
 File: ./figs/network.pdf Graphic file (type pdf)
 <./figs/network.pdf>
-[17])
+[18])
 \openout2 = `tex/experiment.aux'.
 
 (./tex/experiment.tex
 第4章
 
-LaTeX Warning: Citation `gazebo:online' on page 18 undefined on input line 4.
+LaTeX Warning: Citation `gazebo:online' on page 19 undefined on input line 4.
 
 
-LaTeX Warning: Citation `turtlebot3:online' on page 18 undefined on input line 5.
+LaTeX Warning: Citation `turtlebot3:online' on page 19 undefined on input line 5.
 
 
-LaTeX Warning: Reference `fig::turtlebot3' on page 18 undefined on input line 5.
+LaTeX Warning: Reference `fig::turtlebot3' on page 19 undefined on input line 5.
 
 File: ./figs/3_camera.png Graphic file (type bmp)
 <./figs/3_camera.png>
-[18
+[19
 
 
 
-] [19]
+] [20]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 38.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
@@ -664,31 +656,31 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 38.
 
-LaTeX Warning: Reference `fig::zyuzi' on page 20 undefined on input line 42.
+LaTeX Warning: Reference `fig::zyuzi' on page 21 undefined on input line 42.
 
 File: ./figs/zyuuziyoko.png Graphic file (type bmp)
 <./figs/zyuuziyoko.png>
-[20]
+[21]
 
-LaTeX Warning: Reference `fig::exp1route' on page 21 undefined on input line 52.
+LaTeX Warning: Reference `fig::exp1route' on page 22 undefined on input line 52.
 
 File: ./figs/zyuziroute.pdf Graphic file (type pdf)
 <./figs/zyuziroute.pdf>
 
-LaTeX Warning: Reference `fig::exp1route' on page 21 undefined on input line 65.
+LaTeX Warning: Reference `fig::exp1route' on page 22 undefined on input line 65.
 
 
-LaTeX Warning: Reference `tb::exp1suc' on page 21 undefined on input line 66.
+LaTeX Warning: Reference `tb::exp1suc' on page 22 undefined on input line 66.
 
-[21]
+[22]
 
-LaTeX Warning: Reference `fig::hatinozi' on page 22 undefined on input line 88.
+LaTeX Warning: Reference `fig::hatinozi' on page 23 undefined on input line 88.
 
 File: ./figs/coli.png Graphic file (type bmp)
 <./figs/coli.png>
-[22]
+[23]
 
-LaTeX Warning: Reference `fig::exp2route' on page 23 undefined on input line 98.
+LaTeX Warning: Reference `fig::exp2route' on page 24 undefined on input line 98.
 
 File: ./figs/8nozi_1.pdf Graphic file (type pdf)
 <./figs/8nozi_1.pdf>
@@ -707,24 +699,24 @@ Overfull \hbox (18.66666pt too wide) in paragraph at lines 102--142
 [][][][] 
  []
 
-[23]
+[24]
 
-LaTeX Warning: Reference `fig::bunkiban' on page 24 undefined on input line 148.
+LaTeX Warning: Reference `fig::bunkiban' on page 25 undefined on input line 148.
 
 
-LaTeX Warning: Reference `tb::exp2suc' on page 24 undefined on input line 149.
+LaTeX Warning: Reference `tb::exp2suc' on page 25 undefined on input line 149.
 
 File: ./figs/bunkiban.pdf Graphic file (type pdf)
 <./figs/bunkiban.pdf>
-[24]) [25]
+[25]) [26]
 \openout2 = `tex/conclusion.aux'.
 
 (./tex/conclusion.tex
 第5章
 
-LaTeX Warning: Citation `okada' on page 26 undefined on input line 3.
+LaTeX Warning: Citation `okada' on page 27 undefined on input line 3.
 
-) [26
+) [27
 
 
 
@@ -740,12 +732,12 @@ LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 37.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 37.
-) (./backmatter/acknowledgement.tex [27
+) (./backmatter/acknowledgement.tex [28
 
 
 
 
-])) [28
+])) [29
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
@@ -753,8 +745,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
 (out/thesis.aux (out/frontmatter/main.aux) (out/tex/introduction.aux) (out/tex/element_technology.aux) (out/tex/method.aux) (out/tex/experiment.aux) (out/tex/conclusion.aux) (out/backmatter/main.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 72.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: CC230C20DC66DDBEDFC6C51D08D07603;1930.
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: C1BA0A6903E7C03E91CBED9FCACA69DA;1880
+(rerunfilecheck)             After:  CC230C20DC66DDBEDFC6C51D08D07603;1930.
 
 LaTeX Warning: There were undefined references.
 
@@ -766,10 +764,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
 Here is how much of TeX's memory you used:
  6798 strings out of 494735
  103668 string characters out of 6176126
- 187889 words of memory out of 5000000
+ 185889 words of memory out of 5000000
  10179 multiletter control sequences out of 15000+600000
  16969 words of font info for 80 fonts, out of 8000000 for 9000
  269 hyphenation exceptions out of 8191
  36i,14n,41p,323b,687s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/thesis.dvi (35 pages, 57176 bytes).
+Output written on out/thesis.dvi (36 pages, 57480 bytes).

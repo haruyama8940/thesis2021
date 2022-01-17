@@ -9,23 +9,23 @@
 \contentsline {chapter}{\numberline {第3章}提案手法}{11}{chapter.3}
 \contentsline {section}{\numberline {3.1}提案手法の概要}{11}{section.3.1}
 \contentsline {section}{\numberline {3.2}地図ベースの制御器}{13}{section.3.2}
-\contentsline {section}{\numberline {3.3}学習フェーズ}{14}{section.3.3}
-\contentsline {section}{\numberline {3.4}テストフェーズ}{16}{section.3.4}
-\contentsline {section}{\numberline {3.5}ネットワーク構造}{17}{section.3.5}
-\contentsline {chapter}{\numberline {第4章}実験}{18}{chapter.4}
-\contentsline {section}{\numberline {4.1}実験環境}{18}{section.4.1}
-\contentsline {section}{\numberline {4.2}実験方法}{19}{section.4.2}
-\contentsline {section}{\numberline {4.3}成功失敗条件}{19}{section.4.3}
-\contentsline {section}{\numberline {4.4}実験1 十字路}{20}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}実験目的}{20}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}実験環境}{20}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}学習フェーズでの経路}{21}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}評価}{21}{subsection.4.4.4}
-\contentsline {section}{\numberline {4.5}実験2 八の字}{22}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}実験目的}{22}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}実験環境}{22}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}学習フェーズでの経路}{23}{subsection.4.5.3}
-\contentsline {subsection}{\numberline {4.5.4}評価}{24}{subsection.4.5.4}
-\contentsline {chapter}{\numberline {第5章}結論}{26}{chapter.5}
-\contentsline {chapter}{参考文献}{27}{chapter*.37}
-\contentsline {chapter}{謝辞}{28}{chapter*.38}
+\contentsline {section}{\numberline {3.3}学習フェーズ}{15}{section.3.3}
+\contentsline {section}{\numberline {3.4}テストフェーズ}{17}{section.3.4}
+\contentsline {section}{\numberline {3.5}ネットワーク構造}{18}{section.3.5}
+\contentsline {chapter}{\numberline {第4章}実験}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}実験環境}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}実験方法}{20}{section.4.2}
+\contentsline {section}{\numberline {4.3}成功失敗条件}{20}{section.4.3}
+\contentsline {section}{\numberline {4.4}実験1 十字路}{21}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}実験目的}{21}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}実験環境}{21}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}学習フェーズでの経路}{22}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}評価}{22}{subsection.4.4.4}
+\contentsline {section}{\numberline {4.5}実験2 八の字}{23}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}実験目的}{23}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}実験環境}{23}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}学習フェーズでの経路}{24}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}評価}{25}{subsection.4.5.4}
+\contentsline {chapter}{\numberline {第5章}結論}{27}{chapter.5}
+\contentsline {chapter}{参考文献}{28}{chapter*.37}
+\contentsline {chapter}{謝辞}{29}{chapter*.38}

@@ -102,27 +102,27 @@
     目標方向は「道なり」「直進」「左折」「右折」の4つとし，要素数4,次元数1のint型の配列(One-Hot ベクトル)で表現する．
     方向と配列の対応をTable \ref{tb:command_4}に示す．
     \vspace{2.0zh}
-    \begin{figure}[h]
+    \begin{figure}[H]
         \centering
-        \includegraphics[width = 12cm]{./figs/navigation.pdf}
+        \includegraphics[width = 11cm]{./figs/navigation.pdf}
         \caption{Map-based controller}
         \label{fig::navigation}
     \end{figure}
 
-    \begin{figure}[h]
+    \begin{figure}[H]
         \centering
-        \includegraphics[width = 12cm]{./figs/mapbased.png}
+        \includegraphics[width = 11cm]{./figs/mapbased.png}
         \caption{Map-based controller}
         \label{fig::mapbase}
     \end{figure}
     
     \begin{table}[h]
       \centering
-      \caption{Command}
+      \caption{Target Direction list}
       \begin{tabular}{ccccll}
       \cline{1-5}
-      \multicolumn{1}{|c|}{Target Direction} & \multicolumn{1}{c|}{con}&\multicolumn{1}{c|}{go straihgt}          & \multicolumn{1}{c|}{go left}          & \multicolumn{1}{c|}{go right}          &  \\ \cline{1-5}
-      \multicolumn{1}{|c|}{data}  &\multicolumn{1}{c|}{{[}100, 0, 0, 0{]}}& \multicolumn{1}{c|}{{[}0, 100, 0, 0{]}} & \multicolumn{1}{c|}{{[}0,0,100, 0{]}} & \multicolumn{1}{l|}{{[}0, 0, 0, 100{]}} &  \\ \cline{1-5}
+      \multicolumn{1}{|c|}{Target Direction} & \multicolumn{1}{c|}{continue}&\multicolumn{1}{c|}{go straight}          & \multicolumn{1}{c|}{turn left}          & \multicolumn{1}{c|}{turn right}          &  \\ \cline{1-5}
+      \multicolumn{1}{|c|}{Data}  &\multicolumn{1}{c|}{{[}100, 0, 0, 0{]}}& \multicolumn{1}{c|}{{[}0, 100, 0, 0{]}} & \multicolumn{1}{c|}{{[}0,0,100, 0{]}} & \multicolumn{1}{l|}{{[}0, 0, 0, 100{]}} &  \\ \cline{1-5}
                                  &                                  &                                  &                                  &  \\
                                  &                                  &                                  &                                  &  \\
       \multicolumn{1}{l}{}       &                                  &                                  &                                  & 
@@ -150,7 +150,8 @@
     \label{fig::learningsystem}
 \end{figure}
 
-  画像の取得には岡田らの研究\cite{okada}にならい，
+\newpage
+画像の取得には岡田らの研究\cite{okada}にならい，
 旋回のデータをデータセットへ加えることを目的として
 機体の中央, 中央に対して左，右に傾けて取り付けた3つのカメラを用い，Table\ref{tb::camera_ang}に示す．
 % また分岐路以外では，1つの目標方向(例として「直進」）を出力し続けた場合にデータセットへ偏りが生じる可能性が考えられるため，
@@ -175,6 +176,7 @@
 地図ベースの制御器の出力による動作から，中央のカメラ画像と目標方向を入力とした
 学習器の出力による動作へ切り替えて走行を行う．
 テスト時の目標方向の生成(方向の指示)はJoy\_stickコントローラのボタンを用いて行う．
+また，目標方向は学習フェーズと同じ形式，データを用いる．
 テストフェーズにおける手順を下記に示す．
 \begin{enumerate}
     \item 機体に取り付けた中央のカメラからRGB画像,Joy\_stickコントローラより目標方向のデータを取得
