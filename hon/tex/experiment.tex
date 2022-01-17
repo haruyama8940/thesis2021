@@ -1,8 +1,10 @@
 \chapter{実験}
 \section{実験環境}
 実験はシミュレータ上で行い，
-シミュレータ環境としてオープンソースの3DロボットシミュレータGazebo\cite{gazebo:online}を用いる．
-使用機体についてはturtlebot3\_waffle\cite{turtlebot3:online}へカメラを3つ追加したモデル\ref{fig::turtlebot3}を使用する．
+シミュレータ環境としてオープンソースの
+3DロボットシミュレータGazebo\cite{gazebo:online}を用いる．
+実験装置として，turtlebot3\_waffle\cite{turtlebot3:online}へカメラを
+3つ追加したモデル\ref{fig::turtlebot3}を用いる．
 
 \begin{figure}[H]
     \centering
@@ -23,11 +25,12 @@
   (制御：学習器の出力)
   \item コース内に設定した地点において目標方向のコマンドを入力，挙動を確認
 \end{enumerate}
-実験はコース内に設定した地点ごとにコマンドの入力による挙動の確認を5回ずつ行う． 
-　　また，用いるコースは実験ごとに異なるものを用いる．
+実験はコース内に設定した地点ごとに
+コマンドの入力による挙動の確認を5回ずつ行う． 
+また，用いるコースは実験ごとに異なるものを用いる．
 
-\section{成功失敗条件}
-実験の評価条件を下記のように定義する
+\section{実験条件}
+実験条件を下記のように定義する
 
 成功：分岐路において壁に衝突せず，コマンドに対応したコースを選択
 
@@ -70,9 +73,9 @@ Fig. \ref{fig::exp1route}で青で示した地点において，
   \begin{tabular}{|c|c|}
   \hline
   Point & Number of successes \\ \hline
-  1     & /5                  \\ \hline
-  2     & /5                  \\ \hline
-  3     & /5                  \\ \hline
+  1     & 5/5                  \\ \hline
+  2     & 4/5                  \\ \hline
+  3     & 5/5                  \\ \hline
   \end{tabular}
   
   \label{tb::exp1suc}
