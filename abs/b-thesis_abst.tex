@@ -18,18 +18,23 @@
   \title{　　　　　　視覚と行動のEnd-to-End学習により経路追従行動を　　　　　　オンラインで模倣する手法の提案}
         {(目標方向による経路選択機能の追加)}
     \etitle{A proposal for an online imitation method of path-tracking behavior   
-    by end-to-end learning of vision and action}{(Addition of path selection function by target direction.)}
+    by End-to-End learning of vision and action}{(Addition of path selection function by target direction.)}
     
     \author{18C1096\hspace{.5zw}春山健太}
     \eauthor{Kenta HARUYMA}
     
     \makeatother
     
-    \abstract{We proposed a method for acquiring autonomous driving by End-to-End learning using camera images and target directions, which can select a specific path depending on the target direction.
-    The effectiveness of the proposed method was verified by experiments using a simulator.
-    }
+    % \abstract{We have proposed a method for acquiring autonomous driving by End-to-End learning using camera images and target directions, which can select a specific path depending on the target direction.
+    % The effectiveness of the proposed method was verified by experiments using a simulator.
+    \abstract{Previous research has shown that a robot can circumnavigate a certain path by End-to-End learning using camera images as input.
+    We will Add the target direction to the dataset from the previous research and addition of path selection function for branching paths.
+    We propose a method to acquire autonomous running by End-to-End learning with camera images and target direction as input, which can select a path according to the target direction.
+    The proposed method was described in two phases: learning phase and testing phase.
+    The effectiveness of the proposed method was verified by simulator experiments using a turtlebot3 waffle and crossroad environment.  
     % カメラ画像と目標方向を用いたEnd-to-End学習を用いた走行において，目標方向によって特定の経路を選択する手法を提案した．実験により提案手法の有効性を検証した．
-    \keywords{End-to-End Learning, Target Direction}
+    }
+    \keywords{End-to-End Learning, Navigation, Target Direction}
     
     \maketitle
     
@@ -52,17 +57,16 @@
     ロボットが一定の経路を周回することが可能であると示されている．
     本研究では，岡田らの研究をベースに，\reffig{bunki}のような分岐路において，
     「直進」と「左折」などの経路選択する機能を追加することを検討する．
-    カメラ画像のみでは，「どちらへ進むか」のような経路選択に必要な情報が不足している可能性がある．
+    % カメラ画像のみでは，「どちらへ進むか」のような経路選択に必要な情報が不足している可能性がある．
     具体的には，データセットへ，従来のカメラ画像以外に「直進」「左折」などの
     目標とする進行方向の情報(本研究では”目標方向”とする )を追加する
-    ことで，経路の選択が可能であると考えられる．
+    ことで，経路の選択を行える可能性がある．
 
-    本研究では
-    目標方向によって経路の選択が可能な，
-    カメラ画像と目標方向を入力したEnd-to-End学習による自律走行を，
+    本研究では目標方向によって経路の選択が可能な，
+    カメラ画像と目標方向を入力したEnd-to-End学習による自律走行を
     獲得する手法を提案する．
-    また提案手法に基づいて構築したシステムを用いた実験を行い，
-    提案手法の有効性を検証することを目的とする．
+    また提案手法に基づいて，構築したシステムを用いた実験を行い，
+    提案手法の有効性を検証する．
     \begin{center}
         \begin{figure}[h]
             \centering
@@ -72,52 +76,54 @@
         \end{figure}
     \end{center}
     \section{提案手法}%===========================
-    提案手法は学習器の訓練を行う「学習フェーズ」と
-    訓練した学習器の出力を用いて走行する「テストフェーズ」の2つに分けられる．
-    %=======================
-    % \subsection{学習フェーズ}
-    
-    学習フェーズで用いるシステムを\reffig{system_learning}に示す.
-    LiDARとオドメトリを入力とする地図ベースの制御器による経路追従行動を，
-    カメラ画像と目標方向をEnd-to-End学習によって模倣学習を行う．
-    学習フェーズでは3つのカメラから画像を取得する．
-    % 学習器の訓練に用いるデータは(入力:カメラ画像,目標方向　目標出力:角速度)
-    地図ベースの制御器は，
-    ROS Navigation\_stack\cite{navigation}へ
-    目標方向の生成機能を追加した，LiDARとオドメトリを入力とするルールベースの制御器である．
-    目標方向は分岐路以外での「道なり」を示す(continue)，
-    分岐路を「直進(go straight)」，「左折(turn left)」，
-    「右折(turn right)」の4つとする．
-    これら4つの目標方向は，要素数4のOne-hotベクトルを用いて表現する．
-    学習器の訓練は，次の流れを1stepとして
-    設定したstep数の学習を行う．
-    \begin{table}[H]
-        \caption{T}
-        \label{tab:T}
+    目標方向によって経路の選択が可能な，
+    カメラ画像と目標方向を入力したEnd-to-End学習による自律走行の獲得
+    を目的として，岡田らの研究\cite{okada}における
+    学習器の入力及びデータセットへ目標方向を追加する．
+    提案手法で用いた目標方向とデータ形式を，\reftab{data}に示す．
+    分岐路以外での「道なり」を示す(continue)
+    分岐路を「直進(go straight)」「左折(turn left)」「右折(turn right)」の4つとする．
+    \begin{table}[h]
+        \caption{Target direction and data}
+        \label{tab:data}
         \begin{center}
-            \vskip -1zh
+            \vskip 0.5zh
             \begin{tabular}{|c|c|}
                 \hline
-                Target direction & Date\\ \hline
-                continue & $[100,0,0,0]$ \\ \hline
-                go straight & $5/5$ \\ \hline
-                A - C (turn left) & $4/5$ \\ \hline
-                A - D (turn right) & $5/5$ \\ \hline
+                Target direction & Data\\ \hline
+                continue & $[100, 0, 0, 0]$ \\ \hline
+                go straight & $[0, 100, 0, 0]$ \\ \hline
+                turn left& $[0, 0, 100, 0]$ \\ \hline
+                turn right & $[0, 0, 0, 100]$ \\ \hline
             \end{tabular}
         \end{center}
     \end{table}
+
+    提案手法は，学習器の訓練を行う「学習フェーズ」と
+    訓練した学習器の出力を用いて走行する「テストフェーズ」
+    の2つに分けられる．走行における並進速度は2つのフェーズで固定した同じ値を用いる．
+    %=======================
+    % \subsection{学習フェーズ}
+    学習フェーズで用いるシステムを\reffig{system_learning}に示す.
+    地図ベースの制御器による経路追従行動を，
+    カメラ画像と目標方向を入力とするEnd-to-End学習によって模倣する．
+    % 学習フェーズでは3つのカメラから画像を取得する．
+    地図ベースの制御器は，目標方向の生成機能を追加した
+    ROS Navigation\_stack\cite{navigation}であり，LiDARとオドメトリを入力とするルールベースの制御器である．
+    学習器の訓練は，「訓練データ(カメラ画像,目標方向)を学習器へ入力し，結果を出力(角速度)」を1stepとして,
+    設定したstep数行う．
     % 1)LiDARとオドメトリから得たデータを入力とする地図ベースの制御器の出力を用いて自律走行する．
     % 2)地図ベースの制御器の出力からヨー方向の角速度と目標方向,ロボットに取り付けた3つのカメラから
     % RGB画像を取得し,訓練データへ加える．
     % 3)訓練データ(入力:カメラ画像,目標方向 目標出力:角速度)を用いてEnd-to-End学習を行い，学習器の出力を記録．
-    \begin{enumerate}
-        \setlength{\parskip}{0cm} % 段落間
-        \setlength{\itemsep}{0cm} % 項目間
-        \item LiDARとオドメトリから得たデータを入力とする地図ベースの制御器の出力を用いて自律走行する
-        \item 地図ベースの制御器の出力からヨー方向の角速度と目標方向,ロボットに取り付けた3つのカメラから
-        RGB画像を取得し,訓練データへ加える．
-        \item 訓練データ(入力:カメラ画像,目標方向 目標出力:角速度)を用いてEnd-to-End学習を行い，学習器の出力を記録
-        \end{enumerate}
+    % \begin{enumerate}
+    %     \setlength{\parskip}{0cm} % 段落間
+    %     \setlength{\itemsep}{0cm} % 項目間
+    %     \item LiDARとオドメトリから得たデータを入力とする地図ベースの制御器の出力を用いて自律走行する
+    %     \item 地図ベースの制御器の出力からヨー方向の角速度と目標方向,ロボットに取り付けた3つのカメラから
+    %     RGB画像を取得し,訓練データへ加える．
+    %     \item 訓練データ(入力:カメラ画像,目標方向 目標出力:角速度)を用いてEnd-to-End学習を行い，学習器の出力を記録
+    %     \end{enumerate}
     \begin{center}
         \begin{figure}[h]
             \centering
@@ -128,13 +134,11 @@
     \end{center}
     %=========================
     % \subsection{テストフェーズ}
-    
     設定したstep数に達した場合，
     \reffig{system_test}に示すテストフェーズへ移行する．
     % テストフェーズでの目標方向は，Joystickコントローラのボタンを用いて入力する．
     テストフェーズでは，目標方向とカメラ画像を学習器へ入力し，
-    学習器の出力(角速度)を用いて走行する．
-    またその際の並進速度は，学習フェーズと同じ固定の値を用いる．
+    学習器の出力(角速度)を用いて自律走行する．
     % \begin{enumerate}
     % \setlength{\parskip}{0cm} % 段落間
     % \setlength{\itemsep}{0cm} % 項目間
@@ -145,39 +149,37 @@
     \begin{center}
         \begin{figure}[h]
             \centering
-            \includegraphics[width=5.7cm]{./fig/system_test.pdf}
+            \includegraphics[width=6.1cm]{./fig/system_test.pdf}
             \caption{Test phase}
             \label{fig:system_test}
         \end{figure}
     \end{center}
     \vspace{-1zh}
     \section{実\hspace{2zw}験}%=========================検証
-    提案手法の有効性の検証を検証するために，
+    提案手法の有効性の検証のため，
     3DロボットシミュレータGazebo上で実験を行う．
-    環境は\reffig{exp}に示す道幅が2.5[m]の十字路を用いる．
-    また，実験装置として\reffig{system_learning},\reffig{system_test}で示した
+    実験装置として\reffig{system_learning},\reffig{system_test}で示した
     Turtlebot3 waffleへカメラを3つ追加したモデルを用いる．
-    実験は下記の手順でnを1,2,3と順に変更しながら，
-    学習フェーズではstep数を4000[step]，
-    訓練フェーズでは並進速度は0.2[m/s]として各経路を5回
-    繰り返し行う．
+    \reffig{exp}に用いた環境，経路と入力する目標方向を示す．
+    環境は道幅が2.5[m]の十字路を用いる．
+    実験は下記の手順で，経路をStart-Aを固定し，目標地点をB,C,Dと変更して
+    学習フェーズではstep数を6000[step]，訓練フェーズでは各経路を10回走行する．
+    並進速度は0.2[m/s]とした．
     \begin{enumerate}
         \setlength{\parskip}{0cm} % 段落間
         \setlength{\itemsep}{0cm} % 項目間
-        \item 初期位置(緑)へロボットを設置．
-        \item Start - A - (B,C,D)．
+        \item Start(青)へロボットを設置
+        \item Start - A - Target point(B,C,D)
         \end{enumerate}
-    % 目標方向は学習フェーズ，テストフェーズともに
-    % Start-A(continue)，A-B(go straight)，A-C(turn left)
-    % ，A-D(turn right)を入力する．
-    実験条件はテストフェーズにおいて「壁に衝突せず,指定したゴールへ到達」を成功，
+    実験条件は，
+    テストフェーズにおいて「壁に衝突せず,指定した目標地点へ到達」を成功
     「目標方向とは異なった経路を選択,または壁に衝突」を失敗とする．
     \begin{center}
         \begin{figure}[h]
             \centering
-            \includegraphics[width = 7cm]{./fig/zyuziroute.pdf}
+            \includegraphics[width = 6.7cm]{./fig/zyuziroute.pdf}
             
-            \caption{Environment for experiment}
+            \caption{Environment and route for experiment}
             \vskip 0.1zh
             \label{fig:exp}
         \end{figure}
@@ -193,29 +195,27 @@
     % \end{enumerate}
    \section{実験結果}
    実験結果を\reftab{suc}に示す．
-   A-C(turn left)以外の各経路では
-   全ての回数で特定の経路の選択に成功し，
-   目標方向に対応した特定の経路を選択する行動が見られた．
+   結果から，目標方向によって経路を選択する提案手法の有効性が確認できた．
    \begin{table}[H]
-    \caption{Number of successes experiment  point}
+    \caption{Number of successes experiment}
     \label{tab:suc}
     \begin{center}
         \vskip -1zh
         \begin{tabular}{|c|c|}
             \hline
             Route and Target direction & Number of successes\\ \hline
-            Start - A (continue) & $5/5$ \\ \hline
-            A - B (go straight) & $5/5$ \\ \hline
-            A - C (turn left) & $4/5$ \\ \hline
-            A - D (turn right) & $5/5$ \\ \hline
+            Start - A (continue) & $10/10$ \\ \hline
+            A - B (go straight) & $10/10$ \\ \hline
+            A - C (turn left) & $10/10$ \\ \hline
+            A - D (turn right) & $10/10$ \\ \hline
         \end{tabular}
     \end{center}
 \end{table}
     \section{結\hspace{2zw}言}%===========================
-    本稿では，目標方向によって特定の経路を選択可能な，
-    カメラ画像と目標方向を入力したEnd-to-End学習による自律走行を，
+    本稿では，目標方向によって経路を選択可能な，
+    カメラ画像と目標方向を入力とするEnd-to-End学習による自律走行を
     獲得する手法を提案した．
-    シミュレータを用いた実験により，提案手法の有効性を検証した．
+    またシミュレータを用いた実験により，提案手法の有効性を検証した．
     
     {\footnotesize
         \begin{thebibliography}{99}

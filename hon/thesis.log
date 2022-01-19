@@ -1,11 +1,11 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2021.11.1)  17 JAN 2022 17:14
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2021.12.28)  18 JAN 2022 02:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (./thesis.tex
 pLaTeX2e <2017/10/28>+4 (based on LaTeX2e <2017-04-15>)
-Babel <3.18> and hyphenation patterns for 26 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/platex/jsclasses/jsbook.cls
 Document Class: jsbook 2017/10/04 jsclasses (okumura, texjporg)
 \jsc@mpt=\dimen118
@@ -704,12 +704,12 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
  ) 
 Here is how much of TeX's memory you used:
- 6814 strings out of 494735
- 103877 string characters out of 6176126
- 190019 words of memory out of 5000000
- 10182 multiletter control sequences out of 15000+600000
+ 6814 strings out of 493640
+ 103877 string characters out of 6150527
+ 193298 words of memory out of 5000000
+ 10279 multiletter control sequences out of 15000+600000
  16455 words of font info for 78 fonts, out of 8000000 for 9000
- 269 hyphenation exceptions out of 8191
+ 934 hyphenation exceptions out of 8191
  36i,14n,41p,291b,687s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on thesis.dvi (37 pages, 85960 bytes).
