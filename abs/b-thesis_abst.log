@@ -1,11 +1,11 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2021.12.28)  21 JAN 2022 05:28
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2021.11.1)  21 JAN 2022 19:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **b-thesis_abst.tex
 (./b-thesis_abst.tex
 pLaTeX2e <2017/10/28>+4 (based on LaTeX2e <2017-04-15>)
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 26 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/platex/base/jarticle.cls
 Document Class: jarticle 2017/09/19 v1.7g Standard pLaTeX class
 \c@@paper=\count82
@@ -227,42 +227,34 @@ Overfull \hbox (8.53581pt too wide) in paragraph at lines 41--41
 
 File: ./fig/zyuzibunki.png Graphic file (type bmp)
 <./fig/zyuzibunki.png>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1
-
-
-
-]
 File: ./fig/system_learning_app.pdf Graphic file (type pdf)
 <./fig/system_learning_app.pdf>
 
-Overfull \hbox (3.12979pt too wide) in paragraph at lines 214--215
+Overfull \hbox (3.12979pt too wide) in paragraph at lines 174--175
  [][] 
  []
 
 File: ./fig/system_test_app.pdf Graphic file (type pdf)
 <./fig/system_test_app.pdf>
+[1
+
+
+
+]
 File: ./fig/zyuziroute.pdf Graphic file (type pdf)
 <./fig/zyuziroute.pdf>
-
-Overfull \hbox (8.00806pt too wide) in paragraph at lines 257--265
- [][][] 
- []
-
-[2] (./b-thesis_abst.aux)
+ [2] (./b-thesis_abst.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 2000 strings out of 493640
- 23503 string characters out of 6150527
- 90006 words of memory out of 5000000
- 5581 multiletter control sequences out of 15000+600000
+ 2000 strings out of 494735
+ 23503 string characters out of 6176126
+ 85727 words of memory out of 5000000
+ 5484 multiletter control sequences out of 15000+600000
  16332 words of font info for 64 fonts, out of 8000000 for 9000
- 929 hyphenation exceptions out of 8191
- 27i,10n,26p,228b,326s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 264 hyphenation exceptions out of 8191
+ 27i,10n,26p,228b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on b-thesis_abst.dvi (2 pages, 12472 bytes).
+Output written on b-thesis_abst.dvi (2 pages, 11792 bytes).
