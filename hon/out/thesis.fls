@@ -168,8 +168,8 @@ INPUT ./figs/system_learning_okada.pdf
 INPUT extractbb -B cropbox -O ./figs/system_learning_okada.pdf
 INPUT ./figs/okada_path.png
 INPUT extractbb -B cropbox -O ./figs/okada_path.png
-INPUT ./figs/system_test_okada.pdf
-INPUT extractbb -B cropbox -O ./figs/system_test_okada.pdf
+INPUT ./figs/okada_method_test.pdf
+INPUT extractbb -B cropbox -O ./figs/okada_method_test.pdf
 OUTPUT out/tex/method.aux
 INPUT tex/method.tex
 INPUT tex/method.tex
@@ -198,20 +198,26 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT ./figs/zyuziroute.pdf
 INPUT extractbb -B cropbox -O ./figs/zyuziroute.pdf
+INPUT ./figs/exp1_result.png
+INPUT extractbb -B cropbox -O ./figs/exp1_result.png
 INPUT ./figs/coli.png
 INPUT extractbb -B cropbox -O ./figs/coli.png
-INPUT ./figs/8nozi_1.pdf
-INPUT extractbb -B cropbox -O ./figs/8nozi_1.pdf
-INPUT ./figs/8nozi_2.pdf
-INPUT extractbb -B cropbox -O ./figs/8nozi_2.pdf
-INPUT ./figs/8nozi_3.pdf
-INPUT extractbb -B cropbox -O ./figs/8nozi_3.pdf
-INPUT ./figs/8nozi_4.pdf
-INPUT extractbb -B cropbox -O ./figs/8nozi_4.pdf
-INPUT ./figs/8nozi_5.pdf
-INPUT extractbb -B cropbox -O ./figs/8nozi_5.pdf
-INPUT ./figs/8nozi_6.pdf
-INPUT extractbb -B cropbox -O ./figs/8nozi_6.pdf
+INPUT ./figs/8nozi_route-r1.pdf
+INPUT extractbb -B cropbox -O ./figs/8nozi_route-r1.pdf
+INPUT ./figs/8nozi_route-r2.pdf
+INPUT extractbb -B cropbox -O ./figs/8nozi_route-r2.pdf
+INPUT ./figs/8nozi_route-r3.pdf
+INPUT extractbb -B cropbox -O ./figs/8nozi_route-r3.pdf
+INPUT ./figs/8nozi_route-r4.pdf
+INPUT extractbb -B cropbox -O ./figs/8nozi_route-r4.pdf
+INPUT ./figs/8nozi_route-r5.pdf
+INPUT extractbb -B cropbox -O ./figs/8nozi_route-r5.pdf
+INPUT ./figs/8nozi_route-r6.pdf
+INPUT extractbb -B cropbox -O ./figs/8nozi_route-r6.pdf
+INPUT ./figs/8nizi_cap.pdf
+INPUT extractbb -B cropbox -O ./figs/8nizi_cap.pdf
+INPUT ./figs/exp2_result.png
+INPUT extractbb -B cropbox -O ./figs/exp2_result.png
 OUTPUT out/tex/conclusion.aux
 INPUT tex/conclusion.tex
 INPUT tex/conclusion.tex
@@ -220,8 +226,8 @@ INPUT backmatter/main.tex
 INPUT backmatter/main.tex
 INPUT thesis.bbl
 INPUT thesis.bbl
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT backmatter/acknowledgement.tex
 INPUT backmatter/acknowledgement.tex
 INPUT out/thesis.aux

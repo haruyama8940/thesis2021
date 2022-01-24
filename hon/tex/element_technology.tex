@@ -10,12 +10,12 @@ Deep learningは近年，自然言語処理など様々な分野で利用され�
 \begin{figure}[h]
     \centering
     \includegraphics[width = 12cm]{./figs/net.pdf}
-    \caption{Neual Network}
+    \caption{Neual network}
     \label{fig::network}
 \end{figure}
 
-\section{End-to-End学習}
-End-to-Endとは「端から端まで」という，
+\section{end-to-end学習}
+end-to-endとは「端から端まで」という，
 Fig. \ref{fig::e2e}に示すように生データ(入力)から目的の結果(出力)を得るために必要な多段階の処理をNeusal Networkを用いて直接学習を行うものである．
 例として，実世界における自動運転では人物や障害物などの物体認識，走行レーンの検出，経路計画，ステアリング制御
 などの人間が設定した複数個のタスクを解く必要があるが，End-to-End学習では先程のタスクを人間が直接設定せずに
@@ -25,7 +25,7 @@ Fig. \ref{fig::e2e}に示すように生データ(入力)から目的の結果(�
 \begin{figure}[h]
     \centering
     \includegraphics[width = 10cm]{./figs/e2e.pdf}
-    \caption{Structure of End-to-End learning}
+    \caption{Structure of end-to-end learning}
     \label{fig::e2e}
 \end{figure}
 
@@ -62,7 +62,7 @@ Krizhevskら\cite{Imagenet}はFig. \ref{fig::alex}で示すような3つの畳�
     \label{seigyo}
     従来手法と提案手法において教師信号として用いる地図ベースの制御器について述べる．
     % 概要をFig. \ref{fig::navigation}に示す．
-    地図べースの制御器は，ROS Navigation\_stack\cite{navigation:online}へ目標への経由地点(waypoint)の指示を行うwaypoint\_navを組み合わせたものである
+    地図べースの制御器は，ROS Navigation\_stack\cite{navigation:online}へ目標への経由地点(waypoint)の指示を行うwaypoint\_navを組み合わせたものである．
     ROS navigation\_stackは\ref{fig::mapbase}に示すように，LiDARとオドメトリを
     用いて，事前に作成した地図上の自己位置推定をParticle\_Filterによって確率的に行う「amcl」．
     障害物認識などの局所的または地図全体の大域的なコスト計算と，
@@ -104,7 +104,7 @@ LiDARとオドメトリを入力する地図ベースの制御器により自律
 \begin{figure}[h]
     \centering
     \includegraphics[width = 12cm]{./figs/system_learning_okada.pdf}
-    \caption{okada m}
+    \caption{Learning phase of conventional method}
     \label{fig::okada_method_ler}
 \end{figure}
 
@@ -128,7 +128,7 @@ Table\ref{tb::camera_ang}に示すような処理を行う．
 \begin{figure}[h]
     \centering
     \includegraphics[width = 10cm]{./figs/okada_path.png}
-    \caption{okada m}
+    \caption{Collects the rule-based actions the robot's actions from \cite{okada}}
     \label{fig::okada_path}
 \end{figure}
 
@@ -138,7 +138,7 @@ Table\ref{tb::camera_ang}に示すような処理を行う．
 なお，テストフェーズでは中央のカメラのみを用いる．
 \begin{figure}[h]
     \centering
-    \includegraphics[width = 10cm]{./figs/system_test_okada.pdf}
-    \caption{okada m}
+    \includegraphics[width = 10cm]{./figs/okada_method_test.pdf}
+    \caption{Test phase of conventional method}
     \label{fig::okada_method_test}
 \end{figure}

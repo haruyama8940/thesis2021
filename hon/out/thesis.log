@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2021.12.28)  24 JAN 2022 09:15
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2021.11.1)  24 JAN 2022 20:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **/home/haru/souko/thesis2021/hon/thesis.tex
 (/home/haru/souko/thesis2021/hon/thesis.tex
 pLaTeX2e <2017/10/28>+4 (based on LaTeX2e <2017-04-15>)
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 26 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/platex/jsclasses/jsbook.cls
 Document Class: jsbook 2017/10/04 jsclasses (okumura, texjporg)
 \jsc@mpt=\dimen118
@@ -401,98 +401,95 @@ LaTeX Warning: Citation `Nvidia' on page 1 undefined on input line 14.
 LaTeX Warning: Citation `okada' on page 2 undefined on input line 19.
 
 
-LaTeX Warning: Reference `fig::okada_sys' on page 2 undefined on input line 20.
+LaTeX Warning: Reference `fig::okada' on page 2 undefined on input line 19.
 
 
-LaTeX Warning: Reference `fig::okada' on page 2 undefined on input line 26.
+LaTeX Warning: Reference `fig::okada_sys' on page 2 undefined on input line 21.
 
 File: ./figs/okada_sys.png Graphic file (type bmp)
 <./figs/okada_sys.png>
 
-LaTeX Warning: Citation `okada' on page 2 undefined on input line 30.
+LaTeX Warning: Citation `okada' on page 2 undefined on input line 27.
 
 
-LaTeX Warning: Citation `okada' on page 2 undefined on input line 30.
+LaTeX Warning: Citation `okada' on page 2 undefined on input line 27.
 
 File: ./figs/okada.png Graphic file (type bmp)
 <./figs/okada.png>
 
-LaTeX Warning: Citation `okada' on page 2 undefined on input line 37.
+LaTeX Warning: Citation `okada' on page 2 undefined on input line 34.
 
 
-LaTeX Warning: Citation `okada' on page 2 undefined on input line 37.
+LaTeX Warning: Citation `okada' on page 2 undefined on input line 34.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 41.
+(Font)              <7> on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 41.
+(Font)              <5> on input line 38.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 41.
+(Font)              scaled to size 6.72699pt on input line 38.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 41.
+(Font)              scaled to size 4.805pt on input line 38.
 [2]
 
-LaTeX Warning: Citation `okada' on page 3 undefined on input line 44.
+LaTeX Warning: Citation `okada' on page 3 undefined on input line 41.
 
 
-LaTeX Warning: Reference `fig::bunki' on page 3 undefined on input line 44.
-
-
-LaTeX Warning: Citation `pomeru' on page 3 undefined on input line 46.
+LaTeX Warning: Reference `fig::bunki' on page 3 undefined on input line 41.
 
 File: ./figs/bunki.pdf Graphic file (type pdf)
 <./figs/bunki.pdf>
 [3]
 
-LaTeX Warning: Reference `fig::topo' on page 4 undefined on input line 57.
+LaTeX Warning: Reference `fig::topo' on page 4 undefined on input line 55.
 
 
-LaTeX Warning: Reference `fig::sina' on page 4 undefined on input line 60.
+LaTeX Warning: Reference `fig::sina' on page 4 undefined on input line 57.
 
 File: ./figs/topo.png Graphic file (type bmp)
 <./figs/topo.png>
 
-LaTeX Warning: Citation `razikon' on page 4 undefined on input line 67.
+LaTeX Warning: Citation `simada' on page 4 undefined on input line 63.
 
 
-LaTeX Warning: Citation `razikon' on page 4 undefined on input line 67.
+LaTeX Warning: Citation `simada' on page 4 undefined on input line 63.
 
 File: ./figs/sina.png Graphic file (type bmp)
 <./figs/sina.png>
 
-LaTeX Warning: Citation `razikon' on page 4 undefined on input line 73.
+LaTeX Warning: Citation `simada' on page 4 undefined on input line 69.
 
 
-LaTeX Warning: Citation `razikon' on page 4 undefined on input line 73.
+LaTeX Warning: Citation `simada' on page 4 undefined on input line 69.
 
 [4] [5]
 
-LaTeX Warning: Citation `razikon' on page 6 undefined on input line 89.
+LaTeX Warning: Citation `razikon' on page 6 undefined on input line 86.
 
 
-LaTeX Warning: Reference `fig::Conditional_Imitation_Learning' on page 6 undefined on input line 90.
+LaTeX Warning: Reference `fig::Conditional_Imitation_Learning' on page 6 undefined on input line 87.
 
 File: ./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf Graphic file (type pdf)
 <./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf>
 
-LaTeX Warning: Citation `razikon' on page 6 undefined on input line 95.
+LaTeX Warning: Citation `razikon' on page 6 undefined on input line 92.
 
 
-LaTeX Warning: Citation `razikon' on page 6 undefined on input line 95.
+LaTeX Warning: Citation `razikon' on page 6 undefined on input line 92.
 
 
-LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 99.
+LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 96.
 
 
-LaTeX Warning: Reference `fig::nagoyaabst' on page 6 undefined on input line 99.
+LaTeX Warning: Reference `fig::nagoyaabst' on page 6 undefined on input line 96.
 
 File: ./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutional_Neural_Network_abst.pdf Graphic file (type pdf)
 <./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutional_Neural_Network_abst.pdf>
 
-LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 106.
+LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 103.
 
 
-LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 106.
+LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 103.
 
 [6]) [7]
 \openout2 = `tex/element_technology.aux'.
@@ -553,12 +550,18 @@ LaTeX Warning: Reference `fig::okada_path' on page 13 undefined on input line 12
 
 File: ./figs/okada_path.png Graphic file (type bmp)
 <./figs/okada_path.png>
+
+LaTeX Warning: Citation `okada' on page 13 undefined on input line 131.
+
+
+LaTeX Warning: Citation `okada' on page 13 undefined on input line 131.
+
 [13]
 
 LaTeX Warning: Reference `fig::okada_method_test' on page 14 undefined on input line 136.
 
-File: ./figs/system_test_okada.pdf Graphic file (type pdf)
-<./figs/system_test_okada.pdf>
+File: ./figs/okada_method_test.pdf Graphic file (type pdf)
+<./figs/okada_method_test.pdf>
 ) [14]
 \openout2 = `tex/method.aux'.
 
@@ -584,7 +587,7 @@ File: ./figs/ler_abs.pdf Graphic file (type pdf)
 LaTeX Warning: Reference `fig::testsystem' on page 17 undefined on input line 88.
 
 
-LaTeX Warning: Reference `fig::test_abs' on page 17 undefined on input line 89.
+LaTeX Warning: Reference `fig::test_abs' on page 17 undefined on input line 90.
 
 File: ./figs/system_test.pdf Graphic file (type pdf)
 <./figs/system_test.pdf>
@@ -592,19 +595,19 @@ File: ./figs/test_abs.pdf Graphic file (type pdf)
 <./figs/test_abs.pdf>
 [17]
 
-LaTeX Warning: Reference `fig::cmd_4' on page 18 undefined on input line 118.
+LaTeX Warning: Reference `fig::cmd_4' on page 18 undefined on input line 121.
 
 File: ./figs/cmd_4.pdf Graphic file (type pdf)
 <./figs/cmd_4.pdf>
 
-LaTeX Warning: Reference `tb:command_4' on page 18 undefined on input line 130.
+LaTeX Warning: Reference `tb:command_4' on page 18 undefined on input line 133.
 
 [18]
 
-LaTeX Warning: Reference `fig::methodnetwork' on page 19 undefined on input line 165.
+LaTeX Warning: Reference `fig::methodnetwork' on page 19 undefined on input line 168.
 
 
-LaTeX Warning: Reference `tb::param' on page 19 undefined on input line 166.
+LaTeX Warning: Reference `tb::param' on page 19 undefined on input line 169.
 
 File: ./figs/network.pdf Graphic file (type pdf)
 <./figs/network.pdf>
@@ -645,37 +648,50 @@ File: ./figs/zyuziroute.pdf Graphic file (type pdf)
 
 LaTeX Warning: Reference `tb::exp1suc' on page 22 undefined on input line 74.
 
-[22] [23]
 
-LaTeX Warning: Reference `fig::hatinozi' on page 24 undefined on input line 112.
+LaTeX Warning: Reference `fig::exp1_result' on page 22 undefined on input line 76.
+
+[22]
+File: ./figs/exp1_result.png Graphic file (type bmp)
+<./figs/exp1_result.png>
+[23]
+
+LaTeX Warning: Reference `fig::hatinozi' on page 24 undefined on input line 119.
 
 File: ./figs/coli.png Graphic file (type bmp)
 <./figs/coli.png>
 [24]
 
-LaTeX Warning: Reference `fig::exp2route' on page 25 undefined on input line 121.
+LaTeX Warning: Reference `fig::exp2route' on page 25 undefined on input line 128.
 
-File: ./figs/8nozi_1.pdf Graphic file (type pdf)
-<./figs/8nozi_1.pdf>
-File: ./figs/8nozi_2.pdf Graphic file (type pdf)
-<./figs/8nozi_2.pdf>
-File: ./figs/8nozi_3.pdf Graphic file (type pdf)
-<./figs/8nozi_3.pdf>
-File: ./figs/8nozi_4.pdf Graphic file (type pdf)
-<./figs/8nozi_4.pdf>
-File: ./figs/8nozi_5.pdf Graphic file (type pdf)
-<./figs/8nozi_5.pdf>
-File: ./figs/8nozi_6.pdf Graphic file (type pdf)
-<./figs/8nozi_6.pdf>
+File: ./figs/8nozi_route-r1.pdf Graphic file (type pdf)
+<./figs/8nozi_route-r1.pdf>
+File: ./figs/8nozi_route-r2.pdf Graphic file (type pdf)
+<./figs/8nozi_route-r2.pdf>
+File: ./figs/8nozi_route-r3.pdf Graphic file (type pdf)
+<./figs/8nozi_route-r3.pdf>
+File: ./figs/8nozi_route-r4.pdf Graphic file (type pdf)
+<./figs/8nozi_route-r4.pdf>
+File: ./figs/8nozi_route-r5.pdf Graphic file (type pdf)
+<./figs/8nozi_route-r5.pdf>
+File: ./figs/8nozi_route-r6.pdf Graphic file (type pdf)
+<./figs/8nozi_route-r6.pdf>
+File: ./figs/8nizi_cap.pdf Graphic file (type pdf)
+<./figs/8nizi_cap.pdf>
 
-Overfull \hbox (18.66666pt too wide) in paragraph at lines 123--163
+Overfull \hbox (18.66666pt too wide) in paragraph at lines 132--175
 [][][][] 
  []
 
 [25]
 
-LaTeX Warning: Reference `tb::exp2suc' on page 26 undefined on input line 169.
+LaTeX Warning: Reference `tb::exp2suc' on page 26 undefined on input line 182.
 
+
+LaTeX Warning: Reference `fig::exp2_result' on page 26 undefined on input line 184.
+
+File: ./figs/exp2_result.png Graphic file (type bmp)
+<./figs/exp2_result.png>
 ) [26]
 \openout2 = `tex/conclusion.aux'.
 
@@ -692,20 +708,29 @@ LaTeX Warning: Citation `okada' on page 27 undefined on input line 4.
 \openout2 = `backmatter/main.aux'.
 
 (./backmatter/main.tex (./thesis.bbl
+Missing character: There is no ^^e2 in font cmr10!
+Missing character: There is no ^^80 in font cmr10!
+Missing character: There is no ^^93 in font cmr10!
+Missing character: There is no ^^e2 in font cmr10!
+Missing character: There is no ^^80 in font cmr10!
+Missing character: There is no ^^93 in font cmr10!
+Missing character: There is no ^^e2 in font cmr10!
+Missing character: There is no ^^80 in font cmr10!
+Missing character: There is no ^^93 in font cmr10!
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 37.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 37.
+(Font)              scaled to size 9.60999pt on input line 31.
 LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 37.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 37.
-) (./backmatter/acknowledgement.tex [28
+(Font)              scaled to size 9.60999pt on input line 31.
+[28
 
 
 
 
-])) [29
+]) (./backmatter/acknowledgement.tex [29])) [30
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 76.
@@ -719,8 +744,8 @@ Package rerunfilecheck Warning: File `thesis.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: 2C14E0362BECAED5C4E089A7C6CA8445;1751
-(rerunfilecheck)             After:  532267C5AE4555D49CF56F6424246E36;1801.
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  89F4A51CAF24D2E794FC4E7F69D07266;1801.
 
 LaTeX Warning: There were undefined references.
 
@@ -730,12 +755,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
  ) 
 Here is how much of TeX's memory you used:
- 6787 strings out of 493640
- 103431 string characters out of 6150527
- 189168 words of memory out of 5000000
- 10267 multiletter control sequences out of 15000+600000
+ 6792 strings out of 494735
+ 103739 string characters out of 6176126
+ 185889 words of memory out of 5000000
+ 10172 multiletter control sequences out of 15000+600000
  16969 words of font info for 80 fonts, out of 8000000 for 9000
- 934 hyphenation exceptions out of 8191
+ 269 hyphenation exceptions out of 8191
  36i,15n,41p,321b,687s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/thesis.dvi (36 pages, 56244 bytes).
+Output written on out/thesis.dvi (37 pages, 56516 bytes).

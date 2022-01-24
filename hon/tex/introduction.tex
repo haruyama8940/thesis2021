@@ -1,7 +1,7 @@
 \chapter{序論}
 \section{背景}
-近年，様々なセンサを用いた移動ロボットの自律移動に関する研究が盛んに行われており，
-その中でカメラ画像を用いてロボットへ自律移動を行わせる研究も行われている．
+近年，様々なセンサを用いた自律走行に関する研究が盛んに行われており，
+その中でカメラ画像を用いてロボットへ自律走行を行わせる研究も行われている．
 %\index{うえだ@上田}
 %例として，\cite{上田2015gihyo,ueda2015,上田2015jsai}がある．
 Bojaskiら\cite{Nvidia}は
@@ -16,14 +16,11 @@ Fig. \ref{fig::nvidia}で示す方法で，人間のハンドル操作による�
 \end{figure}
 
 \newpage
-本研究室においても岡田ら\cite{okada}によって
-Fig. \ref{fig::okada_sys}に示すシステム
-LiDAR,オドメトリなどの入力とした地図べースの制御器の出力による自律走行を行い
-その際にロボットから取得したカメラ画像を入力，ルールベース制御器の出力した角速度を目標出力として学習器の訓練を行い，
-訓練後にはカメラ画像を入力を学習器へ入力し，
-その出力を用いて走行を行う．
-ルールベース制御器を用いてデータセット収集における労力の削減と経路へ戻る行動が学習可能な
-Fig.\ref{fig::okada}で示すルールベース制御器の経路追従行動を模倣する手法が提案されている．
+本研究室においても岡田ら\cite{okada}はFig. \ref{fig::okada}に示すような経路追従行動を，
+行動を模倣し，カメラ画像を用いた経路追従行動を獲得した．
+研究ではFig. \ref{fig::okada_sys}に示すように，
+LiDAR,オドメトリの入力としたルールベース制御器(後述する"地図べースの制御器")による経路追従行動を行い，
+その行動をカメラ画像を用いてend-to-endで模倣学習している．
 \begin{figure}[h]
     \centering
     \includegraphics[width = 10cm]{./figs/okada_sys.png}
@@ -34,17 +31,17 @@ Fig.\ref{fig::okada}で示すルールベース制御器の経路追従行動を
 \begin{figure}[h]
     \centering
     \includegraphics[width = 10cm]{./figs/okada.png}
-    \caption{A robot that follows a path using vision based on the proposed method\cite{okada}}
+    \caption{A robot that follows a path using vision based from \cite{okada}}
     \label{fig::okada}
 \end{figure}
 
 \newpage
 上記の研究により，カメラ画像用いてロボットが学習した経路を
 周回可能であることが確認されている．
-次に岡田ら\cite{okada}研究をベースに，Fig. \ref{fig::bunki}のような分岐路において経路選択をする機能の追加を検討する．
-画像のみを入力としたネットワークでは，分岐路においてネットワークが2つの方向を出力してしまい，
-左右に車体を向ける振動が発生してしまう事象がDean A. Pomerleauら\cite{pomeru}によって確認されている．
-そこで経路を選択するために必要な情報の検討を行う．
+次に岡田ら\cite{okada}の研究(本研究では”従来手法”と呼ぶ)をベースに，Fig. \ref{fig::bunki}のような分岐路において経路選択をする機能の追加を検討する．
+% 画像のみを入力としたネットワークでは，分岐路においてネットワークが2つの方向を出力してしまい，
+% 左右に車体を向ける振動が発生してしまう事象がDean A. Pomerleauら\cite{pomeru}によって確認されている．
+% そこで経路を選択するために必要な情報の検討を行う．
  \vspace{4.0zh}
 \begin{figure}[h]
     \centering
@@ -53,29 +50,29 @@ Fig.\ref{fig::okada}で示すルールベース制御器の経路追従行動を
     \label{fig::bunki}
 \end{figure}
 \newpage
-島田らは人間の交差点などの目印に基づいて目的地まで移動する能力を，
-トポロジカルマップというFig. \ref{fig::topo}に示す．
-1) ID2) Type(通路の特徴)3) Edge(エッジの ID と相対角度)の情報をもつ
-分岐路などの目印(エッジ)とそのつながり(ノード)を表現する簡易的な地図と，
-シナリオという\ref{fig::sina}で示す，トポロジカルマップに基づいて
-「次の角まで」のような「条件」と「直進」などの「行動」の組み合わせで作成した経路の情報の
-2つを用いて表現する手法を提案している．
-この研究により，「直進」「右折」などの情報を用いることで経路を選択することが可能であると示されている．
+島田らは人が目的地までの移動に用いる道案内の情報を，
+トポロジカルマップとシナリオを用いて表現する手法を提案している．
+トポロジカルマップとはFig. \ref{fig::topo}に示す通路の特徴とエッジの情報をもち、
+分岐路などの目印(エッジ)とそのつながり(ノード)を簡易的に表現した地図である，
+シナリオは\ref{fig::sina}に示すトポロジカルマップを用いて，
+「次の角まで」のような「条件」と「直進」などの「行動」の組み合わせた経路の情報である．
+この研究により，「直進」「右折」などの情報で経路を選択することが可能であると示されている．
 \begin{figure}[H]
     \centering
     \includegraphics[width = 13cm]{./figs/topo.png}
-    \caption{topo\cite{razikon}}
+    \caption{Topological map from\cite{simada}}
     \label{fig::topo}
 \end{figure}
 \begin{figure}[H]
     \centering
     \includegraphics[width = 13cm]{./figs/sina.png}
-    \caption{sina\cite{razikon}}
+    \caption{Scenario of the trajectory from \cite{simada}}
     \label{fig::sina}
 \end{figure}
 
-そこで，本研究では従来手法をベースに，「直進」「左折」「右折」などの目標とする進行方向の情報(本研究では"目標方向"とする)
-をデータセットと学習器の入力へ追加することで，学習器の出力を用いた走行において，目標方向によって，経路を選択可能とする機能の追加を提案する．
+そこで，本研究では従来手法をベースに，「直進」「左折」「右折」などの目標とする進行方向の情報(本研究では"目標方向"と呼ぶ)
+をデータセットと学習器へ与える．
+これにより，学習器の出力を用いた走行において，目標方向により経路を選択可能とする機能の追加を提案する．
 % 提案手法全体の流れをFig. \ref{fig::haikei_zentai}に示す．
 % \begin{figure}[H]
 %     \centering
@@ -92,7 +89,7 @@ Felipeら\cite{razikon}はカメラ画像と操舵角と加速度の2次元の�
 \begin{figure}[H]
     \centering
     \includegraphics[width = 12cm]{./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf}
-    \caption{End-to-end  Driving  via  Conditional  Imitation  Learning from \cite{razikon}}
+    \caption{End-to-end  driving  via  conditional  imitation  learning from \cite{razikon}}
     \label{fig::Conditional_Imitation_Learning}
 \end{figure}
 

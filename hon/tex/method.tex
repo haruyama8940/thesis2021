@@ -73,21 +73,23 @@ LiDARとオドメトリを入力とする地図べースの制御器による経
   \begin{figure}[h]
     \centering
     \includegraphics[width = 12cm]{./figs/system_learning.pdf}
-    \caption{Learning phase system }
+    \caption{Learning phase of proposed method}
     \label{fig::learningsystem}
 \end{figure}
 \begin{figure}[h]
   \centering
-  \includegraphics[width = 10cm]{./figs/ler_abs.pdf}
-  \caption{Learning phase system }
+  \includegraphics[width = 9.5cm]{./figs/ler_abs.pdf}
+  \caption{Overview learning phase}
   \label{fig::learning_abs}
 \end{figure}
 \newpage
 \section{テストフェーズ}
 \label{test}
-提案手法におけるテストフェーズをFig. \ref{fig::testsystem}に示す学習器の入力へ目標方向を追加した
+提案手法におけるテストフェーズではFig. \ref{fig::testsystem}で示すように，
+学習器の入力へ目標方向を追加した．
 \ref{fig::test_abs}に動作の様子を示す.
-学習器の出力による走行において，目標方向によって経路の選択を行う．
+カメラ画像と目標方向を用いた学習器の
+出力による走行において，目標方向によって経路の選択を行う．
 % 地図ベースの制御器の出力による動作から，中央のカメラ画像と目標方向を入力とした
 % 学習器の出力による動作へ切り替えて走行を行う．
 % テスト時の目標方向の生成(方向の指示)はJoy\_stickコントローラのボタンを用いて行う．
@@ -103,15 +105,16 @@ LiDARとオドメトリを入力とする地図べースの制御器による経
 \begin{figure}[h]
     \centering
     \includegraphics[width = 9cm]{./figs/system_test.pdf}
-    \caption{Test phase system}
+    \caption{Test phase of proposed method}
     \label{fig::testsystem}
 \end{figure}
 \begin{figure}[h]
   \centering
-  \includegraphics[width = 10cm]{./figs/test_abs.pdf}
-  \caption{Learning phase system }
+  \includegraphics[width = 9cm]{./figs/test_abs.pdf}
+  \caption{Overview test phase}
   \label{fig::test_abs}
 \end{figure}
+
 \newpage
 \section{目標方向}
 本研究で用いた目標方向と，そのデータ形式である目標方向指令について述べる．
@@ -120,8 +123,8 @@ LiDARとオドメトリを入力とする地図べースの制御器による経
 分岐路において「直進(Go straight)「左折(Turn left)」「右折(Turn right)」の4つとする，
 \begin{figure}[h]
   \centering
-  \includegraphics[width = 9cm]{./figs/cmd_4.pdf}
-  \caption{Test phase system}
+  \includegraphics[width = 9.5cm]{./figs/cmd_4.pdf}
+  \caption{Target direction}
   \label{fig::cmd_4}
 \end{figure}
 
@@ -146,11 +149,11 @@ LiDARとオドメトリを入力とする地図べースの制御器による経
 
  \begin{table}[h]
       \centering
-      \caption{Target Direction list}
+      \caption{Target direction list}
       \begin{tabular}{ccccll}
       \cline{1-5}
       \multicolumn{1}{|c|}{Target Direction} & \multicolumn{1}{c|}{Continue}&\multicolumn{1}{c|}{Go straight}          & \multicolumn{1}{c|}{Turn left}          & \multicolumn{1}{c|}{Turn right}          &  \\ \cline{1-5}
-      \multicolumn{1}{|c|}{Data}  &\multicolumn{1}{c|}{{[}100, 0, 0, 0{]}}& \multicolumn{1}{c|}{{[}0, 100, 0, 0{]}} & \multicolumn{1}{c|}{{[}0,0,100, 0{]}} & \multicolumn{1}{l|}{{[}0, 0, 0, 100{]}} &  \\ \cline{1-5}
+      \multicolumn{1}{|c|}{Data}  &\multicolumn{1}{c|}{{[}100, 0, 0, 0{]}}& \multicolumn{1}{c|}{{[}0, 100, 0, 0{]}} & \multicolumn{1}{c|}{{[}0, 0, 100, 0{]}} & \multicolumn{1}{l|}{{[}0, 0, 0, 100{]}} &  \\ \cline{1-5}
                                  &                                  &                                  &                                  &  \\
                                  &                                  &                                  &                                  &  \\
       \multicolumn{1}{l}{}       &                                  &                                  &                                  & 
@@ -180,10 +183,10 @@ LiDARとオドメトリを入力とする地図べースの制御器による経
     \caption{Parameters of deep learning}
     \begin{tabular}{|c|c|c|c|}
     \hline
-    Input Data    & Image (64x48 pixels, RGB channels) , Target Direction                                             \\ \hline
+    Input data    & Image (64x48 pixels, RGB channels) , Target direction                                             \\ \hline
     Optimizer     & Adam ($alpha = 0.001, beta1 = 0.9, beta2 = 0.999, eps = 1e^{-1}$ )  \\ \hline
-    Loss Function & Softmax-cross-entropy                                                            \\ \hline
-    Output Data   & Angular Velocity                                              \\ \hline
+    Loss function & Softmax-cross-entropy                                                            \\ \hline
+    Output data   & Angular velocity                                              \\ \hline
     \end{tabular}
     \label{tb::param}
     \end{table}

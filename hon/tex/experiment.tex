@@ -71,8 +71,10 @@ Fig. \ref{fig::zyuzi}に環境と経路，入力する目標方向を示す．
 \subsection{評価}
 % Fig. \ref{fig::exp1route}で青で示した地点において，
 % コマンドを入力を行った結果をTable. \ref{tb::exp1suc}に示す．
-テストフェーズで，各経路を10回ずつ走行した結果を表\ref{tb::exp1suc}に示す．
+テストフェーズで，各経路を10回ずつ走行した結果をTable \ref{tb::exp1suc}に示す．
 すべての経路において，目標地点へ到達することに成功した
+また，学習フェーズで収集したデータセットをFig. \ref{fig::exp1_result}に示す．
+経路内に多いContinueは突出している．それ以外の3つはほぼ同数であることが確認できる．
 % \begin{table}[H]
 %   \centering
 %   \caption{Number of successes experiment 1 point}
@@ -102,7 +104,12 @@ Fig. \ref{fig::zyuzi}に環境と経路，入力する目標方向を示す．
   \end{center}
 \end{table}
 
-
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width = 10cm]{./figs/exp1_result.png}
+  \caption{Experiment1 dataset}
+  \label{fig::exp1_result}
+\end{figure}
 \newpage
 \section{実験2 -8の字-}
 % \subsection{実験目的}
@@ -113,60 +120,72 @@ Fig. \ref{fig::hatinozi}に示した，縦8[m]×横12[m]で道幅が2.5[m]の8�
 \begin{figure}[h]
     \centering
     \includegraphics[width = 10cm]{./figs/coli.png}
-    \caption{Experiment2 Course}
+    \caption{Experiment2 course}
     \label{fig::hatinozi}
 \end{figure}
 
 \newpage
-\ref{fig::exp2route}に示す環境内を網羅する経路をRoute A-Fの順で60000[step]学習するまで，繰り返し走行する．
+Fig. \ref{fig::exp2route}に経路と，入力する目標方向を示す．
+これらの環境を網羅するような経路を，
+Route A-Fの順で60000[step]学習するまで，繰り返し走行する．
 \begin{figure}[H]
     \begin{tabular}{cc}
       \begin{minipage}[t]{0.5\hsize}
         \centering
-        \includegraphics[keepaspectratio, scale=0.4]{./figs/8nozi_1.pdf}
+        \includegraphics[keepaspectratio, scale=0.38]{./figs/8nozi_route-r1.pdf}
         \subcaption{Route A}
         \label{exp2route1}
       \end{minipage} 
       \begin{minipage}[t]{0.5\hsize}
         \centering
-        \includegraphics[keepaspectratio, scale=0.4]{./figs/8nozi_2.pdf}
+        \includegraphics[keepaspectratio, scale=0.38]{./figs/8nozi_route-r2.pdf}
         \subcaption{Route B}
         \label{exp2route2}
       \end{minipage} \\
       \vspace{2.0zh}
       \begin{minipage}[t]{0.5\hsize}
         \centering
-        \includegraphics[keepaspectratio, scale=0.4]{./figs/8nozi_3.pdf}
+        \includegraphics[keepaspectratio, scale=0.38]{./figs/8nozi_route-r3.pdf}
         \subcaption{Route C}
         \label{exp2route3}
       \end{minipage} 
       \begin{minipage}[t]{0.5\hsize}
         \centering
-        \includegraphics[keepaspectratio, scale=0.4]{./figs/8nozi_4.pdf}
+        \includegraphics[keepaspectratio, scale=0.38]{./figs/8nozi_route-r4.pdf}
         \subcaption{Route D}
         \label{exp2route4}
       \end{minipage}\\
 
       \begin{minipage}[t]{0.5\hsize}
         \centering
-        \includegraphics[keepaspectratio, scale=0.4]{./figs/8nozi_5.pdf}
+        \includegraphics[keepaspectratio, scale=0.38]{./figs/8nozi_route-r5.pdf}
         \subcaption{Route E}
         \label{exp2route5}
       \end{minipage} 
       \begin{minipage}[t]{0.5\hsize}
         \centering
-        \includegraphics[keepaspectratio, scale=0.4]{./figs/8nozi_6.pdf}
+        \includegraphics[keepaspectratio, scale=0.38]{./figs/8nozi_route-r6.pdf}
         \subcaption{Route F}
         \label{exp2route6}
-      \end{minipage} 
+      \end{minipage}
     \end{tabular}
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width = 10cm]{./figs/8nizi_cap.pdf}
+  \end{figure}
      \caption{Experiment 2 route}
      \label{fig::exp2route}
   \end{figure}
   
 \newpage
 \subsection{評価}
-テストフェーズで，経路をランダムに60回走行を行った結果をTable. \ref{tb::exp2suc}に示す．
+テストフェーズで，経路をランダムに60回走行を行った結果をTable\ref{tb::exp2suc}に示す．
+結果として経路を約8割走行に成功した．
+また，学習フェーズで収集したデータセットをFig. \ref{fig::exp2_result}に示す．
+Go left,Go rightはほぼ同数であるが，Go straightは約半分以下となった．
+しかし，Go straightを用いた，経路成功は問題なく行うことができた．
+これは，Go straightが学習する角速度が，Continueと類似しているからだと考えられる．
+
 % % \begin{figure}[h]
 % %   \centering
 % %   \includegraphics[width = 10cm]{./figs/bunkiban.pdf}
@@ -193,11 +212,18 @@ Fig. \ref{fig::hatinozi}に示した，縦8[m]×横12[m]で道幅が2.5[m]の8�
   
   \begin{table}[htb]
     \centering
-    \caption{Number of successes Experiment2 point}
+    \caption{Number of successes experiment2}
     \begin{tabular}{|c|c|}
     \hline
     Route & Number of successes \\ \hline
     A-F     & 50/60                  \\ \hline
     \end{tabular}
     \label{tb::exp2suc}
+    \vspace{2zh}
     \end{table} 
+    \begin{figure}[ht]
+      \centering
+      \includegraphics[width = 10cm]{./figs/exp2_result.png}
+      \caption{Experiment2 dataset}
+      \label{fig::exp2_result}
+    \end{figure}
