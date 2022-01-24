@@ -56,8 +56,8 @@
     ロボットが一定の経路を周回することが可能であると示されている．
     
     本研究では，岡田らの研究\cite{okada}(”従来手法”とする）をベースに，
-    \reffig{bunki}のような分岐路で「直進」と「左折」などの経路を選択可能とする機能の追加を提案し，
-    実験を行い，機能の有効性の検証することを目的とする．
+    \reffig{bunki}のような分岐路で「直進」と「左折」などの経路を選択可能とする機能の追加を提案する．
+    さらに，実験を行い，提案手法の有効性を検証することを目的とする．
     % カメラ画像のみでは，「どちらへ進むか」のような経路選択に必要な情報が不足している可能性がある．
     % 具体的には，データセットへ，従来のカメラ画像以外に「直進」「左折」などの
     % 目標とする進行方向の情報(本研究では”目標方向”とする )を追加する
@@ -139,39 +139,10 @@
     地図べースの制御器を用いる．
     テストフェースでは，学習器の出力を用いた走行において，
     目標方向指令の入力により，経路の選択を行う．
-    % ROS Navigation\_stack\cite{navigation}であり，LiDARとオドメトリを入力とするルールベースの制御器である．
-    % 1)LiDARとオドメトリから得たデータを入力とする地図ベースの制御器の出力を用いて自律走行する．
-    % 2)地図ベースの制御器の出力からヨー方向の角速度と目標方向,ロボットに取り付けた3つのカメラから
-    % RGB画像を取得し,訓練データへ加える．
-    % 3)訓練データ(入力:カメラ画像,目標方向 目標出力:角速度)を用いてend-to-end学習を行い，学習器の出力を記録．
-    % \begin{enumerate}
-    %     \setlength{\parskip}{0cm} % 段落間
-    %     \setlength{\itemsep}{0cm} % 項目間
-    %     \item LiDARとオドメトリから得たデータを入力とする地図ベースの制御器の出力を用いて自律走行する
-    %     \item 地図ベースの制御器の出力からヨー方向の角速度と目標方向,ロボットに取り付けた3つのカメラから
-    %     RGB画像を取得し,訓練データへ加える．
-    %     \item 訓練データ(入力:カメラ画像,目標方向 目標出力:角速度)を用いてend-to-end学習を行い，学習器の出力を記録
-    %     \end{enumerate}
-    
-    %=========================
-    % \subsection{テストフェーズ}
-    % 次に訓練した学習器の出力を用いて走行する「テストフェーズ」を述べる．
-    % テストフェーズは，学習フェーズにおける学習器の訓練が，
-    % 設定したstep数に達した場合に移行する
-    % テストフェーズでの目標方向は，Joystickコントローラのボタンを用いて入力する．
-    % 岡田らの研究では，カメラ画像を学習器へ入力し，学習器の出力(角速度)を用いて自律走行する．
-    % 提案手法では，学習器の入力へ目標方向を追加し，カメラ画像と目標方向学習器の出力を用いる．
-    % \begin{enumerate}
-    % \setlength{\parskip}{0cm} % 段落間
-    % \setlength{\itemsep}{0cm} % 項目間
-    % \item ロボット中央のカメラからRGB画像 ,Joystickコントローラより目標方向のデータを取得．
-    % \item 取得したデータ (カメラ画像,目標方向)を学習器へ入力．
-    % \item 固定した並進速度，学習器の出力(角速度)を用いて走行．
-    % \end{enumerate}
     \begin{center}
         \begin{figure}[htb]
             \centering
-            \includegraphics[width=8cm]{./fig/system_learning_app.pdf}
+            \includegraphics[width=8cm]{./fig/system_learning.pdf}
             \caption{Learning phase}
             \label{fig:system_learning}
         \end{figure}
@@ -179,7 +150,7 @@
     \begin{center}
         \begin{figure}[htb]
             \centering
-            \includegraphics[width=6cm]{./fig/system_test_app.pdf}
+            \includegraphics[width=6cm]{./fig/system_test.pdf}
             \caption{Test phase}
             \label{fig:system_test}
         \end{figure}
@@ -258,7 +229,7 @@
     \caption{Number of successes experiment}
     \label{tab:suc}
     \begin{center}
-        \vskip 1zh
+        \vskip 0.5zh
         \begin{tabular}{|c|c|}
             \hline
             Route & Number of successes\\ \hline
@@ -273,14 +244,11 @@
     本研究では，従来手法をベースに
     end-to-end学習による自律走行において，経路選択する機能の追加を提案した．
     またシミュレータを用いた実験により，機能の有効性を検証した．
-    
+
+    \vspace{5truemm}
     {\footnotesize
+   
         \begin{thebibliography}{99}
-            
-            % \bibitem{工大2005}
-            % 工大太郎: ``ロボットのしくみ'', 
-            % 日本機械学会論文誌A, 
-            % Vol.~108, No.~1034 (2005), pp.~1--2.
             
             \bibitem{nvidia}
             Mariusz Bojarski et al:``End to End Learning for Self-Driving Cars'',
@@ -288,29 +256,8 @@
             \bibitem{okada}
             岡田眞也, 清岡優祐, 上田隆一, 林原靖男:``視覚と行動の end-to-end 
             学習により経路追従行動をオンラインで模倣する手法の提案''
-            % SICE-SI2020予稿集,1147--1152,制御学会SI部門講演会(2020)
-            % \bibitem{navigation}
-            % ros-planning,navigation:
-            % \url{https://github.com/ros-planning/navigation}， 
-            % （参照日 2020年12月30日）. 
-            % \bibitem{Shibutani2004}
-            % Y. Shibutani: ``Heinrich's Law Resulted Pattern Dynamics --Part2--''，
-            % Proceedings of the 79th Kansai Branch Regular Meeting of the Japan Society of Mechanical Engineers,  
-            % No.~04--05 (2004), pp.~205--206.
-            
-            % \bibitem{Handbook1979}
-            % The Japan Society of Mechanical Engineers ed.: ``JSME Date Handbook: Heat Transfer'', 
-            % (1979), p.~123, The Japan Society of Mechanical Engineers.
-            
-            % \bibitem{Kikuchi2017}
-            % K. Kikuchi, M. Miura, K. Shibata, J. Yamamura: ``Soft Landing Condition for Stair-climbing Robot with Hopping Mechanism'', 
-            % Journal of JSDE, Vol.~53, No.~8 (2018), pp.~605--614, \url{https://doi.org/10.14953/jjsde.2017.2774}.
         \end{thebibliography}
     }
-   
-        
-   
-    \vspace{5truemm}
     
     \normalsize
     

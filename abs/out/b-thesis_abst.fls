@@ -88,11 +88,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
 INPUT ./fig/zyuzibunki.png
 INPUT extractbb -B cropbox -O ./fig/zyuzibunki.png
-INPUT ./fig/system_learning_app.pdf
-INPUT extractbb -B cropbox -O ./fig/system_learning_app.pdf
-INPUT ./fig/system_test_app.pdf
-INPUT extractbb -B cropbox -O ./fig/system_test_app.pdf
+INPUT ./fig/system_learning.pdf
+INPUT extractbb -B cropbox -O ./fig/system_learning.pdf
 OUTPUT out/b-thesis_abst.dvi
+INPUT ./fig/system_test.pdf
+INPUT extractbb -B cropbox -O ./fig/system_test.pdf
 INPUT ./fig/zyuziroute.pdf
 INPUT extractbb -B cropbox -O ./fig/zyuziroute.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin8.tfm

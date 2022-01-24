@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2021.12.28)  18 JAN 2022 02:54
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2021.12.28)  24 JAN 2022 09:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -253,26 +253,26 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 (./backmatter/main.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
 \AtBeginShipoutBox=\box45
-Package hyperref Info: Link coloring OFF on input line 40.
+Package hyperref Info: Link coloring OFF on input line 44.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -282,9 +282,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count108
 )
-LaTeX Info: Redefining \ref on input line 40.
-LaTeX Info: Redefining \pageref on input line 40.
-LaTeX Info: Redefining \nameref on input line 40.
+LaTeX Info: Redefining \ref on input line 44.
+LaTeX Info: Redefining \pageref on input line 44.
+LaTeX Info: Redefining \nameref on input line 44.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write3
@@ -309,12 +309,7 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 16.60605pt on input line 1.
 
-Overfull \hbox (22.10976pt too wide) in paragraph at lines 1--1
- [][] 
- []
-
-
-Overfull \hbox (54.77676pt too wide) in paragraph at lines 1--1
+Overfull \hbox (3.38622pt too wide) in paragraph at lines 1--1
  [][] 
  []
 
@@ -341,7 +336,7 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 
 
 ]
-Overfull \hbox (29.76373pt too wide) in paragraph at lines 23--24
+Overfull \hbox (29.76373pt too wide) in paragraph at lines 30--31
  [] 
  []
 
@@ -392,13 +387,13 @@ LaTeX Warning: Citation `razikon' on page vii undefined on input line 6.
 LaTeX Warning: Citation `razikon' on page vii undefined on input line 7.
 
 
-LaTeX Warning: Citation `razikon' on page vii undefined on input line 9.
+LaTeX Warning: Citation `razikon' on page vii undefined on input line 8.
 
 
-LaTeX Warning: Citation `nagoya' on page vii undefined on input line 10.
+LaTeX Warning: Citation `nagoya' on page vii undefined on input line 9.
 
 
-LaTeX Warning: Citation `Imagenet' on page vii undefined on input line 15.
+LaTeX Warning: Citation `Imagenet' on page vii undefined on input line 13.
 
 [7
 
@@ -480,10 +475,10 @@ LaTeX Warning: Citation `okada' on page 2 undefined on input line 37.
 
 [2]
 
-LaTeX Warning: Citation `okada' on page 3 undefined on input line 46.
+LaTeX Warning: Citation `okada' on page 3 undefined on input line 44.
 
 
-LaTeX Warning: Citation `pomeru' on page 3 undefined on input line 49.
+LaTeX Warning: Citation `pomeru' on page 3 undefined on input line 46.
 
 File: ./figs/bunki.pdf Graphic file (type pdf)
 <./figs/bunki.pdf>
@@ -492,53 +487,45 @@ File: ./figs/topo.png Graphic file (type bmp)
 <./figs/topo.png>
 
 
-LaTeX Warning: Citation `razikon' on page 4 undefined on input line 77.
+LaTeX Warning: Citation `razikon' on page 4 undefined on input line 67.
 
 
-LaTeX Warning: Citation `razikon' on page 4 undefined on input line 77.
+LaTeX Warning: Citation `razikon' on page 4 undefined on input line 67.
 
 File: ./figs/sina.png Graphic file (type bmp)
 <./figs/sina.png>
 
-LaTeX Warning: Citation `razikon' on page 4 undefined on input line 83.
+LaTeX Warning: Citation `razikon' on page 4 undefined on input line 73.
 
 
-LaTeX Warning: Citation `razikon' on page 4 undefined on input line 83.
+LaTeX Warning: Citation `razikon' on page 4 undefined on input line 73.
 
-[4]
+[4] [5]
 
-LaTeX Warning: Citation `okada' on page 5 undefined on input line 89.
-
-File: ./figs/haikei_zentai.pdf Graphic file (type pdf)
-<./figs/haikei_zentai.pdf>
-[5]
-
-LaTeX Warning: Citation `razikon' on page 6 undefined on input line 103.
+LaTeX Warning: Citation `razikon' on page 6 undefined on input line 89.
 
 File: ./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf Graphic 
 file (type pdf)
 <./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf>
 
-LaTeX Warning: Citation `razikon' on page 6 undefined on input line 109.
+LaTeX Warning: Citation `razikon' on page 6 undefined on input line 95.
 
 
-LaTeX Warning: Citation `razikon' on page 6 undefined on input line 109.
+LaTeX Warning: Citation `razikon' on page 6 undefined on input line 95.
 
 
-LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 113.
+LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 99.
 
 File: ./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutio
 nal_Neural_Network_abst.pdf Graphic file (type pdf)
 <./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutional_N
 eural_Network_abst.pdf>
 
-LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 120.
+LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 106.
 
 
-LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 120.
+LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 106.
 
-File: ./figs/haikei_abs.pdf Graphic file (type pdf)
-<./figs/haikei_abs.pdf>
 [6]) [7]
 \openout2 = `tex/element_technology.aux'.
 
@@ -565,88 +552,80 @@ LaTeX Warning: Citation `Imagenet' on page 10 undefined on input line 56.
 
 LaTeX Warning: Citation `Imagenet' on page 10 undefined on input line 56.
 
-) [10]
+[10]
+
+LaTeX Warning: Citation `navigation:online' on page 11 undefined on input line 
+65.
+
+File: ./figs/mapbased.png Graphic file (type bmp)
+<./figs/mapbased.png>
+[11]
+File: ./figs/system_learning_okada.pdf Graphic file (type pdf)
+<./figs/system_learning_okada.pdf>
+ [12]
+File: ./figs/okada_path.png Graphic file (type bmp)
+<./figs/okada_path.png>
+ [13]
+File: ./figs/system_test_okada.pdf Graphic file (type pdf)
+<./figs/system_test_okada.pdf>
+) [14]
 \openout2 = `tex/method.aux'.
 
  (./tex/method.tex
 第3章
-
-LaTeX Warning: Citation `okada' on page 11 undefined on input line 13.
-
-File: ./figs/turtlebot3_kame.pdf Graphic file (type pdf)
-<./figs/turtlebot3_kame.pdf>
-[11
+[15
 
 
 
 ]
-File: ./figs/system_abs.pdf Graphic file (type pdf)
-<./figs/system_abs.pdf>
-File: ./figs/system_test_abs.pdf Graphic file (type pdf)
-<./figs/system_test_abs.pdf>
-
-Overfull \hbox (18.66666pt too wide) in paragraph at lines 47--64
-[][][][] 
- []
-
-[12]
-
-LaTeX Warning: Citation `navigation:online' on page 13 undefined on input line 
-109.
-
-File: ./figs/navigation.pdf Graphic file (type pdf)
-<./figs/navigation.pdf>
-File: ./figs/mapbased.png Graphic file (type bmp)
-<./figs/mapbased.png>
-[13] [14]
 File: ./figs/system_learning.pdf Graphic file (type pdf)
 <./figs/system_learning.pdf>
- [15]
-
-LaTeX Warning: Citation `okada' on page 16 undefined on input line 165.
-
-[16]
+File: ./figs/ler_abs.pdf Graphic file (type pdf)
+<./figs/ler_abs.pdf>
+ [16]
 File: ./figs/system_test.pdf Graphic file (type pdf)
 <./figs/system_test.pdf>
+File: ./figs/test_abs.pdf Graphic file (type pdf)
+<./figs/test_abs.pdf>
  [17]
+File: ./figs/cmd_4.pdf Graphic file (type pdf)
+<./figs/cmd_4.pdf>
+ [18]
 File: ./figs/network.pdf Graphic file (type pdf)
 <./figs/network.pdf>
- [18])
+) [19]
 \openout2 = `tex/experiment.aux'.
 
  (./tex/experiment.tex
 第4章
 
-LaTeX Warning: Citation `gazebo:online' on page 19 undefined on input line 5.
+LaTeX Warning: Citation `gazebo:online' on page 20 undefined on input line 7.
 
 
-LaTeX Warning: Citation `turtlebot3:online' on page 19 undefined on input line 
-6.
+LaTeX Warning: Citation `turtlebot3:online' on page 20 undefined on input line 
+8.
 
 File: ./figs/3_camera.png Graphic file (type bmp)
 <./figs/3_camera.png>
-[19
+[20
 
 
 
-] [20]
+] [21]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 41.
+(Font)              scaled to size 11.53198pt on input line 38.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 41.
+(Font)              scaled to size 11.53198pt on input line 38.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 41.
+(Font)              scaled to size 11.53198pt on input line 38.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 41.
-File: ./figs/zyuuziyoko.png Graphic file (type bmp)
-<./figs/zyuuziyoko.png>
- [21]
+(Font)              scaled to size 11.53198pt on input line 38.
 File: ./figs/zyuziroute.pdf Graphic file (type pdf)
 <./figs/zyuziroute.pdf>
- [22]
+ [22] [23]
 File: ./figs/coli.png Graphic file (type bmp)
 <./figs/coli.png>
- [23]
+ [24]
 File: ./figs/8nozi_1.pdf Graphic file (type pdf)
 <./figs/8nozi_1.pdf>
 File: ./figs/8nozi_2.pdf Graphic file (type pdf)
@@ -660,20 +639,17 @@ File: ./figs/8nozi_5.pdf Graphic file (type pdf)
 File: ./figs/8nozi_6.pdf Graphic file (type pdf)
 <./figs/8nozi_6.pdf>
 
-Overfull \hbox (18.66666pt too wide) in paragraph at lines 105--145
+Overfull \hbox (18.66666pt too wide) in paragraph at lines 125--165
 [][][][] 
  []
 
-[24]
-File: ./figs/bunkiban.pdf Graphic file (type pdf)
-<./figs/bunkiban.pdf>
- [25]) [26]
+[25]) [26]
 \openout2 = `tex/conclusion.aux'.
 
  (./tex/conclusion.tex
 第5章
 
-LaTeX Warning: Citation `okada' on page 27 undefined on input line 3.
+LaTeX Warning: Citation `okada' on page 27 undefined on input line 4.
 
 ) [27
 
@@ -688,28 +664,28 @@ LaTeX Warning: Citation `okada' on page 27 undefined on input line 3.
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 76.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
  (./thesis.aux (./frontmatter/main.aux) (./tex/introduction.aux)
 (./tex/element_technology.aux) (./tex/method.aux) (./tex/experiment.aux)
 (./tex/conclusion.aux) (./backmatter/main.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 72.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 76.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 76.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 19E6CD629F0DFC815FF52DA460587A9F;1874.
+(rerunfilecheck)             Checksum: 2C14E0362BECAED5C4E089A7C6CA8445;1751.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
  ) 
 Here is how much of TeX's memory you used:
- 6814 strings out of 493640
- 103877 string characters out of 6150527
- 193298 words of memory out of 5000000
- 10279 multiletter control sequences out of 15000+600000
+ 6803 strings out of 493640
+ 103640 string characters out of 6150527
+ 193054 words of memory out of 5000000
+ 10270 multiletter control sequences out of 15000+600000
  16455 words of font info for 78 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 36i,14n,41p,291b,687s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,15n,41p,289b,687s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (37 pages, 85960 bytes).
+Output written on thesis.dvi (37 pages, 83696 bytes).

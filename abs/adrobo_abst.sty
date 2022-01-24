@@ -34,7 +34,7 @@
 
 % 行間の設定
 %\setlength{\baselineskip}{4.2mm}
-\renewcommand{\baselinestretch}{0.917}
+\renewcommand{\baselinestretch}{0.925}
 %\renewcommand{\baselinestretch}{0.93}
 %\kanjiskip=0.023zw plus 0.015zw minus 0.015zw
 
@@ -62,7 +62,7 @@
 % instead of \unhbox\@tempboxa\par we do #1: #2\par
 %====================================================================
 \long\def\@makecaption#1#2{
-   \vskip 5pt 
+   \vskip 10pt 
    \setbox\@tempboxa\hbox{#1 #2}
    \ifdim \wd\@tempboxa >\hsize   % IF longer than one line:
        \@hangfrom{#1 }#2\par %\ignorespaces #2\strut \par %chaged on 89-09-07

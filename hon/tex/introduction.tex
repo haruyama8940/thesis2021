@@ -18,7 +18,7 @@ Fig. \ref{fig::nvidia}で示す方法で，人間のハンドル操作による�
 \newpage
 本研究室においても岡田ら\cite{okada}によって
 Fig. \ref{fig::okada_sys}に示すシステム
-LiDAR,オドメトリなどの入力としたルールべースの制御器の出力による自律走行を行い
+LiDAR,オドメトリなどの入力とした地図べースの制御器の出力による自律走行を行い
 その際にロボットから取得したカメラ画像を入力，ルールベース制御器の出力した角速度を目標出力として学習器の訓練を行い，
 訓練後にはカメラ画像を入力を学習器へ入力し，
 その出力を用いて走行を行う．
@@ -41,15 +41,10 @@ Fig.\ref{fig::okada}で示すルールベース制御器の経路追従行動を
 \newpage
 上記の研究により，カメラ画像用いてロボットが学習した経路を
 周回可能であることが確認されている．
-
-
-次に岡田ら\cite{okada}研究を一定の経路の周回以外への拡張について考える．
-走行する経路内にFig. \ref{fig::bunki}のような分岐路が含まれる場合，
+次に岡田ら\cite{okada}研究をベースに，Fig. \ref{fig::bunki}のような分岐路において経路選択をする機能の追加を検討する．
 画像のみを入力としたネットワークでは，分岐路においてネットワークが2つの方向を出力してしまい，
 左右に車体を向ける振動が発生してしまう事象がDean A. Pomerleauら\cite{pomeru}によって確認されている．
-そのため赤と緑の矢印で示した直進と左折のようなルートを任意に切り替えを行うためには，
-カメラ画像のみを入力とした場合「分岐路をどちらへ進むか」というルート選択を行うために
-情報が必要だと考えられる．
+そこで経路を選択するために必要な情報の検討を行う．
  \vspace{4.0zh}
 \begin{figure}[h]
     \centering
@@ -58,19 +53,14 @@ Fig.\ref{fig::okada}で示すルールベース制御器の経路追従行動を
     \label{fig::bunki}
 \end{figure}
 \newpage
-
-分岐路でルートを選択をする情報として
-人間の交差点などの目印に基づいて目的地まで移動する能力を，
-島田らは分岐路などの目印(エッジ)とそのつながり(ノード)を表現する地図(トポロジカルマップ)
-Fig. \ref{fig::topo}と
-次の情報を持つエッジ
-1) ID
-2) Type(通路の特徴)
-3) Edge(エッジの ID と相対角度)
-トポロジカルマップより「道案内」同様に，「次の角まで」のような「条件」と「直進」などの「行動」
-の組み合わせで作成した経路の情報(シナリオ)\ref{fig::sina}
-を用いて表現した自律移動ロボットのNavigation手法を提案している．
-
+島田らは人間の交差点などの目印に基づいて目的地まで移動する能力を，
+トポロジカルマップというFig. \ref{fig::topo}に示す．
+1) ID2) Type(通路の特徴)3) Edge(エッジの ID と相対角度)の情報をもつ
+分岐路などの目印(エッジ)とそのつながり(ノード)を表現する簡易的な地図と，
+シナリオという\ref{fig::sina}で示す，トポロジカルマップに基づいて
+「次の角まで」のような「条件」と「直進」などの「行動」の組み合わせで作成した経路の情報の
+2つを用いて表現する手法を提案している．
+この研究により，「直進」「右折」などの情報を用いることで経路を選択することが可能であると示されている．
 \begin{figure}[H]
     \centering
     \includegraphics[width = 13cm]{./figs/topo.png}
@@ -84,19 +74,15 @@ Fig. \ref{fig::topo}と
     \label{fig::sina}
 \end{figure}
 
-そこで本研究では，島田らが提案した「シナリオ」から生成した
-「直進」「左折」「右折」などの目標とする方向の情報(本研究では"目標方向"とする)
-を\cite{okada}らが提案した手法におけるデータセットへ追加し，
-学習器の出力を用いた走行で
-目標方向によって，特定の経路を選択する．
-「カメラ画像と目標方向を用いたEnd-to-End学習によるシナリオを用いたNavigation手法」を提案する．
-提案手法全体の流れをFig. \ref{fig::haikei_zentai}に示す．
-\begin{figure}[H]
-    \centering
-    \includegraphics[width = 13cm]{./figs/haikei_zentai.pdf}
-    \caption{hai}
-    \label{fig::haikei_zentai}
-\end{figure}
+そこで，本研究では従来手法をベースに，「直進」「左折」「右折」などの目標とする進行方向の情報(本研究では"目標方向"とする)
+をデータセットと学習器の入力へ追加することで，学習器の出力を用いた走行において，目標方向によって，経路を選択可能とする機能の追加を提案する．
+% 提案手法全体の流れをFig. \ref{fig::haikei_zentai}に示す．
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width = 13cm]{./figs/haikei_zentai.pdf}
+%     \caption{hai}
+%     \label{fig::haikei_zentai}
+% \end{figure}
 
 \newpage
 カメラ画像と他の情報を用いて，自律移動を行う研究として
@@ -116,36 +102,33 @@ Felipeら\cite{razikon}はカメラ画像と操舵角と加速度の2次元の�
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width = 9.8cm]{./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutional_Neural_Network_abst.pdf}
+    \includegraphics[width = 9cm]{./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutional_Neural_Network_abst.pdf}
     \caption{Overview of Seiya and others proposed method from \cite{nagoya}}
     \label{fig::nagoyaabst}
 \end{figure}
 
 
 \section{目的}
-本研究では，
-データセットを自動的に収集し，経路追従行動を模倣する岡田ら
-トポロジカルマップとシナリオを用いてNavigation手法
-島田らの研究を拡張する．
-カメラ画像と目標方向を用いたEnd-to-End学習
-によるシナリオに基づいたNavigation手法を行う予備段階として
-Fig. \ref{fig::haikei_abs}に赤枠で示した部分を対象とする，
-\begin{figure}[H]
-    \centering
-    \includegraphics[width = 12cm]{./figs/haikei_abs.pdf}
-    \caption{a}
-    \label{fig::haikei_abs}
-\end{figure}
+本研究では，従来手法をベースに，
+分岐路で「直進」と「左折」などの経路を選択可能とする機能の追加を提案する．
+さらに，実験を行い，提案手法の有効性を検証することを目的とする
+% Fig. \ref{fig::haikei_abs}に赤枠で示した部分を対象とする，
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width = 12cm]{./figs/haikei_abs.pdf}
+%     \caption{a}
+%     \label{fig::haikei_abs}
+% \end{figure}
 
-カメラ画像と目標方向を入力とする学習器の出力を用いた走行において，
-目標方向によって分岐路で任意のルートへ走行経路を変更することを目指す．
-カメラ画像以外に分岐路での方向指示の情報を追加し，その情報を用いてルート選択が可能であるかの
-検証を行う．
+% カメラ画像と目標方向を入力とする学習器の出力を用いた走行において，
+% 目標方向によって分岐路で任意のルートへ走行経路を変更することを目指す．
+% カメラ画像以外に分岐路での方向指示の情報を追加し，その情報を用いてルート選択が可能であるかの
+% 検証を行う．
 
 
 \section{論文構成}
 1章では，本研究における背景，及び目的を述べた．
-2章では，本研究で用いた深層学習の要素技術について述べる．
+2章では，本研究で用いた深層学習の要素技術とベースとする従来手法について述べる．
 3章では，本研究で用いた手法と構築したシステムについて述べる．
 4章では，構築したシステムを用いた実験を行う．
 5章では，本研究の結論を述べる．

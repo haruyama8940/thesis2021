@@ -1,138 +1,155 @@
 \chapter{提案手法}\label{chap:method}
-本章では，提案手法の概要，
-及び提案手法に基づいて構築したシステムを
-学習器の訓練に用いる地図べースの制御器，
-学習フェーズ，テストフェーズ
+本章では，従来手法をベースとする提案手法を
+提案手法の概要，提案手法における学習フェーズ，テストフェーズと用いた目標方向について
 の4節に分けて述べる．
 
 \section{提案手法の概要}
 
-1章の背景で述べた分岐路において，ルートを選択する場合に
-入力する情報としてカメラ画像のみでは「右と左のどちらに曲がる」という判断をするための
-情報が不足していると考えられる．
-そこで，カメラ画像をもとにEnd-to-End学習で経路追従行動を行う岡田らの研究\cite{okada}で用いたシステムへ
-カメラ画像以外にルートの選択に必要な情報として，「直進」「左折」「右折」の目標方向情報を目標方向を追加した，
+% 1章の背景で述べた分岐路において，ルートを選択する場合に
+% 入力する情報としてカメラ画像のみでは「右と左のどちらに曲がる」という判断をするための
+% 情報が不足していると考えられる．
+従来手法で用いたデータセットと学習器の入力へ，
+「直進」「左折」などの目標方向指令を追加することで，
+学習器の出力による走行において,経路を選択する機能の追加を行った．
+なお，追加した要素以外は従来手法と同様である．
+% 本研究で対象とするロボットの構造，搭載するセンサを\ref{fig::turtlebot3_gazo}とし，
 
-本研究で対象とするロボットの構造，搭載するセンサを\ref{fig::turtlebot3_gazo}とし，
-提案手法の概要をFig.\ref{fig::method_abs}
-学習フェーズFig.\ref{fig::learning_abs}
-テストフェーズFig.\ref{fig::test_abs}
+% 提案手法の概要をFig.\ref{fig::method_abs}
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width = 4cm]{./figs/turtlebot3_kame.pdf}
+%     \caption{turtlebot3 waffle}
+%     \label{fig::turtlebot3_gazo}
+% \end{figure}
+
+% \begin{figure}[H]
+%     \begin{tabular}{c}
+%       \begin{minipage}[t]{0.5\hsize}
+%         \centering
+%         % \vspace{-1.0zh}
+%         \includegraphics[keepaspectratio, scale=0.35]{./figs/system_abs.pdf}
+%         \subcaption{Learning phase}
+%         \label{fig::learning_abs}
+%       \end{minipage}
+%       \begin{minipage}[t]{0.5\hsize}
+%         \centering
+        
+%         \includegraphics[keepaspectratio, scale=0.35]{./figs/system_test_abs.pdf}
+%         \subcaption{Test phase}
+%         \label{fig::test_abs}
+%       \end{minipage}
+%       \vspace{2.0zh}
+%     \end{tabular}
+%      \caption{Concept of the proposed method}
+%      \label{fig::method_abs}
+%   \end{figure} 
 
 
+    
+    % \begin{table}[h]
+    %   \centering
+    %   \caption{Target Direction list}
+    %   \begin{tabular}{ccccll}
+    %   \cline{1-5}
+    %   \multicolumn{1}{|c|}{Target Direction} & \multicolumn{1}{c|}{continue}&\multicolumn{1}{c|}{go straight}          & \multicolumn{1}{c|}{turn left}          & \multicolumn{1}{c|}{turn right}          &  \\ \cline{1-5}
+    %   \multicolumn{1}{|c|}{Data}  &\multicolumn{1}{c|}{{[}100, 0, 0, 0{]}}& \multicolumn{1}{c|}{{[}0, 100, 0, 0{]}} & \multicolumn{1}{c|}{{[}0,0,100, 0{]}} & \multicolumn{1}{l|}{{[}0, 0, 0, 100{]}} &  \\ \cline{1-5}
+    %                              &                                  &                                  &                                  &  \\
+    %                              &                                  &                                  &                                  &  \\
+    %   \multicolumn{1}{l}{}       &                                  &                                  &                                  & 
+    %   \end{tabular}
+    %   \vspace{-3.0zh}
+    %   \label{tb:command_4}
+    %   \end{table}
 
-\begin{figure}[H]
+\newpage
+\section{学習フェーズ}
+\label{lerning}
+学習器の訓練を行う学習フェーズで用いるシステムをFig. \ref{fig::learningsystem}示す．
+経路追従行動を行う地図べースの制御器へ目標方向の生成機能と，データセットへ目標方向の追加を行った．
+提案手法では，\ref{fig::learning_abs}に示すように
+LiDARとオドメトリを入力とする地図べースの制御器による経路追従行動を，
+カメラ画像と目標方向を用いて模倣学習する．
+  \begin{figure}[h]
     \centering
-    \includegraphics[width = 4cm]{./figs/turtlebot3_kame.pdf}
-    \caption{turtlebot3 waffle}
-    \label{fig::turtlebot3_gazo}
+    \includegraphics[width = 12cm]{./figs/system_learning.pdf}
+    \caption{Learning phase system }
+    \label{fig::learningsystem}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width = 10cm]{./figs/ler_abs.pdf}
+  \caption{Learning phase system }
+  \label{fig::learning_abs}
+\end{figure}
+\newpage
+\section{テストフェーズ}
+\label{test}
+提案手法におけるテストフェーズをFig. \ref{fig::testsystem}に示す学習器の入力へ目標方向を追加した
+\ref{fig::test_abs}に動作の様子を示す.
+学習器の出力による走行において，目標方向によって経路の選択を行う．
+% 地図ベースの制御器の出力による動作から，中央のカメラ画像と目標方向を入力とした
+% 学習器の出力による動作へ切り替えて走行を行う．
+% テスト時の目標方向の生成(方向の指示)はJoy\_stickコントローラのボタンを用いて行う．
+% また，目標方向は学習フェーズと同じ形式，データを用いる．
+% テストフェーズにおける手順を下記に示す．
+% \begin{enumerate}
+%     \item 機体に取り付けた中央のカメラからRGB画像,Joy\_stickコントローラより目標方向のデータを取得
+%     \item 取得したデータ(カメラ画像，目標方向)を学習器へ入力
+%     \item 学習器の出力である角速度をモータへ与える
+%   \end{enumerate}
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 9cm]{./figs/system_test.pdf}
+    \caption{Test phase system}
+    \label{fig::testsystem}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width = 10cm]{./figs/test_abs.pdf}
+  \caption{Learning phase system }
+  \label{fig::test_abs}
+\end{figure}
+\newpage
+\section{目標方向}
+本研究で用いた目標方向と，そのデータ形式である目標方向指令について述べる．
+目標方向はFig.\ref{fig::cmd_4}に示す．
+経路を「道なり」に走行(Continue)
+分岐路において「直進(Go straight)「左折(Turn left)」「右折(Turn right)」の4つとする，
+\begin{figure}[h]
+  \centering
+  \includegraphics[width = 9cm]{./figs/cmd_4.pdf}
+  \caption{Test phase system}
+  \label{fig::cmd_4}
 \end{figure}
 
+学習器には，上記の4つの目標方向を，要素数4,次元数1のint型の
+配列(One-Hot ベクトル)で表現した”目標方向指令”を入力する．
+目標方向指令のデータ形式をTable \ref{tb:command_4}に示す．
+  %   \begin{table}[h]
+  %     \caption{Target direction and data}
+  %     \label{tb:command_4}
+  %     \begin{center}
+  %         \vskip 0.5zh
+  %         \begin{tabular}{|c|c|}
+  %             \hline
+  %             Target direction & Data\\ \hline
+  %             Continue & $[100, 0, 0, 0]$ \\ \hline
+  %             Go straight & $[0, 100, 0, 0]$ \\ \hline
+  %             Turn left& $[0, 0, 100, 0]$ \\ \hline
+  %             Turn right & $[0, 0, 0, 100]$ \\ \hline
+  %         \end{tabular}
+  %     \end{center}
+  % \end{table}
 
-% \begin{table}[ht]
-%     \centering
-%     \caption{Robot}
-%       \begin{tabular}{c|cll}
-%       \hline
-%       tpye    & Differential-drive wheele                                                           \\ \hline
-%       sensors & \begin{tabular}[c]{@{}l@{}}2D-LiDAR\\ Wheel Encoder\\ Monocular Camera\end{tabular} \\ \hline
-%       \end{tabular}
-
-    
-%     \label{tb:hikaku}
-   
-%     \end{table}
-
-
-\begin{figure}[H]
-    \begin{tabular}{c}
-      \begin{minipage}[t]{0.5\hsize}
-        \centering
-        % \vspace{-1.0zh}
-        \includegraphics[keepaspectratio, scale=0.35]{./figs/system_abs.pdf}
-        \subcaption{Learning phase}
-        \label{fig::learning_abs}
-      \end{minipage}
-      \begin{minipage}[t]{0.5\hsize}
-        \centering
-        
-        \includegraphics[keepaspectratio, scale=0.35]{./figs/system_test_abs.pdf}
-        \subcaption{Test phase}
-        \label{fig::test_abs}
-      \end{minipage}
-      \vspace{2.0zh}
-    \end{tabular}
-     \caption{Concept of the proposed method}
-     \label{fig::method_abs}
-  \end{figure}
-
-\newpage
-% \section{システム}
-% 本研究室のチームが行ってきたシステム\cite{okada}へ，目標方向に対応した目標方向の生成機能とネットワーク構造の変更をすることでシステムを構築した．
-
-
-% 本節では\ref{seigyo}学習フェーズで用いる地図べースの制御器
-% 学習器の訓練を行う，\ref{lerning}「学習フェーズ」，
-% 学習器の出力を用いて走行を行う\ref{test}「テストフェーズ」，\ref{net}構築したネットワークの構造の4つに分けて述べる．
-
-% \begin{table}[h]
-%     \centering
-%     \caption{Command}
-%     \begin{tabular}{cccll}
-%     \cline{1-4}
-%     \multicolumn{1}{|c|}{Target Direction} & \multicolumn{1}{c|}{go straihgt}          & \multicolumn{1}{c|}{go left}          & \multicolumn{1}{c|}{go right}          &  \\ \cline{1-4}
-%     \multicolumn{1}{|c|}{data}  & \multicolumn{1}{c|}{{[}　100,　0,　0　{]}} & \multicolumn{1}{c|}{{[}　0,　100,　0　{]}} & \multicolumn{1}{l|}{{[}　0,　0,　100　{]}} &  \\ \cline{1-4}
-%                                &                                  &                                  &                                  &  \\
-%                                &                                  &                                  &                                  &  \\
-%     \multicolumn{1}{l}{}       &                                  &                                  &                                  & 
-%     \end{tabular}
-%     \vspace{-3.0zh}
-%     \label{tb:comman}
-%     \end{table}
-  
-    
-
-\newpage
-\section{地図ベースの制御器}
-    \label{seigyo}
-    学習フェーズで使用する地図ベースの制御器について，
-    概要をFig. \ref{fig::navigation}に示す．
-    センサからの観測情報を用いて
-    局所的な障害物認識を行うlocal\_costmap，
-    local\_costmapの結果を利用して
-    局所的な経路計画を行うlocal\_planner．
-    後述するmap\_serverから配信される，
-    地図に対して全体のコスト計算を行うglobal\_costmap．
-    その結果を利用して大域的な経路計画を行うglobal\_plannner．
-    これらを統合して行動計画とモータ指令を行う「move\_base」，Particle\_Filterによって自己位置推定を行う「amcl」，
-    この2つへ保持する地図の配信を行う
-    「map\_server」などのパッケージを統合した自律移動用のメタパッケージである．
-    ROS Navigation\_stack\cite{navigation:online}へ目標地点(waypoint)と
-    目標方向の生成機能をもつ「waypoint\_nav」を
-    組み込んで使用している．
-    
-    目標方向は「道なり」「直進」「左折」「右折」の4つとし，要素数4,次元数1のint型の配列(One-Hot ベクトル)で表現する．
-    方向と配列の対応をTable \ref{tb:command_4}に示す．
-    \vspace{2.0zh}
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width = 11cm]{./figs/navigation.pdf}
-        \caption{Map-based controller}
-        \label{fig::navigation}
-    \end{figure}
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width = 11cm]{./figs/mapbased.png}
-        \caption{Map-based controller}
-        \label{fig::mapbase}
-    \end{figure}
-    
-    \begin{table}[h]
+ \begin{table}[h]
       \centering
       \caption{Target Direction list}
       \begin{tabular}{ccccll}
       \cline{1-5}
-      \multicolumn{1}{|c|}{Target Direction} & \multicolumn{1}{c|}{continue}&\multicolumn{1}{c|}{go straight}          & \multicolumn{1}{c|}{turn left}          & \multicolumn{1}{c|}{turn right}          &  \\ \cline{1-5}
+      \multicolumn{1}{|c|}{Target Direction} & \multicolumn{1}{c|}{Continue}&\multicolumn{1}{c|}{Go straight}          & \multicolumn{1}{c|}{Turn left}          & \multicolumn{1}{c|}{Turn right}          &  \\ \cline{1-5}
       \multicolumn{1}{|c|}{Data}  &\multicolumn{1}{c|}{{[}100, 0, 0, 0{]}}& \multicolumn{1}{c|}{{[}0, 100, 0, 0{]}} & \multicolumn{1}{c|}{{[}0,0,100, 0{]}} & \multicolumn{1}{l|}{{[}0, 0, 0, 100{]}} &  \\ \cline{1-5}
                                  &                                  &                                  &                                  &  \\
                                  &                                  &                                  &                                  &  \\
@@ -141,76 +158,15 @@
       \vspace{-3.0zh}
       \label{tb:command_4}
       \end{table}
-
-\newpage
-\section{学習フェーズ}
-\label{lerning}
-学習器の訓練を行う学習フェーズで用いるシステムをFig. \ref{fig::learningsystem}示す．
-学習は下記の一連の流れを1 stepとして，設定したstep数行う．
-\begin{enumerate}
-    \item LiDARとオドメトリから得たデータを入力とする地図ベースの制御器の出力を用いて自律走行を行う
-    \item 地図ベースの制御器の出力からヨー方向の角速度と目標方向，機体に取り付けたカメラからRGB画像を取得し，訓練データへ加える
-    \item 訓練データを　入力:カメラ画像，目標方向 目標出力:角速度　として学習器の訓練を行う
-    \item 学習器の出力を記録．
-  \end{enumerate}
-
-  \begin{figure}[h]
-    \centering
-    \includegraphics[width = 12cm]{./figs/system_learning.pdf}
-    \caption{Learning phase system }
-    \label{fig::learningsystem}
-\end{figure}
-
-\newpage
-画像の取得には岡田らの研究\cite{okada}にならい，
-旋回のデータをデータセットへ加えることを目的として
-機体の中央, 中央に対して左，右に傾けて取り付けた3つのカメラを用い，Table\ref{tb::camera_ang}に示す．
-% また分岐路以外では，1つの目標方向(例として「直進」）を出力し続けた場合にデータセットへ偏りが生じる可能性が考えられるため，
-% ランダムな目標方向の出力を用いる．
-% 目標方向の生成方法は\ref{seigyo}で述べるwaypointを用いて，目標方向に対応した目標方向を生成する．
-\begin{table}[H]
-  \centering
-  \caption{camera }
-  \begin{tabular}{|c|c|ll}
-  \hline
-  Left camera   & Angular velocity of Map-based controller + 0.2 rad/s \\ \hline
-  Center camera & Angular velocity of Map-based controller             \\ \hline
-  Right camera  & Angular velocity of Map-based controller - 0.2 rad/s  \\ \hline
-  \end{tabular}
-  \label{tb::camera_ang}
-  \end{table}
-
-\newpage
-\section{テストフェーズ}
-\label{test}
-設定したstep数に達した場合に，Fig. \ref{fig::testsystem}に示すように
-地図ベースの制御器の出力による動作から，中央のカメラ画像と目標方向を入力とした
-学習器の出力による動作へ切り替えて走行を行う．
-テスト時の目標方向の生成(方向の指示)はJoy\_stickコントローラのボタンを用いて行う．
-また，目標方向は学習フェーズと同じ形式，データを用いる．
-テストフェーズにおける手順を下記に示す．
-\begin{enumerate}
-    \item 機体に取り付けた中央のカメラからRGB画像,Joy\_stickコントローラより目標方向のデータを取得
-    \item 取得したデータ(カメラ画像，目標方向)を学習器へ入力
-    \item 学習器の出力である角速度をモータへ与える
-  \end{enumerate}
-
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width = 12cm]{./figs/system_test.pdf}
-    \caption{Test phase system}
-    \label{fig::testsystem}
-\end{figure}
-
 \newpage
 \section{ネットワーク構造}
 \label{net}
-今回のシステムで用いたネットワークをFig. \ref{fig::methodnetwork}に示す．
+今回の提案手法で用いた，カメラ画像と目標方向を入力とする学習器の
+ネットワークをFig. \ref{fig::methodnetwork}に示す．
 また，ハイパーパラメータについてTable \ref{tb::param}に示す．
-64×48のRGB画像を入力とする入力層1，畳込み層3，全結合層2層を持つ6層のCNNと，CNNの出力と目標方向を入力する入力層1，
+64×48のRGB画像を入力とする入力層1，畳込み層3，全結合層2層を持つ6層のCNNと，CNNの出力と目標方向指令を入力する入力層1，
 全結合層2．出力層1の全10層の構造になっている．
-出力はヨー方向の角速度を連続値である．
+出力はヨー方向の角速度である．
 
 \begin{figure}[h]
     \centering
@@ -219,19 +175,19 @@
     \label{fig::methodnetwork}
 \end{figure}
 % \vspace{-1.0zh}
-\begin{table}[h]
+\begin{table}[htb]
     \centering
     \caption{Parameters of deep learning}
     \begin{tabular}{|c|c|c|c|}
     \hline
-    Input Data    & Image (64x48 pixels, RGB channels) , Command                                              \\ \hline
+    Input Data    & Image (64x48 pixels, RGB channels) , Target Direction                                             \\ \hline
     Optimizer     & Adam ($alpha = 0.001, beta1 = 0.9, beta2 = 0.999, eps = 1e^{-1}$ )  \\ \hline
     Loss Function & Softmax-cross-entropy                                                            \\ \hline
-    Output Data   & Angular velocity                                              \\ \hline
+    Output Data   & Angular Velocity                                              \\ \hline
     \end{tabular}
     \label{tb::param}
     \end{table}
-\newpage
+
 
 
 
