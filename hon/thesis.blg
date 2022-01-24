@@ -23,7 +23,7 @@ while executing---line 1216 of file junsrt.bst
 Warning--empty booktitle in Imagenet
 You've used 10 entries,
             2270 wiz_defined-function locations,
-            598 strings with 5659 characters,
+            598 strings with 5658 characters,
 and the built_in function-call counts, 2667 in all, are:
 = -- 207
 > -- 50
