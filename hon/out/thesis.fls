@@ -183,13 +183,15 @@ INPUT ./figs/test_abs.pdf
 INPUT extractbb -B cropbox -O ./figs/test_abs.pdf
 INPUT ./figs/cmd_4.pdf
 INPUT extractbb -B cropbox -O ./figs/cmd_4.pdf
-INPUT ./figs/network.pdf
-INPUT extractbb -B cropbox -O ./figs/network.pdf
+INPUT ./figs/method_network.pdf
+INPUT extractbb -B cropbox -O ./figs/method_network.pdf
 OUTPUT out/tex/experiment.aux
 INPUT tex/experiment.tex
 INPUT tex/experiment.tex
 INPUT ./figs/3_camera.png
 INPUT extractbb -B cropbox -O ./figs/3_camera.png
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm

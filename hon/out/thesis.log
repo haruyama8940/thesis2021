@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2021.11.1)  24 JAN 2022 20:05
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2021.12.28)  25 JAN 2022 03:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **/home/haru/souko/thesis2021/hon/thesis.tex
 (/home/haru/souko/thesis2021/hon/thesis.tex
 pLaTeX2e <2017/10/28>+4 (based on LaTeX2e <2017-04-15>)
-Babel <3.18> and hyphenation patterns for 26 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/platex/jsclasses/jsbook.cls
 Document Class: jsbook 2017/10/04 jsclasses (okumura, texjporg)
 \jsc@mpt=\dimen118
@@ -513,52 +513,52 @@ File: ./figs/e2e.pdf Graphic file (type pdf)
 <./figs/e2e.pdf>
 [9]
 
-LaTeX Warning: Citation `Imagenet' on page 10 undefined on input line 46.
+LaTeX Warning: Citation `Imagenet' on page 10 undefined on input line 48.
 
 
-LaTeX Warning: Reference `fig::alex' on page 10 undefined on input line 46.
+LaTeX Warning: Reference `fig::alex' on page 10 undefined on input line 48.
 
 File: ./figs/alex.pdf Graphic file (type pdf)
 <./figs/alex.pdf>
 
-LaTeX Warning: Citation `Imagenet' on page 10 undefined on input line 56.
+LaTeX Warning: Citation `Imagenet' on page 10 undefined on input line 58.
 
 
-LaTeX Warning: Citation `Imagenet' on page 10 undefined on input line 56.
+LaTeX Warning: Citation `Imagenet' on page 10 undefined on input line 58.
 
 [10]
 
-LaTeX Warning: Citation `navigation:online' on page 11 undefined on input line 65.
+LaTeX Warning: Citation `navigation:online' on page 11 undefined on input line 67.
 
 
-LaTeX Warning: Reference `fig::mapbase' on page 11 undefined on input line 66.
+LaTeX Warning: Reference `fig::mapbase' on page 11 undefined on input line 68.
 
 File: ./figs/mapbased.png Graphic file (type bmp)
 <./figs/mapbased.png>
 [11]
 
-LaTeX Warning: Reference `fig::okada_method_ler' on page 12 undefined on input line 100.
+LaTeX Warning: Reference `fig::okada_method_ler' on page 12 undefined on input line 102.
 
 File: ./figs/system_learning_okada.pdf Graphic file (type pdf)
 <./figs/system_learning_okada.pdf>
 [12]
 
-LaTeX Warning: Reference `tb::camera_ang' on page 13 undefined on input line 114.
+LaTeX Warning: Reference `tb::camera_ang' on page 13 undefined on input line 116.
 
 
-LaTeX Warning: Reference `fig::okada_path' on page 13 undefined on input line 127.
+LaTeX Warning: Reference `fig::okada_path' on page 13 undefined on input line 129.
 
 File: ./figs/okada_path.png Graphic file (type bmp)
 <./figs/okada_path.png>
 
-LaTeX Warning: Citation `okada' on page 13 undefined on input line 131.
+LaTeX Warning: Citation `okada' on page 13 undefined on input line 133.
 
 
-LaTeX Warning: Citation `okada' on page 13 undefined on input line 131.
+LaTeX Warning: Citation `okada' on page 13 undefined on input line 133.
 
 [13]
 
-LaTeX Warning: Reference `fig::okada_method_test' on page 14 undefined on input line 136.
+LaTeX Warning: Reference `fig::okada_method_test' on page 14 undefined on input line 138.
 
 File: ./figs/okada_method_test.pdf Graphic file (type pdf)
 <./figs/okada_method_test.pdf>
@@ -595,22 +595,22 @@ File: ./figs/test_abs.pdf Graphic file (type pdf)
 <./figs/test_abs.pdf>
 [17]
 
-LaTeX Warning: Reference `fig::cmd_4' on page 18 undefined on input line 121.
+LaTeX Warning: Reference `fig::cmd_4' on page 18 undefined on input line 119.
 
 File: ./figs/cmd_4.pdf Graphic file (type pdf)
 <./figs/cmd_4.pdf>
 
-LaTeX Warning: Reference `tb:command_4' on page 18 undefined on input line 133.
+LaTeX Warning: Reference `tb:command_4' on page 18 undefined on input line 131.
 
 [18]
 
-LaTeX Warning: Reference `fig::methodnetwork' on page 19 undefined on input line 168.
+LaTeX Warning: Reference `fig::methodnetwork' on page 19 undefined on input line 165.
 
 
-LaTeX Warning: Reference `tb::param' on page 19 undefined on input line 169.
+LaTeX Warning: Reference `tb::param' on page 19 undefined on input line 166.
 
-File: ./figs/network.pdf Graphic file (type pdf)
-<./figs/network.pdf>
+File: ./figs/method_network.pdf Graphic file (type pdf)
+<./figs/method_network.pdf>
 ) [19]
 \openout2 = `tex/experiment.aux'.
 
@@ -620,10 +620,10 @@ File: ./figs/network.pdf Graphic file (type pdf)
 LaTeX Warning: Citation `gazebo:online' on page 20 undefined on input line 7.
 
 
+LaTeX Warning: Reference `fig::turtlebot3' on page 20 undefined on input line 8.
+
+
 LaTeX Warning: Citation `turtlebot3:online' on page 20 undefined on input line 8.
-
-
-LaTeX Warning: Reference `fig::turtlebot3' on page 20 undefined on input line 9.
 
 File: ./figs/3_camera.png Graphic file (type bmp)
 <./figs/3_camera.png>
@@ -631,38 +631,45 @@ File: ./figs/3_camera.png Graphic file (type bmp)
 
 
 
-] [21]
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 33.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
+[21]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 38.
+(Font)              scaled to size 11.53198pt on input line 39.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 38.
+(Font)              scaled to size 11.53198pt on input line 39.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 38.
+(Font)              scaled to size 11.53198pt on input line 39.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 38.
+(Font)              scaled to size 11.53198pt on input line 39.
 
-LaTeX Warning: Reference `fig::zyuzi' on page 22 undefined on input line 39.
+LaTeX Warning: Reference `fig::zyuzi' on page 22 undefined on input line 40.
 
 File: ./figs/zyuziroute.pdf Graphic file (type pdf)
 <./figs/zyuziroute.pdf>
 
-LaTeX Warning: Reference `tb::exp1suc' on page 22 undefined on input line 74.
+LaTeX Warning: Reference `tb::exp1suc' on page 22 undefined on input line 75.
 
 
-LaTeX Warning: Reference `fig::exp1_result' on page 22 undefined on input line 76.
+LaTeX Warning: Reference `fig::exp1_result' on page 22 undefined on input line 77.
 
 [22]
 File: ./figs/exp1_result.png Graphic file (type bmp)
 <./figs/exp1_result.png>
 [23]
 
-LaTeX Warning: Reference `fig::hatinozi' on page 24 undefined on input line 119.
+LaTeX Warning: Reference `fig::hatinozi' on page 24 undefined on input line 120.
 
 File: ./figs/coli.png Graphic file (type bmp)
 <./figs/coli.png>
 [24]
 
-LaTeX Warning: Reference `fig::exp2route' on page 25 undefined on input line 128.
+LaTeX Warning: Reference `fig::exp2route' on page 25 undefined on input line 129.
 
 File: ./figs/8nozi_route-r1.pdf Graphic file (type pdf)
 <./figs/8nozi_route-r1.pdf>
@@ -679,16 +686,16 @@ File: ./figs/8nozi_route-r6.pdf Graphic file (type pdf)
 File: ./figs/8nizi_cap.pdf Graphic file (type pdf)
 <./figs/8nizi_cap.pdf>
 
-Overfull \hbox (18.66666pt too wide) in paragraph at lines 132--175
+Overfull \hbox (18.66666pt too wide) in paragraph at lines 133--176
 [][][][] 
  []
 
 [25]
 
-LaTeX Warning: Reference `tb::exp2suc' on page 26 undefined on input line 182.
+LaTeX Warning: Reference `tb::exp2suc' on page 26 undefined on input line 183.
 
 
-LaTeX Warning: Reference `fig::exp2_result' on page 26 undefined on input line 184.
+LaTeX Warning: Reference `fig::exp2_result' on page 26 undefined on input line 185.
 
 File: ./figs/exp2_result.png Graphic file (type bmp)
 <./figs/exp2_result.png>
@@ -708,15 +715,6 @@ LaTeX Warning: Citation `okada' on page 27 undefined on input line 4.
 \openout2 = `backmatter/main.aux'.
 
 (./backmatter/main.tex (./thesis.bbl
-Missing character: There is no ^^e2 in font cmr10!
-Missing character: There is no ^^80 in font cmr10!
-Missing character: There is no ^^93 in font cmr10!
-Missing character: There is no ^^e2 in font cmr10!
-Missing character: There is no ^^80 in font cmr10!
-Missing character: There is no ^^93 in font cmr10!
-Missing character: There is no ^^e2 in font cmr10!
-Missing character: There is no ^^80 in font cmr10!
-Missing character: There is no ^^93 in font cmr10!
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
@@ -738,14 +736,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
 (out/thesis.aux (out/frontmatter/main.aux) (out/tex/introduction.aux) (out/tex/element_technology.aux) (out/tex/method.aux) (out/tex/experiment.aux) (out/tex/conclusion.aux) (out/backmatter/main.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 76.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 76.
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  89F4A51CAF24D2E794FC4E7F69D07266;1801.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 89F4A51CAF24D2E794FC4E7F69D07266;1801.
 
 LaTeX Warning: There were undefined references.
 
@@ -755,12 +747,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
  ) 
 Here is how much of TeX's memory you used:
- 6792 strings out of 494735
- 103739 string characters out of 6176126
- 185889 words of memory out of 5000000
- 10172 multiletter control sequences out of 15000+600000
+ 6816 strings out of 493640
+ 104124 string characters out of 6150527
+ 189168 words of memory out of 5000000
+ 10290 multiletter control sequences out of 15000+600000
  16969 words of font info for 80 fonts, out of 8000000 for 9000
- 269 hyphenation exceptions out of 8191
- 36i,15n,41p,321b,687s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 934 hyphenation exceptions out of 8191
+ 36i,15n,41p,539b,687s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/thesis.dvi (37 pages, 56516 bytes).
+Output written on out/thesis.dvi (37 pages, 59928 bytes).

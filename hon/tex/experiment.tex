@@ -1,12 +1,12 @@
 \chapter{実験}
 \section{実験目的}
-シュミレータを用いて実験を行い，提案手法の有効性の検証を行う．
+シュミレータ上で，環境を変えて実験を行い，提案手法の有効性の検証を行う．
 \section{実験環境}
-実験はシミュレータ上で行い，
+実験はシミュレータ上で行う．
 シミュレータ環境としてオープンソースの
 3DロボットシミュレータGazebo\cite{gazebo:online}を用いる．
-実験装置として，turtlebot3\_waffle\cite{turtlebot3:online}へカメラを
-3つ追加したモデルFig. \ref{fig::turtlebot3}を用いる．
+実験装置として，Fig. \ref{fig::turtlebot3}に示す，turtlebot3\_waffle\cite{turtlebot3:online}へカメラを
+3つ追加したモデルを用いる．
 
 \begin{figure}[H]
     \centering
@@ -23,15 +23,16 @@
   \item テストフェーズへ移行，各経路を設定した回数走行する．
 \end{enumerate}
 なお，学習器の訓練は「訓練データ (カメラ画像, 目標方向指令) を学習器へ入力し,結果を出力」を 1step とする．
-また，データセットの収集及び，学習器への入力は0.25[s]周期で行い，走行に用いる並進速度は0.2[m]とする．
+データセットの収集及び，学習器への入力は0.25[s]周期で行う．
+また走行に用いる並進速度は0.2[m/s]とする．
 
 \section{実験条件}
 実験条件は
 テストフェーズにおいて，
-\begin{enumerate}
+\begin{itemize}
   \item 成功：壁に衝突せず, 指定した目標地点へ到達
   \item 失敗：目標方向指令とは異なった経路を選択, または壁に衝突
-\end{enumerate}
+\end{itemize}
 とした．
 \newpage
 \section{実験1 十字路}
@@ -72,9 +73,9 @@ Fig. \ref{fig::zyuzi}に環境と経路，入力する目標方向を示す．
 % Fig. \ref{fig::exp1route}で青で示した地点において，
 % コマンドを入力を行った結果をTable. \ref{tb::exp1suc}に示す．
 テストフェーズで，各経路を10回ずつ走行した結果をTable \ref{tb::exp1suc}に示す．
-すべての経路において，目標地点へ到達することに成功した
+すべての経路において，目標地点へ到達することに成功した．
 また，学習フェーズで収集したデータセットをFig. \ref{fig::exp1_result}に示す．
-経路内に多いContinueは突出している．それ以外の3つはほぼ同数であることが確認できる．
+走行回数が多いContinueは突出しているが，それ以外の3つはほぼ同数であることが確認できる．
 % \begin{table}[H]
 %   \centering
 %   \caption{Number of successes experiment 1 point}
@@ -179,11 +180,11 @@ Route A-Fの順で60000[step]学習するまで，繰り返し走行する．
   
 \newpage
 \subsection{評価}
-テストフェーズで，経路をランダムに60回走行を行った結果をTable\ref{tb::exp2suc}に示す．
+テストフェーズで，経路をランダムに60回走行を行った結果をTable \ref{tb::exp2suc}に示す．
 結果として経路を約8割走行に成功した．
 また，学習フェーズで収集したデータセットをFig. \ref{fig::exp2_result}に示す．
 Go left,Go rightはほぼ同数であるが，Go straightは約半分以下となった．
-しかし，Go straightを用いた，経路成功は問題なく行うことができた．
+しかし，Go straightを用いた，経路の選択は問題なく行うことができた．
 これは，Go straightが学習する角速度が，Continueと類似しているからだと考えられる．
 
 % % \begin{figure}[h]
