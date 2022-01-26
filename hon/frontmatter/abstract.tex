@@ -10,15 +10,16 @@
 \vspace{1.0zh}
 %
 
-近年,カメラ画像に基づいた自律移動の研究が行われている.
-本研究室でも,LiDAR を用いた自律移動システムの出力を教師信号として与えることで
+近年,カメラ画像に基づいた自律走行の研究が行われている.
+本研究室でも,LiDAR を用いた自律走行システムの出力を教師信号として与えることで
 ロボットの経路追従行動をオンラインで模倣する手法を提案し,
 実験により一定の経路を周回可能であると示されている.
-本研究では，従来手法をベースに，目標とする進行方向("目標方向")をデータセットと学習器の入力へ加えることで，
+本研究では，従来手法をベースに，目標とする進行方向をデータセットと学習器の入力へ加えることで，
 分岐路で「直進」と「左折」などの経路を選択可能とする機能の追加を提案する．
 提案手法では，LiDAR を用いた自律移動システムの出力をカメラ画像と目標方向を用いて模倣学習し，
 学習後，カメラ画像と目標方向に基づいて経路を選択可能な自律走行を行う．
-また，シミュレータを用いた実験により，提案手法の有効性を検証した. 
+また，シミュレータを用いた実験により，提案手法の有効性を検証した.
+その結果，経路を選択し，自律走行できることを確認した．
 
 キーワード: end-to-end学習, Navigation, 目標方向
 %
@@ -36,12 +37,12 @@
 %
 
 In recent years, research on autonomous mobility based on camera images has been conducted.
-In our laboratory, we have proposed a method to imitate the path-following behavior of a robot online by providing the output of a LiDAR-based autonomous mobility system as a supervisory signal. I have also proposed a method to imitate the robot's path-following behavior online by providing the output of a LiDAR-based autonomous moving system as a supervisory signal, Experiments have shown that it is possible to follow a certain path.
-In this study, based on the conventional method, I propose a method to imitate a robot's path-following behavior by adding a target direction ("target direction") to the data set and the input of the learner. 
-In this paper, I propose to add a function that allows the user to select a path such as "straight ahead" or "left turn" at a forked road by adding the target direction ("target direction") to the dataset and the input of the learner.
+In our laboratory, we have proposed a method to imitate the path-following behavior of a robot online by providing the output of a LiDAR-based autonomous mobility system as a supervisory signal. 
+We have also proposed a method to imitate the robot's path-following behavior online by providing the output of a LiDAR-based autonomous moving system as a supervisory signal, Experiments have shown that it is possible to follow a certain path.
+In this paper, I propose to add a function that allows the user to select a path such as "go straight" or "turn left" at a forked road by adding the target direction  to the dataset and the input of the learner.
 The proposed method imitates and learns the output of a LiDAR-based autonomous mobility system using camera images and target directions.
 After learning, the system runs autonomously and can select a route based on the camera image and the target direction.
 I also verified the effectiveness of the proposed method by experiments using a simulator. 
-
+As a result, it was confirmed that the robot could select a route and drive autonomously.
 
 keywords: End-to-end learning, Navigation, Target direction

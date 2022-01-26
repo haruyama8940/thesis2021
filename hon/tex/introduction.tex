@@ -20,10 +20,10 @@ Fig. \ref{fig::nvidia}で示す方法で，人間のハンドル操作による�
 行動を模倣し，カメラ画像を用いた経路追従行動を獲得した．
 研究ではFig. \ref{fig::okada_sys}に示すように，
 LiDAR,オドメトリの入力としたルールベース制御器(後述する"地図べースの制御器")による経路追従行動を行い，
-その行動をカメラ画像を用いてend-to-endで模倣学習している．
+その行動をカメラ画像を用いてend-to-endで模倣学習した．
 \begin{figure}[h]
     \centering
-    \includegraphics[width = 10cm]{./figs/okada_sys.png}
+    \includegraphics[width = 10cm]{./figs/okada_sys.pdf}
     \caption{Okada and others proposed method from \cite{okada}}
     \label{fig::okada_sys}
 \end{figure}
@@ -50,7 +50,7 @@ LiDAR,オドメトリの入力としたルールベース制御器(後述する"
     \label{fig::bunki}
 \end{figure}
 \newpage
-島田らは人が目的地までの移動に用いる道案内の情報を，
+島田ら\cite{simada}は人が目的地までの移動に用いる道案内の情報を，
 トポロジカルマップとシナリオを用いて表現する手法を提案している．
 トポロジカルマップとはFig. \ref{fig::topo}に示す通路の特徴とエッジの情報をもち、
 分岐路などの目印(エッジ)とそのつながり(ノード)を簡易的に表現した地図である，
@@ -70,16 +70,22 @@ LiDAR,オドメトリの入力としたルールベース制御器(後述する"
     \label{fig::sina}
 \end{figure}
 
-そこで，本研究では従来手法をベースに，「直進」「左折」「右折」などの目標とする進行方向の情報(本研究では"目標方向"と呼ぶ)
+最終的に岡田らの手法と島田らの手法を融合して，
+カメラ画像を入力として，シナリオに基づいて
+目的地まで移動する自律走行の手法を提案を考える．
+
+そのため，まず本研究では従来手法をベースに，「直進」「左折」「右折」などの
+目標とする進行方向の情報(本研究では"目標方向"と呼ぶ)
 をデータセットと学習器へ与える．
-これにより，学習器の出力を用いた走行において，目標方向により経路を選択可能とする機能の追加を提案する．
-% 提案手法全体の流れをFig. \ref{fig::haikei_zentai}に示す．
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width = 13cm]{./figs/haikei_zentai.pdf}
-%     \caption{hai}
-%     \label{fig::haikei_zentai}
-% \end{figure}
+これにより，学習器の出力を用いた走行において，
+目標方向により経路を選択可能とする機能の追加を提案する．
+提案手法全体の流れをFig. \ref{fig::haikei_zentai}に示す．
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 13cm]{./figs/haikei_zentai.pdf}
+    \caption{Overview future work}
+    \label{fig::haikei_zentai}
+\end{figure}
 
 \newpage
 カメラ画像と他の情報を用いて，自律移動を行う研究を述べる．
@@ -106,16 +112,17 @@ Felipeら\cite{razikon}はカメラ画像と操舵角と加速度の2次元の�
 
 
 \section{目的}
-本研究では，従来手法をベースに，
-分岐路で「直進」と「左折」などの経路を選択可能とする機能の追加を提案する．
+本研究では，Fig. \ref{fig::haikei_abs}に赤枠で示した部分を対象として，
+岡田らの従来手法をベースに，分岐路で「直進」と「左折」などの
+経路を選択可能とする機能の追加を提案する．
 さらに，実験を行い，提案手法の有効性を検証することを目的とする．
-% Fig. \ref{fig::haikei_abs}に赤枠で示した部分を対象とする，
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width = 12cm]{./figs/haikei_abs.pdf}
-%     \caption{a}
-%     \label{fig::haikei_abs}
-% \end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 12cm]{./figs/haikei_abs.pdf}
+    \caption{Overview scope of proposed method}
+    \label{fig::haikei_abs}
+\end{figure}
 
 % カメラ画像と目標方向を入力とする学習器の出力を用いた走行において，
 % 目標方向によって分岐路で任意のルートへ走行経路を変更することを目指す．
@@ -125,11 +132,7 @@ Felipeら\cite{razikon}はカメラ画像と操舵角と加速度の2次元の�
 
 \section{論文構成}
 1章では，本研究における背景，及び目的を述べた．
-
 2章では，本研究で用いた深層学習の要素技術とベースとする従来手法について述べる．
-
 3章では，従来手法をベースにした，提案手法を述べる．
-
 4章では，シミュレータを用いた実験を行う．
-
 5章では，本研究の結論を述べる．

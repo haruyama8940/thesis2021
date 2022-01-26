@@ -137,8 +137,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
-INPUT ./figs/okada_sys.png
-INPUT extractbb -B cropbox -O ./figs/okada_sys.png
+INPUT ./figs/okada_sys.pdf
+INPUT extractbb -B cropbox -O ./figs/okada_sys.pdf
 INPUT ./figs/okada.png
 INPUT extractbb -B cropbox -O ./figs/okada.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
@@ -149,10 +149,14 @@ INPUT ./figs/topo.png
 INPUT extractbb -B cropbox -O ./figs/topo.png
 INPUT ./figs/sina.png
 INPUT extractbb -B cropbox -O ./figs/sina.png
+INPUT ./figs/haikei_zentai.pdf
+INPUT extractbb -B cropbox -O ./figs/haikei_zentai.pdf
 INPUT ./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf
 INPUT extractbb -B cropbox -O ./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf
 INPUT ./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutional_Neural_Network_abst.pdf
 INPUT extractbb -B cropbox -O ./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutional_Neural_Network_abst.pdf
+INPUT ./figs/haikei_abs.pdf
+INPUT extractbb -B cropbox -O ./figs/haikei_abs.pdf
 OUTPUT out/tex/element_technology.aux
 INPUT tex/element_technology.tex
 INPUT tex/element_technology.tex
@@ -200,10 +204,22 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT ./figs/zyuziroute.pdf
 INPUT extractbb -B cropbox -O ./figs/zyuziroute.pdf
+INPUT ./figs/zyuzi_ler_go.png
+INPUT extractbb -B cropbox -O ./figs/zyuzi_ler_go.png
+INPUT ./figs/zyuzi_test_go.png
+INPUT extractbb -B cropbox -O ./figs/zyuzi_test_go.png
+INPUT ./figs/zyuzi_ler_left.png
+INPUT extractbb -B cropbox -O ./figs/zyuzi_ler_left.png
+INPUT ./figs/zyuzi_test_left.png
+INPUT extractbb -B cropbox -O ./figs/zyuzi_test_left.png
+INPUT ./figs/zyuzi_ler_right.png
+INPUT extractbb -B cropbox -O ./figs/zyuzi_ler_right.png
+INPUT ./figs/zyuzi_test_right.png
+INPUT extractbb -B cropbox -O ./figs/zyuzi_test_right.png
 INPUT ./figs/exp1_result.png
 INPUT extractbb -B cropbox -O ./figs/exp1_result.png
-INPUT ./figs/coli.png
-INPUT extractbb -B cropbox -O ./figs/coli.png
+INPUT ./figs/coli.pdf
+INPUT extractbb -B cropbox -O ./figs/coli.pdf
 INPUT ./figs/8nozi_route-r1.pdf
 INPUT extractbb -B cropbox -O ./figs/8nozi_route-r1.pdf
 INPUT ./figs/8nozi_route-r2.pdf
@@ -218,6 +234,14 @@ INPUT ./figs/8nozi_route-r6.pdf
 INPUT extractbb -B cropbox -O ./figs/8nozi_route-r6.pdf
 INPUT ./figs/8nizi_cap.pdf
 INPUT extractbb -B cropbox -O ./figs/8nizi_cap.pdf
+INPUT ./figs/coli_ler_go.png
+INPUT extractbb -B cropbox -O ./figs/coli_ler_go.png
+INPUT ./figs/coli_test_go.png
+INPUT extractbb -B cropbox -O ./figs/coli_test_go.png
+INPUT ./figs/coli_ler_left.png
+INPUT extractbb -B cropbox -O ./figs/coli_ler_left.png
+INPUT ./figs/coli_test_left.png
+INPUT extractbb -B cropbox -O ./figs/coli_test_left.png
 INPUT ./figs/exp2_result.png
 INPUT extractbb -B cropbox -O ./figs/exp2_result.png
 OUTPUT out/tex/conclusion.aux
