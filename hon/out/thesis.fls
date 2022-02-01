@@ -160,8 +160,8 @@ INPUT extractbb -B cropbox -O ./figs/haikei_abs.pdf
 OUTPUT out/tex/element_technology.aux
 INPUT tex/element_technology.tex
 INPUT tex/element_technology.tex
-INPUT ./figs/net.pdf
-INPUT extractbb -B cropbox -O ./figs/net.pdf
+INPUT ./figs/network.pdf
+INPUT extractbb -B cropbox -O ./figs/network.pdf
 INPUT ./figs/e2e.pdf
 INPUT extractbb -B cropbox -O ./figs/e2e.pdf
 INPUT ./figs/alex.pdf

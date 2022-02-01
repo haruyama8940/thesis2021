@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2021.12.28)  27 JAN 2022 05:39
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2021.12.28)  30 JAN 2022 16:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -399,104 +399,104 @@ LaTeX Warning: Citation `okada' on page 2 undefined on input line 19.
 LaTeX Warning: Reference `fig::okada' on page 2 undefined on input line 19.
 
 
-LaTeX Warning: Reference `fig::okada_sys' on page 2 undefined on input line 21.
+LaTeX Warning: Reference `fig::okada_sys' on page 2 undefined on input line 20.
 
 File: ./figs/okada_sys.pdf Graphic file (type pdf)
 <./figs/okada_sys.pdf>
 
-LaTeX Warning: Citation `okada' on page 2 undefined on input line 27.
+LaTeX Warning: Citation `okada' on page 2 undefined on input line 26.
 
 
-LaTeX Warning: Citation `okada' on page 2 undefined on input line 27.
+LaTeX Warning: Citation `okada' on page 2 undefined on input line 26.
 
 File: ./figs/okada.png Graphic file (type bmp)
 <./figs/okada.png>
 
-LaTeX Warning: Citation `okada' on page 2 undefined on input line 34.
+LaTeX Warning: Citation `okada' on page 2 undefined on input line 33.
 
 
-LaTeX Warning: Citation `okada' on page 2 undefined on input line 34.
+LaTeX Warning: Citation `okada' on page 2 undefined on input line 33.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 38.
+(Font)              <7> on input line 37.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 38.
+(Font)              <5> on input line 37.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 38.
+(Font)              scaled to size 6.72699pt on input line 37.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 38.
+(Font)              scaled to size 4.805pt on input line 37.
 [2]
 
-LaTeX Warning: Citation `okada' on page 3 undefined on input line 41.
+LaTeX Warning: Citation `okada' on page 3 undefined on input line 40.
 
 
-LaTeX Warning: Reference `fig::bunki' on page 3 undefined on input line 41.
+LaTeX Warning: Reference `fig::bunki' on page 3 undefined on input line 40.
 
 File: ./figs/bunki.pdf Graphic file (type pdf)
 <./figs/bunki.pdf>
 [3]
 
-LaTeX Warning: Citation `simada' on page 4 undefined on input line 53.
+LaTeX Warning: Citation `simada' on page 4 undefined on input line 52.
 
 
-LaTeX Warning: Reference `fig::topo' on page 4 undefined on input line 55.
+LaTeX Warning: Reference `fig::topo' on page 4 undefined on input line 54.
 
 
-LaTeX Warning: Reference `fig::sina' on page 4 undefined on input line 57.
+LaTeX Warning: Reference `fig::sina' on page 4 undefined on input line 56.
 
 File: ./figs/topo.png Graphic file (type bmp)
 <./figs/topo.png>
 
-LaTeX Warning: Citation `simada' on page 4 undefined on input line 63.
+LaTeX Warning: Citation `simada' on page 4 undefined on input line 62.
 
 
-LaTeX Warning: Citation `simada' on page 4 undefined on input line 63.
+LaTeX Warning: Citation `simada' on page 4 undefined on input line 62.
 
 File: ./figs/sina.png Graphic file (type bmp)
 <./figs/sina.png>
 
-LaTeX Warning: Citation `simada' on page 4 undefined on input line 69.
+LaTeX Warning: Citation `simada' on page 4 undefined on input line 68.
 
 
-LaTeX Warning: Citation `simada' on page 4 undefined on input line 69.
+LaTeX Warning: Citation `simada' on page 4 undefined on input line 68.
 
 [4]
 
-LaTeX Warning: Reference `fig::haikei_zentai' on page 5 undefined on input line 82.
+LaTeX Warning: Reference `fig::haikei_zentai' on page 5 undefined on input line 81.
 
 File: ./figs/haikei_zentai.pdf Graphic file (type pdf)
 <./figs/haikei_zentai.pdf>
 [5]
 
-LaTeX Warning: Citation `razikon' on page 6 undefined on input line 92.
+LaTeX Warning: Citation `razikon' on page 6 undefined on input line 91.
 
 
-LaTeX Warning: Reference `fig::Conditional_Imitation_Learning' on page 6 undefined on input line 93.
+LaTeX Warning: Reference `fig::Conditional_Imitation_Learning' on page 6 undefined on input line 92.
 
 File: ./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf Graphic file (type pdf)
 <./figs/End-to-end_Driving_via_Conditional_Imitation_Learning.pdf>
 
-LaTeX Warning: Citation `razikon' on page 6 undefined on input line 98.
+LaTeX Warning: Citation `razikon' on page 6 undefined on input line 97.
 
 
-LaTeX Warning: Citation `razikon' on page 6 undefined on input line 98.
+LaTeX Warning: Citation `razikon' on page 6 undefined on input line 97.
 
 
-LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 102.
+LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 101.
 
 
-LaTeX Warning: Reference `fig::nagoyaabst' on page 6 undefined on input line 102.
+LaTeX Warning: Reference `fig::nagoyaabst' on page 6 undefined on input line 101.
 
 File: ./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutional_Neural_Network_abst.pdf Graphic file (type pdf)
 <./figs/End-to-End_Navigation_with_Branch_Turning_Support_using_Convolutional_Neural_Network_abst.pdf>
 
-LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 109.
+LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 108.
 
 
-LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 109.
+LaTeX Warning: Citation `nagoya' on page 6 undefined on input line 108.
 
 
-LaTeX Warning: Reference `fig::haikei_abs' on page 6 undefined on input line 115.
+LaTeX Warning: Reference `fig::haikei_abs' on page 6 undefined on input line 114.
 
 [6]
 File: ./figs/haikei_abs.pdf Graphic file (type pdf)
@@ -509,8 +509,8 @@ File: ./figs/haikei_abs.pdf Graphic file (type pdf)
 
 LaTeX Warning: Reference `fig::network' on page 8 undefined on input line 8.
 
-File: ./figs/net.pdf Graphic file (type pdf)
-<./figs/net.pdf>
+File: ./figs/network.pdf Graphic file (type pdf)
+<./figs/network.pdf>
 
 LaTeX Warning: Reference `fig::e2e' on page 8 undefined on input line 19.
 
@@ -642,12 +642,12 @@ File: ./figs/3_camera.png Graphic file (type bmp)
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 33.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 34.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
 [21]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 39.
@@ -840,11 +840,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
  ) 
 Here is how much of TeX's memory you used:
  6876 strings out of 493640
- 105473 string characters out of 6150527
+ 105485 string characters out of 6150527
  190168 words of memory out of 5000000
  10338 multiletter control sequences out of 15000+600000
  16969 words of font info for 80 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  36i,15n,41p,345b,687s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/thesis.dvi (40 pages, 66988 bytes).
+Output written on out/thesis.dvi (40 pages, 66972 bytes).
